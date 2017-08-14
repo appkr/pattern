@@ -1,0 +1,32 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Basic\\Composition\\": "Basic/Composition/src/",
+      "Basic\\Dependency\\": "Basic/Dependency/src/",
+      "Basic\\DI\\": "Basic/DependencyInjection/src/",
+      "Basic\\Encapsulation\\": "Basic/Encapsulation/src/",
+      "Basic\\ServiceLocator\\": "Basic/ServiceLocator/src/",
+      "Behavioral\\Command\\": "Behavioral/Command/src/",
+      "Structural\\Proxy\\": "Structural/Proxy/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Basic\\Composition\\Test\\": "Basic/Composition/tests/",
+      "Basic\\Dependency\\Test\\": "Basic/Dependency/tests/",
+      "Basic\\DI\\Test\\": "Basic/DependencyInjection/tests/",
+      "Basic\\Encapsulation\\Test\\": "Basic/Encapsulation/tests/",
+      "Basic\\ServiceLocator\\Test\\": "Basic/ServiceLocator/tests/",
+      "Behavioral\\Command\\Test\\": "Behavioral/Command/tests/",
+      "Structural\\Proxy\\Test\\": "Structural/Proxy/tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "illuminate/support": "^5.4",
+    "ramsey/uuid": "^3.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
+  }
+}
