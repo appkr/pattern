@@ -6,7 +6,7 @@
 
 ```bash
 ~/pattern $ composer install
-~/pattern $ vendor/bin/phpunit Behavioral/Command
+~/pattern $ vendor/bin/phpunit Behavioral/Command2
 ```
 
 ![](docs/command.phpunit.png)
