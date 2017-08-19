@@ -8,7 +8,8 @@
       "Basic\\ServiceLocator\\": "Basic/ServiceLocator/src/",
       "Behavioral\\Command\\": "Behavioral/Command/src/",
       "Behavioral\\Command2\\": "Behavioral/Command2/src/",
-      "Structural\\Proxy\\": "Structural/Proxy/src/"
+      "Structural\\Proxy\\": "Structural/Proxy/src/",
+      "SOLID\\Isp\\": "SOLID/Isp/src/"
     }
   },
   "autoload-dev": {
@@ -20,7 +21,8 @@
       "Basic\\ServiceLocator\\Test\\": "Basic/ServiceLocator/tests/",
       "Behavioral\\Command\\Test\\": "Behavioral/Command/tests/",
       "Behavioral\\Command2\\Test\\": "Behavioral/Command2/tests/",
-      "Structural\\Proxy\\Test\\": "Structural/Proxy/tests/"
+      "Structural\\Proxy\\Test\\": "Structural/Proxy/tests/",
+      "SOLID\\Isp\\Test\\": "SOLID/Isp/tests/"
     }
   },
   "require": {
