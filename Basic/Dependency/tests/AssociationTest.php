@@ -1,11 +1,7 @@
 <?php
 
-namespace Basic\Dependency\Test;
+namespace Basic\Dependency;
 
-use Basic\Dependency\Department;
-use Basic\Dependency\Student;
-use Basic\Dependency\Teacher;
-use Basic\Dependency\University;
 use PHPUnit\Framework\TestCase;
 
 class AssociationTest extends TestCase

@@ -1,9 +1,7 @@
 <?php
 
-namespace Structural\Proxy\Test\Ex2;
+namespace Structural\Proxy\Ex2;
 
-use Structural\Proxy\Ex2\User;
-use Structural\Proxy\Ex2\UserProxy;
 use PHPUnit\Framework\TestCase;
 
 /**
