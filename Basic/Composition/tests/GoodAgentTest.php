@@ -1,6 +1,6 @@
 <?php
 
-namespace Basic\Composition\Test;
+namespace Basic\Composition;
 
 use Basic\Composition\Good\DeliveryAgent;
 use Basic\Composition\Common\DeliveryManager;

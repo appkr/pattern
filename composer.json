@@ -13,20 +13,6 @@
       "SOLID\\Isp\\": "SOLID/Isp/src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Basic\\Composition\\Test\\": "Basic/Composition/tests/",
-      "Basic\\Dependency\\Test\\": "Basic/Dependency/tests/",
-      "Basic\\DI\\Test\\": "Basic/DependencyInjection/tests/",
-      "Basic\\Encapsulation\\Test\\": "Basic/Encapsulation/tests/",
-      "Basic\\ServiceLocator\\Test\\": "Basic/ServiceLocator/tests/",
-      "Basic\\TellDontAsk\\Test\\": "Basic/TellDontAsk/tests/",
-      "Behavioral\\Command\\Test\\": "Behavioral/Command/tests/",
-      "Behavioral\\Command2\\Test\\": "Behavioral/Command2/tests/",
-      "Structural\\Proxy\\Test\\": "Structural/Proxy/tests/",
-      "SOLID\\Isp\\Test\\": "SOLID/Isp/tests/"
-    }
-  },
   "require": {
     "php": ">=7.1",
     "illuminate/support": "^5.4",

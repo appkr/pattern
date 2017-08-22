@@ -1,6 +1,6 @@
 <?php
 
-namespace Basic\TellDontAsk\Test;
+namespace Basic\TellDontAsk;
 
 use Basic\TellDontAsk\Bad\Surgery as BadDoctor;
 use Basic\TellDontAsk\Surgery as GoodDoctor;

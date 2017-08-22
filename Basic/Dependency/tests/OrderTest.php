@@ -1,9 +1,7 @@
 <?php
 
-namespace Basic\Dependency\Test;
+namespace Basic\Dependency;
 
-use Basic\Dependency\Customer;
-use Basic\Dependency\Order;
 use PHPUnit\Framework\TestCase;
 
 class OrderTest extends TestCase

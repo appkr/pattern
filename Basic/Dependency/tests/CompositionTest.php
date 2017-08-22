@@ -1,9 +1,7 @@
 <?php
 
-namespace Basic\Dependency\Test;
+namespace Basic\Dependency;
 
-use Basic\Dependency\Department;
-use Basic\Dependency\University;
 use PHPUnit\Framework\TestCase;
 
 class CompositionTest extends TestCase

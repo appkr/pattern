@@ -1,11 +1,7 @@
 <?php
 
-namespace Behavioral\Command\Test;
+namespace Behavioral\Command;
 
-use Behavioral\Command\FlipDownCommand;
-use Behavioral\Command\FlipUpCommand;
-use Behavioral\Command\Light;
-use Behavioral\Command\SwitchController;
 use PHPUnit\Framework\TestCase;
 
 /**

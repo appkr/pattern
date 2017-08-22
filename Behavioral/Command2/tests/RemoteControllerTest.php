@@ -1,12 +1,7 @@
 <?php
 
-namespace Behavioral\Command2\Test;
+namespace Behavioral\Command2;
 
-use Behavioral\Command2\Light;
-use Behavioral\Command2\RemoteController;
-use Behavioral\Command2\TurnLightOff;
-use Behavioral\Command2\TurnLightOn;
-use Behavioral\Command2\TurnLightsOn;
 use PHPUnit\Framework\TestCase;
 
 final class RemoteControllerTest extends TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace SOLID\Isp\Test;
+namespace SOLID\Isp;
 
 use PHPUnit\Framework\TestCase;
 use SOLID\Isp\Bad\Cat;

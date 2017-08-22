@@ -1,9 +1,7 @@
 <?php
 
-namespace Basic\Dependency\Test;
+namespace Basic\Dependency;
 
-use Basic\Dependency\Car;
-use Basic\Dependency\Vehicle;
 use PHPUnit\Framework\TestCase;
 
 class CarTest extends TestCase

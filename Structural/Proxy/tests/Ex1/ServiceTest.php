@@ -1,9 +1,7 @@
 <?php
 
-namespace Structural\Proxy\Test\Ex1;
+namespace Structural\Proxy\Ex1;
 
-use Structural\Proxy\Ex1\FullService;
-use Structural\Proxy\Ex1\PublicService;
 use PHPUnit\Framework\TestCase;
 
 class ServiceTest extends TestCase

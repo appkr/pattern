@@ -1,6 +1,6 @@
 <?php
 
-namespace Basic\Encapsulation\Test;
+namespace Basic\Encapsulation;
 
 use Basic\Encapsulation\Bad\NewspaperSubscriber;
 use Basic\Encapsulation\Bad\Paperboy;

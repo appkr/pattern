@@ -1,6 +1,6 @@
 <?php
 
-namespace Basic\Encapsulation\Test;
+namespace Basic\Encapsulation;
 
 use Basic\Encapsulation\Good\NotEnoughMoneyException;
 use Basic\Encapsulation\Good\NewspaperSubscriber;
