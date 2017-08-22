@@ -73,4 +73,4 @@ public function requestMedicalTreatment(Doctor $doctor): void
 }
 ```
 
-![](docs/Bad.Good.png)
+![](docs/Good.class.png)
