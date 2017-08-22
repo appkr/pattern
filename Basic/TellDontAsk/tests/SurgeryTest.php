@@ -4,7 +4,8 @@ namespace Basic\TellDontAsk\Test;
 
 use Basic\TellDontAsk\Bad\Surgery as BadDoctor;
 use Basic\TellDontAsk\Surgery as GoodDoctor;
-use Basic\TellDontAsk\Patient;
+use Basic\TellDontAsk\Bad\Patient as BadPatient;
+use Basic\TellDontAsk\Patient as GoodPatient;
 use PHPUnit\Framework\TestCase;
 
 class SurgeryTest extends TestCase
@@ -24,7 +25,7 @@ class SurgeryTest extends TestCase
     /** @test */
     public function a_patient_gets_a_surgery_with_asking()
     {
-        $patient = new Patient();
+        $patient = new BadPatient();
         $doctor = new BadDoctor();
 
         echo __METHOD__, PHP_EOL;
@@ -34,10 +35,8 @@ class SurgeryTest extends TestCase
         $diagnosis = $patient->visitDoctor($doctor);
         echo "{$patient->getId()} 환자의 진단명: {$diagnosis}", PHP_EOL;
 
-        if (false === $doctor->isMyOrganOk($patient)) {
-            echo '환자가 자신의 대장 상태를 보고 수술 여부를 판단합니다.', PHP_EOL;
-            $doctor->doSurgery($patient);
-        }
+        echo '환자가 자신의 대장 상태를 보고 수술 여부를 판단합니다.', PHP_EOL;
+        $patient->requestMedicalTreatment($doctor);
 
         echo "{$patient->getId()} 환자의 현재 건강상태: {$patient->getHealthiness()}", PHP_EOL;
 
@@ -47,7 +46,7 @@ class SurgeryTest extends TestCase
     /** @test */
     public function a_patient_gets_a_surgery_without_asking()
     {
-        $patient = new Patient();
+        $patient = new GoodPatient();
         $doctor = new GoodDoctor();
 
         echo __METHOD__, PHP_EOL;
@@ -58,7 +57,7 @@ class SurgeryTest extends TestCase
         echo "{$patient->getId()} 환자의 진단명: {$diagnosis}", PHP_EOL;
 
         echo '환자는 의사에게 수술을 요청하고, 수술 여부는 의사가 판단합니다.', PHP_EOL;
-        $doctor->doSurgery($patient);
+        $patient->requestMedicalTreatment($doctor);
 
         echo "{$patient->getId()} 환자의 현재 건강상태: {$patient->getHealthiness()}", PHP_EOL;
 
