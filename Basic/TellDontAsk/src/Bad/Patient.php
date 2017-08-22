@@ -1,6 +1,9 @@
 <?php
 
-namespace Basic\TellDontAsk;
+namespace Basic\TellDontAsk\Bad;
+
+use Basic\TellDontAsk\Doctor;
+use Basic\TellDontAsk\HospitalVisitor;
 
 class Patient implements HospitalVisitor
 {
@@ -34,6 +37,8 @@ class Patient implements HospitalVisitor
 
     public function requestMedicalTreatment(Doctor $doctor): void
     {
-        $doctor->doSurgery($this);
+        if (false === $doctor->isMyOrganOk($this)) {
+            $doctor->doSurgery($this);
+        }
     }
 }
