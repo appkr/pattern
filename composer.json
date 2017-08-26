@@ -5,6 +5,7 @@
       "Basic\\Dependency\\": "Basic/Dependency/src/",
       "Basic\\DI\\": "Basic/DependencyInjection/src/",
       "Basic\\Encapsulation\\": "Basic/Encapsulation/src/",
+      "Basic\\LawOfDemeter\\": "Basic/LawOfDemeter/src/",
       "Basic\\ServiceLocator\\": "Basic/ServiceLocator/src/",
       "Basic\\TellDontAsk\\": "Basic/TellDontAsk/src/",
       "Behavioral\\Command\\": "Behavioral/Command/src/",
