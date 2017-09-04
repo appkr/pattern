@@ -1,5 +1,12 @@
 ## 의존이란?
 
+다음과 같을 때 두 클래스간의 결합도(의존성)가 높다고 할 수 있습니다.
+
+- `A`가 자신의 클래스 속성으로 `B` 타입을 가지고 있을 때
+- `A`가 `B` 객체에서 제공하는 서비스(==함수)를 호출할 때
+- `A`가 제공하는 함수에서 `B` 타입을 파라미터로 받거나, `B` 타입을 반환할 때
+- `A`가 `B`의 서브 타입이거나 구현체일 때
+
 ### 1. 의존 (Dependency)
 
 A 클래스가 B 클래스를 참조합니다. B 클래스의 객체를 A 클래스 안에서 생성한다든가, B 클래스의 객체를 생성자 또는 함수의 인자로 받아 B 클래스의 함수에 접근하는 경우를 말합니다. 
@@ -63,3 +70,4 @@ class Teacher
 
 - http://www.c-sharpcorner.com/UploadFile/b1df45/dependency-generalization-association-aggregation-compos/
 - http://www.nextree.co.kr/p6753/
+- https://en.wikipedia.org/wiki/Coupling_(computer_programming)#Solutions
