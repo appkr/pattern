@@ -10,6 +10,8 @@
       "Basic\\TellDontAsk\\": "Basic/TellDontAsk/src/",
       "Behavioral\\Command\\": "Behavioral/Command/src/",
       "Behavioral\\Command2\\": "Behavioral/Command2/src/",
+      "Behavioral\\State\\": "Behavioral/State/src/",
+      "Common\\": "Common/",
       "Structural\\Proxy\\": "Structural/Proxy/src/",
       "SOLID\\Isp\\": "SOLID/Isp/src/"
     }
