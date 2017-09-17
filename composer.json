@@ -12,13 +12,14 @@
       "Behavioral\\Command2\\": "Behavioral/Command2/src/",
       "Behavioral\\State\\": "Behavioral/State/src/",
       "Common\\": "Common/",
+      "Structural\\Bridge\\": "Structural/Bridge/src/",
       "Structural\\Proxy\\": "Structural/Proxy/src/",
       "SOLID\\Isp\\": "SOLID/Isp/src/"
     }
   },
   "require": {
     "php": ">=7.1",
-    "illuminate/support": "^5.4",
+    "illuminate/support": "5.*",
     "ramsey/uuid": "^3.6"
   },
   "require-dev": {
