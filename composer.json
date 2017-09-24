@@ -11,6 +11,7 @@
       "Behavioral\\Command\\": "Behavioral/Command/src/",
       "Behavioral\\Command2\\": "Behavioral/Command2/src/",
       "Behavioral\\State\\": "Behavioral/State/src/",
+      "Behavioral\\Visitor\\": "Behavioral/Visitor/src/",
       "Common\\": "Common/",
       "Structural\\Bridge\\": "Structural/Bridge/src/",
       "Structural\\Proxy\\": "Structural/Proxy/src/",
