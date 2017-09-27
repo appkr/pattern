@@ -13,6 +13,7 @@
       "Behavioral\\State\\": "Behavioral/State/src/",
       "Common\\": "Common/",
       "Structural\\Bridge\\": "Structural/Bridge/src/",
+      "Structural\\Decorator\\": "Structural/Decorator/src/",
       "Structural\\Proxy\\": "Structural/Proxy/src/",
       "SOLID\\Isp\\": "SOLID/Isp/src/"
     }
