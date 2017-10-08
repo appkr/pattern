@@ -1,16 +1,8 @@
 <?php
 
-interface Subject
-{
-    public function attach($observable);
-    public function detach($observer);
-    public function notify();
-}
+namespace Behavioral\Observer1;
 
-interface Observer
-{
-    public function handle();
-}
+use Exception;
 
 class Login implements Subject
 {
@@ -50,35 +42,4 @@ class Login implements Subject
             $observer->handle();
         }
     }
-
-    public function fire()
-    {
-        // perform the login
-        $this->notify();
-
-        return;
-    }
 }
-
-class LogHandler implements Observer
-{
-    public function handle()
-    {
-        var_dump('Log something important.');
-    }
-}
-
-class EmailNotifier implements Observer
-{
-    public function handle()
-    {
-        var_dump('Fire off an email');
-    }
-}
-
-$login = new Login;
-$login->attach([
-    new LogHandler,
-    new EmailNotifier,
-]);
-$login->fire();
