@@ -10,6 +10,8 @@
       "Basic\\TellDontAsk\\": "Basic/TellDontAsk/src/",
       "Behavioral\\Command\\": "Behavioral/Command/src/",
       "Behavioral\\Command2\\": "Behavioral/Command2/src/",
+      "Behavioral\\Observer1\\": "Behavioral/Observer1/src/",
+      "Behavioral\\Observer2\\": "Behavioral/Observer2/src/",
       "Behavioral\\State\\": "Behavioral/State/src/",
       "Common\\": "Common/",
       "Structural\\Bridge\\": "Structural/Bridge/src/",
