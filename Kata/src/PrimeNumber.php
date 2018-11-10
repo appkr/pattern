@@ -12,11 +12,10 @@ class PrimeNumber
         if ($n == 3) {
             return true;
         }
-        if ($n % 2 == 0) {
-            return false;
-        }
-        if ($n % 3 == 0) {
-            return false;
+        for ($i = 2; $i < $n; $i++) {
+            if ($n % $i == 0) {
+                return false;
+            }
         }
 
         return true;
