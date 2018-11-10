@@ -9,7 +9,9 @@ class PrimeNumberTest extends TestCase
     function testIsPrime()
     {
         $c = new PrimeNumber();
-        $c->isPrime();
-        assertTrue(true);
+
+        assertTrue($c->isPrime(2));
+        assertTrue($c->isPrime(3));
+        assertFalse($c->isPrime(4));
     }
 }
