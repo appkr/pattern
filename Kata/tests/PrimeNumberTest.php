@@ -6,7 +6,8 @@ use PHPUnit\Framework\TestCase;
 
 class PrimeNumberTest extends TestCase
 {
-    const PRIMES = [11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
+    const PRIMES = [
+        11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
         47, 53, 59, 61, 67, 71, 73, 79, 83, 89,
         97, 101, 103, 107, 109, 113, 127, 131, 137, 139,
         149, 151, 157, 163, 167, 173, 179, 181, 191, 193,
@@ -22,7 +23,8 @@ class PrimeNumberTest extends TestCase
         761, 769, 773, 787, 797, 809, 811, 821, 823, 827,
         829, 839, 853, 857, 859, 863, 877, 881, 883, 887,
         907, 911, 919, 929, 937, 941, 947, 953, 967, 971,
-        977, 983, 991, 997];
+        977, 983, 991, 997
+    ];
 
     function testIsPrime()
     {
@@ -61,5 +63,22 @@ class PrimeNumberTest extends TestCase
         assertEquals([7], $c->factorize(7));
         assertEquals([2, 2, 2], $c->factorize(8));
         assertEquals([3, 3], $c->factorize(9));
+        assertEquals([2, 5], $c->factorize(10));
+
+        foreach (self::PRIMES as $prime) {
+            assertEquals([$prime], $c->factorize($prime));
+        }
+
+        $primes = array_merge([2,3,5,7], self::PRIMES);
+        foreach (range(1, 10) as $i) {
+            // 소수 목록 셔플링
+            shuffle($primes);
+            // 앞에서부터 3개만 추출. e.g. [7, 2, 3]
+            $set = array_slice($primes, 0, 3);
+            // 정렬. e.g. [2, 3, 7]
+            sort($set);
+            // array_product([2, 3, 7]) = 2 * 3 * 7 = 42
+            assertEquals($set, $c->factorize(array_product($set)));
+        }
     }
 }
