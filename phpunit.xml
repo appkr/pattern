@@ -24,11 +24,12 @@
   verbose="true">
   <testsuites>
     <testsuite name="Test Suite">
-      <directory suffix="Test.php">./Basic</directory>
-      <directory suffix="Test.php">./Behavioral</directory>
-      <directory suffix="Test.php">./Creational</directory>
-      <directory suffix="Test.php">./Other</directory>
-      <directory suffix="Test.php">./Structural</directory>
+      <directory suffix="Test.php">./</directory>
     </testsuite>
   </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="false">
+      <directory suffix=".php">.</directory>
+    </whitelist>
+  </filter>
 </phpunit>
