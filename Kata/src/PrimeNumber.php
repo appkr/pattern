@@ -15,6 +15,9 @@ class PrimeNumber
         if ($n % 2 == 0) {
             return false;
         }
+        if ($n % 3 == 0) {
+            return false;
+        }
 
         return true;
     }
