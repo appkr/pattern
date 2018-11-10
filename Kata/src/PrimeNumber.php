@@ -17,4 +17,9 @@ class PrimeNumber
 
         return true;
     }
+
+    public function factorize($n)
+    {
+        return [$n];
+    }
 }

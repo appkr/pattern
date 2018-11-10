@@ -48,4 +48,13 @@ class PrimeNumberTest extends TestCase
             assertFalse($c->isPrime($nonPrime));
         }
     }
+
+    function testFactorize()
+    {
+        $c = new PrimeNumber();
+
+        assertEquals([2], $c->factorize(2));
+        assertEquals([3], $c->factorize(3));
+        assertEquals([2, 2], $c->factorize(4));
+    }
 }
