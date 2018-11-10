@@ -20,6 +20,15 @@ class PrimeNumber
 
     public function factorize($n)
     {
-        return [$n];
+        $primes = [];
+        while ($n % 2 == 0) {
+            $primes[] = 2;
+            $n /= 2;
+        }
+        if ($n > 1) {
+            $primes[] = $n;
+        }
+
+        return $primes;
     }
 }
