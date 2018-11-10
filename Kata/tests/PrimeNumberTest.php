@@ -56,5 +56,10 @@ class PrimeNumberTest extends TestCase
         assertEquals([2], $c->factorize(2));
         assertEquals([3], $c->factorize(3));
         assertEquals([2, 2], $c->factorize(4));
+        assertEquals([5], $c->factorize(5));
+        assertEquals([2, 3], $c->factorize(6));
+        assertEquals([7], $c->factorize(7));
+        assertEquals([2, 2, 2], $c->factorize(8));
+        assertEquals([3, 3], $c->factorize(9));
     }
 }
