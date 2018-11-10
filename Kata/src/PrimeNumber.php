@@ -21,12 +21,13 @@ class PrimeNumber
     public function factorize($n)
     {
         $primes = [];
-        while ($n % 2 == 0) {
-            $primes[] = 2;
-            $n /= 2;
-        }
-        if ($n > 1) {
-            $primes[] = $n;
+        $divider = 2;
+        while ($n > 1) {
+            while ($n % $divider == 0) {
+                $primes[] = $divider;
+                $n /= $divider;
+            }
+            $divider++;
         }
 
         return $primes;
