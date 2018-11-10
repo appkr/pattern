@@ -26,11 +26,15 @@ TDD 연습 프로젝트 입니다.
 
 #### 1.2. 셋업
 
+[[commit](https://github.com/appkr/pattern/commit/39f7dbba65bce31eae0a5584b71d6be598a6fc68)]
+
 최초 한번 셋팅 후에는 단축키(저의 IDE에서는 <kbd>ctrl</kbd>+<kbd>r</kbd>)로 테스트를 실행할 수 있습니다.
 
 ![](docs/01_tdd_setup.png)
 
 #### 1.3. 첫 실패
+
+[[commit](https://github.com/appkr/pattern/commit/bd79f24ce16662ce6668165dc579f1a3265f21d1)]
 
 아래 코드에서 4는 소수가 아닌데, 소수라고 `true`를 잘못 반환합니다.
 
@@ -59,6 +63,8 @@ class PrimeNumberTest extends TestCase
 
 #### 1.4. 최소의 노력으로 그린 만들기
 
+[[commit](https://github.com/appkr/pattern/commit/a8732c829b534cab266e2c71c47c5e29e60e8986)]
+
 2와 3은 소수으므로 `true`를 바로 반환하고, 4는 2*2로 소인수 분해할 수 있으므로, 2로 나누어 나머지가 0이면 `false`를 반환하도록 수정했습니다.
 
 ```php
@@ -82,6 +88,8 @@ class PrimeNumber
 ```
 
 #### 1.5. 두번째 실패
+
+[[commit](https://github.com/appkr/pattern/commit/d924a2f43a27f018c468826d7a9c7fb96e4b2120)]
 
 9는 소수가 아닌데, 우리의 알고리즘은 소수라고 판단합니다. 왜냐하면, 아래에서 어떤 조건문도 타지 않기 때문입니다.
 
@@ -123,6 +131,8 @@ class PrimeNumber
 ```
 
 #### 1.6. 알고리즘 일반화 리팩토링
+
+[[commit](https://github.com/appkr/pattern/commit/0c9c1460a36cb4185099ed6019779483c6918fe0)]
 
 소수의 정의에 따르면, 자연수 n을 2부터 나누기 시작해서 n-1까지 나누어 봤을 때, 나머지가 0으로 떨어지지 않으면 소수라고 할 수 있습니다. 그대로 구현해봤습니다.
 
@@ -173,6 +183,8 @@ class PrimeNumber
 
 #### 1.7. 더 많은 수
 
+[[commit](https://github.com/appkr/pattern/commit/b7ebe6729bfefbe9040087e98c06f657e17417d7)]
+
 1,000까지 소수 목록을 찾아서 상수로 선언하고, 알고리즘이 잘 작동하는지 확인해봤습니다.
 
 ```php
@@ -200,6 +212,8 @@ class PrimeNumberTest extends TestCase
 ```
 
 #### 1.8. 성능 개선 리팩토링
+
+[[commit](https://github.com/appkr/pattern/commit/79ce4eef18aca0d3578baa3f7e8a0a238b223a88)]
 
 1.6의 알고리즘에서는 자연수 n이 소수인지 판단하기 위해서는 n-2번의 루프가 필요했습니다. 가령 검사하려는 수가 11이라면, 2부터 10까지 전부 나눠봐야하므로 9번의 루프가 발생했습니다. 즉, 시간복잡도는 `O(n-2)` 입니다.
 

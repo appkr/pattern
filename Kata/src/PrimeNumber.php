@@ -6,10 +6,7 @@ class PrimeNumber
 {
     public function isPrime($n)
     {
-        if ($n == 2) {
-            return true;
-        }
-        if ($n == 3) {
+        if ($n == 2 || $n == 3) {
             return true;
         }
         for ($i = 2; $i <= sqrt($n); $i++) {
