@@ -229,6 +229,168 @@ class PrimeNumberTest extends TestCase
 
 #### 2.1. 목표
 
-- 매개변수로 주어진 자연수 `n`을 소수로 약분하여, n을 구성하는 소수의 집합을 반환하는 함수를 개발한다.
+- 매개변수로 주어진 자연수 `n`을 소수로 약분하여, `n`을 구성하는 소수의 집합을 반환하는 함수를 개발한다.
 
-TBD
+#### 2.2. 첫 실패
+
+[[commit](https://github.com/appkr/pattern/commit/8f4b648b0a0ea5cb46e55a5de4430a790aa0e66e)]
+
+4를 소인수분해한 결과로 `[2, 2]`를 기대했지만, `[4]`가 반환되었습니다.
+
+```php
+class PrimeNumber
+    public function factorize($n)
+    {
+        return [$n];
+    }
+}
+```
+
+```php
+class PrimeNumberTest extends TestCase
+    function testFactorize()
+    {
+        $c = new PrimeNumber();
+
+        assertEquals([2], $c->factorize(2));
+        assertEquals([3], $c->factorize(3));
+        assertEquals([2, 2], $c->factorize(4));
+    }
+}
+```
+
+#### 2.3. 최소의 노력으로 그린 만들기
+
+[[commit](https://github.com/appkr/pattern/commit/75dcd65da807ffd8490c2d47e0c43e0d6c1c46e6)]
+
+아래 코드에서,
+
+- $n = 4일때, `4 % 2 == 0` 평가식이 참으므로, `$primes = [2]`, `4 / 2 = 2 = $n`가 됩니다.
+- 이제 $n = 2이므로, `2 % 2 == 0` 평가식이 참이므로, `$primes = [2, 2]`, `2 / 2 = 1 = $n`이 됩니다.
+- 이제 $n =1이므로, 루프를 빠져 나갑니다. 또, `1 > 1`은 거짓이므로 조건문도 타지 않고, `[2, 2]`를 반환합니다.
+
+```diff
+class PrimeNumber
+
+     public function factorize($n)
+     {
+-        return [$n];
++        $primes = [];
++        while ($n % 2 == 0) {
++            $primes[] = 2;
++            $n /= 2;
++        }
++        if ($n > 1) {
++            $primes[] = $n;
++        }
++
++        return $primes;
+     }
+ }
+```
+
+#### 2.4. 두번째 실패
+
+[[commit](https://github.com/appkr/pattern/commit/7c208535e0cce01fdaf1bddfe1af91cc06e9e6e4), [commit](https://github.com/appkr/pattern/commit/c1150d3c9dbd7a59ab0e6299f617e40540e37919)]
+
+9를 소인수분해한 결과로 `[3, 3]`를 기대했지만, `[9]`가 반환되었습니다.
+
+- $n = 9일 때, `9 % 2 == 0` 평가식이 거짓으므로, while 루프를 건너뜁니다.
+- `9 > 1` 평가식이 참이므로, `$primes = [9]`가 되어 반환됩니다.
+
+2로 나누어 떨어지지 않을 때는, 3, 4, ... 처럼 1씩 증가시키면서 나눌 수 있도록 중첩 루프를 씌웠습니다.
+
+```diff
+class PrimeNumber
+     public function factorize($n)
+     {
+         $primes = [];
+-        while ($n % 2 == 0) {
+-            $primes[] = 2;
+-            $n /= 2;
+-        }
+-        if ($n > 1) {
+-            $primes[] = $n;
++        $divider = 2;
++        while ($n > 1) {
++            while ($n % $divider == 0) {
++                $primes[] = $divider;
++                $n /= $divider;
++            }
++            $divider++;
+         }
+
+         return $primes;
+     }
+ }
+```
+
+- $n = 9일때, `9 > 1` 평가식이 참이므로 outer 루프를 시작합니다.
+- inner 루프의 평가식 `9 % 2 == 0`은 거짓으므로 inner 루프를 건너뜁니다.
+- `$divider++` 증가식에 의해 이제 `$divider = 3`이 되었고, outer 루프로 돌아갑니다.
+- `9 > 1` 평가식은 여전히 참이므로, outer 루프를 계속 합니다.
+- 이번에는 inner 루프의 평가식 `9 % 3 == 0`으로 참입니다. 이제 `$primes = [3]`, `9 / 3 = 3 = $n`이 됩니다.
+- inner 루프로 다시 돌아가서 `3 % 3 == 0`은 참이므로, `$primes = [3, 3]`, `3 / 3 = 1 = $n`이 됩니다.
+- `1 % 3 == 0`은 거짓이므로 inner 루프를 마치고, `1 > 1` 또한 거짓이므로 outer 루프도 마칩니다.
+
+> $n = 11이면, `$divider`가 2부터 11까지 증가할 동안 outer 루프를 10번 타고, `$divider`가 11일 때 inner 루프 한번을 탑니다. 
+>
+> $n = 187 = (11 * 17) 이면 어떻게 될까요? 2부터 11까지 outer 10번 + inner 1번, 12부터 17까지 outer 6번 + inner 1번, 총 18번의 루프를 타게 됩니다. [시간복잡도](https://ko.wikipedia.org/wiki/시간_복잡도) 식을 어떻게 써야 할 지 모르겠네요.  
+
+#### 2.5. 더 많은 테스트 케이스
+
+[[commit](https://github.com/appkr/pattern/commit/1e4f7c6c0d1797d4a7da0c3df8536ca142575790)]
+
+이 프로젝트의 목적인 TDD와는 무관하지만, 여기서 재밌는 사실을 발견하는데요. 소인수의 개수가 조금만 많아져도 소인수 분해의 성능이 급격히 떨어지는 것을 체감 할 수 있습니다. 소수를 곱해서 자연수를 만드는 것은 쉽지만, 자연수를 소인수 분해하는 것은 어렵다는 특징을 이용하는 것이 RSA 암호화라고 알려져 있습니다. 
+
+가령, 아래 코드에서 무작위 정렬된 소수 3개를 `array_slice(..);` 함수로 뽑아서 테스트 케이스를 만들고 있는데요. 소수 10개 정도만 뽑아도 컴퓨터가 버거워 할 겁니다.
+
+```diff
+ class PrimeNumberTest extends TestCase
+ {
+         assertEquals([3, 3], $c->factorize(9));
++        assertEquals([2, 5], $c->factorize(10));
++
++        foreach (self::PRIMES as $prime) {
++            assertEquals([$prime], $c->factorize($prime));
++        }
++
++        $primes = array_merge([2,3,5,7], self::PRIMES);
++        foreach (range(1, 10) as $i) {
++            // 소수 목록 셔플링
++            shuffle($primes);
++            // 앞에서부터 3개만 추출. e.g. [7, 2, 3]
++            $set = array_slice($primes, 0, 3);
++            // 정렬. e.g. [2, 3, 7]
++            sort($set);
++            // array_product([2, 3, 7]) = 2 * 3 * 7 = 42
++            assertEquals($set, $c->factorize(array_product($set)));
++        }
+     }
+ }
+```
+
+#### 2.6. 리팩토링
+
+[[commit](https://github.com/appkr/pattern/commit/c9a7e05d2b5825d83f5c0dda7c05da8f75e20207)]
+
+초기식과 탈출 조건, 증감 조건을 한 줄에 쓸 수 있는 for 루프로 대체했습니다. 최종 코드는 아래와 같습니다.
+
+```php
+class PrimeNumber
+{
+    public function factorize($n)
+    {
+        $primes = [];
+        for ($divider = 2; $n > 1; $divider++) {
+            for (; $n % $divider == 0; $n /= $divider) {
+                $primes[] = $divider;
+            }
+        }
+
+        return $primes;
+    }
+}
+```
+
+> 2절의 소인수분해 알고리즘은 라라캐스트의 [Prime Factors](https://laracasts.com/series/code-katas-in-php/episodes/1), 백명석님의 [클린 코더스 강의 9. TDD4 - primefactors and wordwrap](https://www.youtube.com/watch?v=X4JtF2BfA0U) 영상을 참고했습니다.

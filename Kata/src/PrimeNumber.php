@@ -6,10 +6,7 @@ class PrimeNumber
 {
     public function isPrime($n)
     {
-        if ($n == 2) {
-            return true;
-        }
-        if ($n == 3) {
+        if ($n == 2 || $n == 3) {
             return true;
         }
         for ($i = 2; $i <= sqrt($n); $i++) {
@@ -19,5 +16,17 @@ class PrimeNumber
         }
 
         return true;
+    }
+
+    public function factorize($n)
+    {
+        $primes = [];
+        for ($divider = 2; $n > 1; $divider++) {
+            for (; $n % $divider == 0; $n /= $divider) {
+                $primes[] = $divider;
+            }
+        }
+
+        return $primes;
     }
 }
