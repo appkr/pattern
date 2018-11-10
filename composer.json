@@ -14,11 +14,15 @@
       "Behavioral\\Observer2\\": "Behavioral/Observer2/src/",
       "Behavioral\\State\\": "Behavioral/State/src/",
       "Common\\": "Common/",
+      "Kata\\": "Kata/src/",
       "Structural\\Bridge\\": "Structural/Bridge/src/",
       "Structural\\Decorator\\": "Structural/Decorator/src/",
       "Structural\\Proxy\\": "Structural/Proxy/src/",
       "SOLID\\Isp\\": "SOLID/Isp/src/"
-    }
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
   },
   "require": {
     "php": ">=7.1",
