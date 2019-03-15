@@ -3,8 +3,8 @@
 class EventDispatcher {
     private static $pair = [];
 
-    public static function registerPair(string $eventName, string $handlerName) {
-        self::$pair[$eventName][] = $handlerName;
+    public static function registerPair(string $eventName, $handler) {
+        self::$pair[$eventName][] = $handler;
     }
 
     public static function fire(Event $event) {
@@ -13,12 +13,17 @@ class EventDispatcher {
             return;
         }
 
-        foreach (self::$pair[$eventName] as $handlerName) {
-            $handler = new $handlerName();
-            $handler->handle($event);
-            // 아래와 같이 호출해도 됩니다.
-            // call_user_func([new $handlerName, 'handle'], $event);
-            // call_user_func_array([new $handlerName, 'handle'], [$event]);
+        foreach (self::$pair[$eventName] as $typeUnknownHandler) {
+            if (is_string($typeUnknownHandler)) {
+                $handler = new $typeUnknownHandler();
+                $handler->handle($event);
+            }
+            if ($typeUnknownHandler instanceof Closure) {
+                $typeUnknownHandler($event);
+            }
+            if ($typeUnknownHandler instanceof Handler) {
+                $typeUnknownHandler->handle($event);
+            }
         }
     }
 }
@@ -26,26 +31,14 @@ class EventDispatcher {
 interface Event {}
 
 class FooEvent implements Event {
-    private $fooData;
+    private $data;
 
-    public function __construct(array $fooData) {
-        $this->fooData = $fooData;
+    public function __construct(array $data) {
+        $this->data = $data;
     }
 
-    public function getFooData() {
-        return $this->fooData;
-    }
-}
-
-class BarEvent implements Event {
-    private $barData;
-
-    public function __construct(string $barData) {
-        $this->barData = $barData;
-    }
-
-    public function getBarData() {
-        return $this->barData;
+    public function getData() {
+        return $this->data;
     }
 }
 
@@ -53,25 +46,22 @@ interface Handler {
     public function handle(Event $event);
 }
 
-class PrintArrayEventHandler implements Handler {
+class MaskFirstLetterEventHandler implements Handler {
     public function handle(Event $event) {
-        /** @var FooEvent $event */
-        echo implode(' ', $event->getFooData()), PHP_EOL;
+        $result = array_map(function ($elem) {
+            $remainder = mb_substr($elem, 1);
+            return "*{$remainder}";
+        }, $event->getData());
+        echo implode(' ', $result), PHP_EOL;
     }
 }
 
-class AllCapsStringEventHandler implements Handler {
-    public function handle(Event $event) {
-        /** @var BarEvent $event */
-        echo strtoupper($event->getBarData()), PHP_EOL;
-    }
-}
+EventDispatcher::registerPair(FooEvent::class, function (Event $event) {
+    echo implode(' ', $event->getData()), PHP_EOL;
+});
+EventDispatcher::registerPair(FooEvent::class, MaskFirstLetterEventHandler::class);
 
-EventDispatcher::registerPair(FooEvent::class, PrintArrayEventHandler::class);
-EventDispatcher::registerPair(BarEvent::class, AllCapsStringEventHandler::class);
-
-$fooEvent = new FooEvent(['I', 'am', 'Foo']);
+$fooEvent = new FooEvent(['I', 'am', 'FooEvent']);
 EventDispatcher::fire($fooEvent);
-
-$barEvent = new BarEvent('I am Bar');
-EventDispatcher::fire($barEvent);
+// I am FooEvent
+// * *m *ooEvent
