@@ -1,6 +1,6 @@
 <?php
 
-class FooEvent {
+abstract class Event {
     private $eventData;
     /** @var Handler[] */
     private $handlers;
@@ -20,29 +20,31 @@ class FooEvent {
     }
 }
 
+class FooEvent extends Event {}
+class BarEvent extends Event {}
+
 interface Handler {
     public function handle(string $eventData);
 }
 
-class PrintHandler implements Handler {
+class FooHandler implements Handler {
     public function handle(string $eventData) {
-        echo $eventData, PHP_EOL;
+        echo "Handling {$eventData}", PHP_EOL;
     }
 }
 
-class AllCapsHandler implements Handler {
+class BarHandler implements Handler {
     public function handle(string $eventData) {
-        echo strtoupper($eventData), PHP_EOL;
+        echo "Handling {$eventData}", PHP_EOL;
     }
 }
 
-$printHandler = new PrintHandler();
-$capsHandler = new AllCapsHandler();
+$fooHandler = new FooHandler();
+$fooEvent = new FooEvent('FooEvent data');
+$fooEvent->registerHandlers($fooHandler);
+$fooEvent->notifyHandler(); // Handling FooEvent data
 
-$event = new FooEvent('I am FooEvent');
-$event->registerHandlers($printHandler);
-$event->registerHandlers($capsHandler);
-
-$event->notifyHandler();
-// I am FooEvent
-// I AM FOOEVENT
+$barHandler = new BarHandler();
+$barEvent = new BarEvent('BarEvent data');
+$barEvent->registerHandlers($barHandler);
+$barEvent->notifyHandler(); // Handling BarEvent data
