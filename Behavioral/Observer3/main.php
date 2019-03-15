@@ -1,50 +1,77 @@
 <?php
 
-abstract class Event {
-    private $eventData;
-    /** @var Handler[] */
-    private $handlers;
+class EventDispatcher {
+    private static $pair = [];
 
-    public function __construct(string $eventData) {
-        $this->eventData = $eventData;
+    public static function registerPair(string $eventName, string $handlerName) {
+        self::$pair[$eventName][] = $handlerName;
     }
 
-    public function registerHandlers(Handler $handler) {
-        $this->handlers[] = $handler;
-    }
+    public static function fire(Event $event) {
+        $eventName = get_class($event);
+        if (array_key_exists($eventName, self::$pair) === false) {
+            return;
+        }
 
-    public function notifyHandler() {
-        foreach ($this->handlers as $handler) {
-            $handler->handle($this->eventData);
+        foreach (self::$pair[$eventName] as $handlerName) {
+            $handler = new $handlerName();
+            $handler->handle($event);
+            // 아래와 같이 호출해도 됩니다.
+            // call_user_func([new $handlerName, 'handle'], $event);
+            // call_user_func_array([new $handlerName, 'handle'], [$event]);
         }
     }
 }
 
-class FooEvent extends Event {}
-class BarEvent extends Event {}
+interface Event {}
+
+class FooEvent implements Event {
+    private $fooData;
+
+    public function __construct(array $fooData) {
+        $this->fooData = $fooData;
+    }
+
+    public function getFooData() {
+        return $this->fooData;
+    }
+}
+
+class BarEvent implements Event {
+    private $barData;
+
+    public function __construct(string $barData) {
+        $this->barData = $barData;
+    }
+
+    public function getBarData() {
+        return $this->barData;
+    }
+}
 
 interface Handler {
-    public function handle(string $eventData);
+    public function handle(Event $event);
 }
 
-class FooHandler implements Handler {
-    public function handle(string $eventData) {
-        echo "Handling {$eventData}", PHP_EOL;
+class PrintArrayEventHandler implements Handler {
+    public function handle(Event $event) {
+        /** @var FooEvent $event */
+        echo implode(' ', $event->getFooData()), PHP_EOL;
     }
 }
 
-class BarHandler implements Handler {
-    public function handle(string $eventData) {
-        echo "Handling {$eventData}", PHP_EOL;
+class AllCapsStringEventHandler implements Handler {
+    public function handle(Event $event) {
+        /** @var BarEvent $event */
+        echo strtoupper($event->getBarData()), PHP_EOL;
     }
 }
 
-$fooHandler = new FooHandler();
-$fooEvent = new FooEvent('FooEvent data');
-$fooEvent->registerHandlers($fooHandler);
-$fooEvent->notifyHandler(); // Handling FooEvent data
+EventDispatcher::registerPair(FooEvent::class, PrintArrayEventHandler::class);
+EventDispatcher::registerPair(BarEvent::class, AllCapsStringEventHandler::class);
 
-$barHandler = new BarHandler();
-$barEvent = new BarEvent('BarEvent data');
-$barEvent->registerHandlers($barHandler);
-$barEvent->notifyHandler(); // Handling BarEvent data
+$fooEvent = new FooEvent(['I', 'am', 'Foo']);
+EventDispatcher::fire($fooEvent);
+
+$barEvent = new BarEvent('I am Bar');
+EventDispatcher::fire($barEvent);
