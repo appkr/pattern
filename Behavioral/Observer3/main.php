@@ -2,14 +2,14 @@
 
 class FooEvent {
     private $eventData;
-    /** @var FooEventHandler[] */
+    /** @var Handler[] */
     private $handlers;
 
     public function __construct(string $eventData) {
         $this->eventData = $eventData;
     }
 
-    public function registerHandlers(FooEventHandler $handler) {
+    public function registerHandlers(Handler $handler) {
         $this->handlers[] = $handler;
     }
 
@@ -20,13 +20,29 @@ class FooEvent {
     }
 }
 
-class FooEventHandler {
+interface Handler {
+    public function handle(string $eventData);
+}
+
+class PrintHandler implements Handler {
     public function handle(string $eventData) {
         echo $eventData, PHP_EOL;
     }
 }
 
-$fooHandler = new FooEventHandler();
+class AllCapsHandler implements Handler {
+    public function handle(string $eventData) {
+        echo strtoupper($eventData), PHP_EOL;
+    }
+}
+
+$printHandler = new PrintHandler();
+$capsHandler = new AllCapsHandler();
+
 $event = new FooEvent('I am FooEvent');
-$event->registerHandlers($fooHandler);
-$event->notifyHandler(); // I am FooEvent
+$event->registerHandlers($printHandler);
+$event->registerHandlers($capsHandler);
+
+$event->notifyHandler();
+// I am FooEvent
+// I AM FOOEVENT
