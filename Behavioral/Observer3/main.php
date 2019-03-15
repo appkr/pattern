@@ -30,15 +30,10 @@ class EventDispatcher {
 
 interface Event {}
 
-class FooEvent implements Event {
-    private $data;
-
-    public function __construct(array $data) {
-        $this->data = $data;
-    }
-
-    public function getData() {
-        return $this->data;
+class UserRegisteredEvent implements Event {
+    public $user;
+    public function __construct($user) {
+        $this->user = $user;
     }
 }
 
@@ -46,22 +41,21 @@ interface Handler {
     public function handle(Event $event);
 }
 
-class MaskFirstLetterEventHandler implements Handler {
+class SendWelcomeEmail implements Handler {
     public function handle(Event $event) {
-        $result = array_map(function ($elem) {
-            $remainder = mb_substr($elem, 1);
-            return "*{$remainder}";
-        }, $event->getData());
-        echo implode(' ', $result), PHP_EOL;
+        echo "Send mail to {$event->user->name}", PHP_EOL;
     }
 }
 
-EventDispatcher::registerPair(FooEvent::class, function (Event $event) {
-    echo implode(' ', $event->getData()), PHP_EOL;
-});
-EventDispatcher::registerPair(FooEvent::class, MaskFirstLetterEventHandler::class);
+class User {
+    public $name;
+    public function __construct($name) {
+        $this->name = $name;
+    }
+}
 
-$fooEvent = new FooEvent(['I', 'am', 'FooEvent']);
-EventDispatcher::fire($fooEvent);
-// I am FooEvent
-// * *m *ooEvent
+EventDispatcher::registerPair(UserRegisteredEvent::class, SendWelcomeEmail::class);
+
+$user = new User('FooBar');
+$event = new UserRegisteredEvent($user);
+EventDispatcher::fire($event); // Send mail to FooBar
