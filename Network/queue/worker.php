@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/./Queue.php';
+require_once __DIR__.'/./Queue.php';
 
 $queue = new Queue();
 

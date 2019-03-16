@@ -12,7 +12,8 @@ class Queue {
     }
 
     public function push($message){
-        file_put_contents($this->storage, $message.PHP_EOL, FILE_APPEND|LOCK_EX);
+        $serialized = serialize($message);
+        file_put_contents($this->storage, $serialized.PHP_EOL, FILE_APPEND|LOCK_EX);
     }
 
     public function pop() {
@@ -20,7 +21,7 @@ class Queue {
         if (count($messages) > 0) {
             $message = array_shift($messages);
             file_put_contents($this->storage, implode(PHP_EOL, $messages), LOCK_EX);
-            return $message;
+            return unserialize(trim($message));
         }
     }
 }
