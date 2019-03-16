@@ -1,44 +1,14 @@
 <?php
 
-class EventDispatcher {
-    private static $pair = [];
-
-    public static function registerPair(string $eventName, $handler) {
-        self::$pair[$eventName][] = $handler;
-    }
-
-    public static function fire(Event $event) {
-        $eventName = get_class($event);
-        if (array_key_exists($eventName, self::$pair) === false) {
-            return;
-        }
-
-        foreach (self::$pair[$eventName] as $typeUnknownHandler) {
-            if (is_string($typeUnknownHandler)) {
-                $handler = new $typeUnknownHandler();
-                $handler->handle($event);
-            }
-            if ($typeUnknownHandler instanceof Closure) {
-                $typeUnknownHandler($event);
-            }
-            if ($typeUnknownHandler instanceof Handler) {
-                $typeUnknownHandler->handle($event);
-            }
-        }
-    }
-}
-
-interface Event {}
+require __DIR__.'/./Event.php';
+require __DIR__.'/./EventDispatcher.php';
+require __DIR__.'/./Handler.php';
 
 class UserRegisteredEvent implements Event {
     public $user;
     public function __construct($user) {
         $this->user = $user;
     }
-}
-
-interface Handler {
-    public function handle(Event $event);
 }
 
 class SendWelcomeEmail implements Handler {
