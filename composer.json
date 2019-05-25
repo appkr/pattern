@@ -1,35 +1,33 @@
 {
-  "autoload": {
-    "psr-4": {
-      "Basic\\Composition\\": "Basic/Composition/src/",
-      "Basic\\Dependency\\": "Basic/Dependency/src/",
-      "Basic\\DI\\": "Basic/DependencyInjection/src/",
-      "Basic\\Encapsulation\\": "Basic/Encapsulation/src/",
-      "Basic\\LawOfDemeter\\": "Basic/LawOfDemeter/src/",
-      "Basic\\ServiceLocator\\": "Basic/ServiceLocator/src/",
-      "Basic\\TellDontAsk\\": "Basic/TellDontAsk/src/",
-      "Behavioral\\Command\\": "Behavioral/Command/src/",
-      "Behavioral\\Command2\\": "Behavioral/Command2/src/",
-      "Behavioral\\Observer1\\": "Behavioral/Observer1/src/",
-      "Behavioral\\Observer2\\": "Behavioral/Observer2/src/",
-      "Behavioral\\State\\": "Behavioral/State/src/",
-      "Common\\": "Common/",
-      "Kata\\": "Kata/src/",
-      "Structural\\Bridge\\": "Structural/Bridge/src/",
-      "Structural\\Decorator\\": "Structural/Decorator/src/",
-      "Structural\\Proxy\\": "Structural/Proxy/src/",
-      "SOLID\\Isp\\": "SOLID/Isp/src/"
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
     },
-    "files": [
-      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
-    ]
-  },
-  "require": {
-    "php": ">=7.1",
-    "illuminate/support": "5.*",
-    "ramsey/uuid": "^3.6"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^6.2"
-  }
+    "require": {
+        "illuminate/support": "^5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Basic\\Composition\\": "Basic/Composition/src/",
+            "Basic\\Dependency\\": "Basic/Dependency/src/",
+            "Basic\\DI\\": "Basic/DependencyInjection/src/",
+            "Basic\\Encapsulation\\": "Basic/Encapsulation/src/",
+            "Basic\\LawOfDemeter\\": "Basic/LawOfDemeter/src/",
+            "Basic\\ServiceLocator\\": "Basic/ServiceLocator/src/",
+            "Basic\\TellDontAsk\\": "Basic/TellDontAsk/src/",
+            "Behavioral\\Command\\": "Behavioral/Command/src/",
+            "Behavioral\\Command2\\": "Behavioral/Command2/src/",
+            "Behavioral\\Observer1\\": "Behavioral/Observer1/src/",
+            "Behavioral\\Observer2\\": "Behavioral/Observer2/src/",
+            "Behavioral\\State\\": "Behavioral/State/src/",
+            "Common\\": "Common/",
+            "Kata\\": "Kata/src/",
+            "Structural\\Bridge\\": "Structural/Bridge/src/",
+            "Structural\\Decorator\\": "Structural/Decorator/src/",
+            "Structural\\Proxy\\": "Structural/Proxy/src/",
+            "SOLID\\Isp\\": "SOLID/Isp/src/"
+        },
+        "files": [
+            "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+        ]
+    }
 }

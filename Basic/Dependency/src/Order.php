@@ -4,7 +4,6 @@ namespace Basic\Dependency;
 
 use DateTime;
 use DateTimeZone;
-use Ramsey\Uuid\Uuid;
 
 class Order
 {
@@ -15,7 +14,7 @@ class Order
     public function __construct(Customer $customer)
     {
         $this->customerId = $customer->getCustomerId();
-        $this->orderId = Uuid::uuid4();
+        $this->orderId = uniqid();
         $this->orderedAt = new DateTime(
             'now', new DateTimeZone('Asia/Seoul')
         );

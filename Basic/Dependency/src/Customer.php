@@ -2,8 +2,6 @@
 
 namespace Basic\Dependency;
 
-use Ramsey\Uuid\Uuid;
-
 class Customer
 {
     private $customerId;
@@ -11,7 +9,7 @@ class Customer
 
     public function __construct(string $customerName)
     {
-        $this->customerId = Uuid::uuid4();
+        $this->customerId = uniqid();
         $this->customerName = $customerName;
     }
 
