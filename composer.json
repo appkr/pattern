@@ -20,6 +20,7 @@
             "Behavioral\\Observer2\\": "Behavioral/Observer2/src/",
             "Behavioral\\State\\": "Behavioral/State/src/",
             "Common\\": "Common/",
+            "Creational\\Builder\\": "Creational/Builder/src",
             "Kata\\": "Kata/src/",
             "Structural\\Bridge\\": "Structural/Bridge/src/",
             "Structural\\Decorator\\": "Structural/Decorator/src/",

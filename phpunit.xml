@@ -13,6 +13,7 @@
     <testsuite name="Test Suite">
       <directory suffix="Test.php">./Basic</directory>
       <directory suffix="Test.php">./Behavioral</directory>
+      <directory suffix="Test.php">./Creational</directory>
       <directory suffix="Test.php">./Kata</directory>
       <directory suffix="Test.php">./Network</directory>
       <directory suffix="Test.php">./SOLID</directory>
