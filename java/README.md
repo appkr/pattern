@@ -19,4 +19,8 @@
 2. 객체를 clone 한다면?
 3. 직렬화했다가 역직렬화한다면?
 4. 리플렉션으로 새 인스턴스를 만든다면?
+
+### Visitor
+- @see https://www.youtube.com/watch?v=pL4mOUDi54o
+
  
