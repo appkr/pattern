@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+List loggers = [
+    'org.slf4j:slf4j-api:1.7.30',
+    'org.slf4j:log4j-over-slf4j:1.7.30',
+    'ch.qos.logback:logback-core:1.2.3',
+    'ch.qos.logback:logback-classic:1.2.3'
+]
+
+dependencies {
+    implementation 'org.apache.commons:commons-pool2:2.8.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
+    testImplementation loggers
+}
+
+application {
+    mainClassName = 'dev.appkr.pattern.App'
+}
+
+test {
+    useJUnitPlatform()
+}
