@@ -1,0 +1,30 @@
+@startuml
+
+actor App
+participant OrderServiceFacade
+participant InventoryService
+participant PaymentService
+participant ShippingService
+
+autonumber
+
+activate App
+App -> OrderServiceFacade: create
+return OrderServiceFacade
+
+App -> OrderServiceFacade: placeOrder(int: productId)
+    activate OrderServiceFacade
+    OrderServiceFacade -> OrderServiceFacade: findProduct(int: productId)
+    OrderServiceFacade -> InventoryService: isAvailable(Product)
+    activate InventoryService
+    deactivate InventoryService
+    OrderServiceFacade -> PaymentService: makePayment(int: price)
+    activate PaymentService
+    deactivate PaymentService
+    OrderServiceFacade -> ShippingService: shipProduct(Product)
+    activate ShippingService
+    deactivate ShippingService
+
+App <-- OrderServiceFacade: Product
+
+@enduml

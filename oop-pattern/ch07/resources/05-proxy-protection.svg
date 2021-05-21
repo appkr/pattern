@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="208px" preserveAspectRatio="none" style="width:424px;height:208px;" version="1.1" viewBox="0 0 424 208" width="424px" zoomAndPan="magnify"><defs><filter height="300%" id="f12s7wkbzvexsl" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[335f4d9be48430461c68bf6d6fdba145]
+class App--><rect codeLine="3" fill="#FEFECE" filter="url(#f12s7wkbzvexsl)" height="48" id="App" style="stroke:#A80036;stroke-width:1.5;" width="56" x="81" y="13.5"/><ellipse cx="96" cy="29.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M98.9688,35.1406 Q98.3906,35.4375 97.75,35.5781 Q97.1094,35.7344 96.4063,35.7344 Q93.9063,35.7344 92.5781,34.0938 Q91.2656,32.4375 91.2656,29.3125 Q91.2656,26.1875 92.5781,24.5313 Q93.9063,22.875 96.4063,22.875 Q97.1094,22.875 97.75,23.0313 Q98.4063,23.1875 98.9688,23.4844 L98.9688,26.2031 Q98.3438,25.625 97.75,25.3594 Q97.1563,25.0781 96.5313,25.0781 Q95.1875,25.0781 94.5,26.1563 Q93.8125,27.2188 93.8125,29.3125 Q93.8125,31.4063 94.5,32.4844 Q95.1875,33.5469 96.5313,33.5469 Q97.1563,33.5469 97.75,33.2813 Q98.3438,33 98.9688,32.4219 L98.9688,35.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="24" x="110" y="33.6543">App</text><line style="stroke:#A80036;stroke-width:1.5;" x1="82" x2="136" y1="45.5" y2="45.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="82" x2="136" y1="53.5" y2="53.5"/><!--MD5=[dbb8b4f13c7b21394f9d757e58732f45]
+class Service--><rect codeLine="5" fill="#FEFECE" filter="url(#f12s7wkbzvexsl)" height="60.8047" id="Service" style="stroke:#A80036;stroke-width:1.5;" width="109" x="172.5" y="7"/><ellipse cx="201.9" cy="23" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M197.8219,18.7656 L197.8219,16.6094 L205.2125,16.6094 L205.2125,18.7656 L202.7438,18.7656 L202.7438,26.8438 L205.2125,26.8438 L205.2125,29 L197.8219,29 L197.8219,26.8438 L200.2906,26.8438 L200.2906,18.7656 L197.8219,18.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="45" x="219.1" y="27.1543">Service</text><line style="stroke:#A80036;stroke-width:1.5;" x1="173.5" x2="280.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="173.5" x2="280.5" y1="47" y2="47"/><ellipse cx="183.5" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="83" x="192.5" y="61.2104">request(): void</text><!--MD5=[0af531f05ab0a622011247683b84f34c]
+class PublicService--><rect codeLine="9" fill="#FEFECE" filter="url(#f12s7wkbzvexsl)" height="66.7422" id="PublicService" style="stroke:#A80036;stroke-width:1.5;" width="220" x="7" y="128"/><ellipse cx="71.75" cy="146.9688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M74.7188,152.6094 Q74.1406,152.9063 73.5,153.0469 Q72.8594,153.2031 72.1563,153.2031 Q69.6563,153.2031 68.3281,151.5625 Q67.0156,149.9063 67.0156,146.7813 Q67.0156,143.6563 68.3281,142 Q69.6563,140.3438 72.1563,140.3438 Q72.8594,140.3438 73.5,140.5 Q74.1563,140.6563 74.7188,140.9531 L74.7188,143.6719 Q74.0938,143.0938 73.5,142.8281 Q72.9063,142.5469 72.2813,142.5469 Q70.9375,142.5469 70.25,143.625 Q69.5625,144.6875 69.5625,146.7813 Q69.5625,148.875 70.25,149.9531 Q70.9375,151.0156 72.2813,151.0156 Q72.9063,151.0156 73.5,150.75 Q74.0938,150.4688 74.7188,149.8906 L74.7188,152.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="47" x="109.75" y="144.1387">«proxy»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="92.25" y="158.1074">PublicService</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="226" y1="165.9375" y2="165.9375"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="173.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="194" x="27" y="180.1479">premiumService: PremiumService</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="226" y1="186.7422" y2="186.7422"/><!--MD5=[ab85a7f6edd8717e465df44757a66385]
+class PremiumService--><rect codeLine="13" fill="#FEFECE" filter="url(#f12s7wkbzvexsl)" height="53.9375" id="PremiumService" style="stroke:#A80036;stroke-width:1.5;" width="148" x="262" y="134.5"/><ellipse cx="277" cy="153.4688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M279.9688,159.1094 Q279.3906,159.4063 278.75,159.5469 Q278.1094,159.7031 277.4063,159.7031 Q274.9063,159.7031 273.5781,158.0625 Q272.2656,156.4063 272.2656,153.2813 Q272.2656,150.1563 273.5781,148.5 Q274.9063,146.8438 277.4063,146.8438 Q278.1094,146.8438 278.75,147 Q279.4063,147.1563 279.9688,147.4531 L279.9688,150.1719 Q279.3438,149.5938 278.75,149.3281 Q278.1563,149.0469 277.5313,149.0469 Q276.1875,149.0469 275.5,150.125 Q274.8125,151.1875 274.8125,153.2813 Q274.8125,155.375 275.5,156.4531 Q276.1875,157.5156 277.5313,157.5156 Q278.1563,157.5156 278.75,157.25 Q279.3438,156.9688 279.9688,156.3906 L279.9688,159.1094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="120" x="289" y="150.6387">«concrete subject»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="299.5" y="164.6074">PremiumService</text><line style="stroke:#A80036;stroke-width:1.5;" x1="263" x2="409" y1="172.4375" y2="172.4375"/><line style="stroke:#A80036;stroke-width:1.5;" x1="263" x2="409" y1="180.4375" y2="180.4375"/><!--MD5=[dadbd4924466068576dfe6a18860cfbe]
+reverse link Service to PublicService--><path d="M186.2791,83.4035 C173.2556,98.0846 159.0844,114.0595 146.9717,127.7137 " fill="none" id="Service-backto-PublicService" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="181.3001,78.4679,199.809,68.1517,191.7732,87.7585,181.3001,78.4679" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[997cd24fd5756b406642c76a93dc9c4b]
+reverse link Service to PremiumService--><path d="M267.1742,83.2028 C282.2181,100.3169 298.8295,119.2143 311.9635,134.1558 " fill="none" id="Service-backto-PremiumService" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="261.8907,87.7947,253.9438,68.1517,272.4057,78.5517,261.8907,87.7947" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1888775462fba6bfc1e937667a7ec5f4]
+link App to Service--><path codeLine="15" d="M137.1172,37.5 C147.0834,37.5 157.0497,37.5 167.016,37.5 " fill="none" id="App-to-Service" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="172.2277,37.5,163.2277,33.5,167.2277,37.5,163.2277,41.5,172.2277,37.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a58256c069f6f4be8facac384055e163]
+link PublicService to PremiumService--><path codeLine="16" d="M227.3555,161.5 C237.1132,161.5 246.8709,161.5 256.6286,161.5 " fill="none" id="PublicService-to-PremiumService" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="261.7313,161.5,252.7313,157.5,256.7313,161.5,252.7313,165.5,261.7313,161.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c8561e6dc236844b4df51ac6b13aebac]
+@startuml
+'skinparam linetype ortho
+
+class App {}
+
+interface Service {
+  + request(): void
+}
+
+class PublicService <<proxy>> implements Service {
+  - premiumService: PremiumService
+}
+
+class PremiumService <<concrete subject>> implements Service {}
+
+App -> Service
+PublicService -> PremiumService
+@enduml
+
+@startuml
+
+class App {}
+
+interface Service {
+  + request(): void
+}
+
+class PublicService <<proxy>> implements Service {
+  - premiumService: PremiumService
+}
+
+class PremiumService <<concrete subject>> implements Service {}
+
+App -> Service
+PublicService -> PremiumService
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

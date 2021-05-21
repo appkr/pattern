@@ -1,0 +1,13 @@
+@startuml
+
+class AuthenticationHandler {
+  + handleRequest(id:String, passwd:String): void
+}
+
+class Authenticator {
+  + authenticate(id:String, passwd:String): void
+}
+
+AuthenticationHandler -> Authenticator
+
+@enduml

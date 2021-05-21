@@ -1,0 +1,26 @@
+@startuml
+
+'skinparam linetype ortho
+
+[FinancialReportController]
+
+[FinancialReportInteractor]
+
+[ScreenPresenter]
+
+[PrintPresenter]
+
+[WebView]
+
+[PDFView]
+
+[FinancialDatabase]
+
+FinancialReportController -> FinancialReportInteractor
+ScreenPresenter -up-> FinancialReportController
+PrintPresenter -up-> FinancialReportController
+WebView -up-> ScreenPresenter
+PDFView -up-> PrintPresenter
+FinancialDatabase -up-> FinancialReportInteractor
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+
+class App {}
+
+interface OrderServiceFacade {
+    + placeOrder(): Product
+}
+
+class OrderServiceFacadeImpl implements OrderServiceFacade {}
+
+class InventoryService {
+    + {static} isAvailable(Product): boolean
+}
+
+class PaymentService {
+    + {static} makePayment(price: int): boolean
+}
+
+class ShippingService {
+    + {static} shipProduct(Product): void
+}
+
+App --> OrderServiceFacade
+OrderServiceFacadeImpl ..> InventoryService
+OrderServiceFacadeImpl ..> PaymentService
+OrderServiceFacadeImpl ..> ShippingService
+
+@enduml

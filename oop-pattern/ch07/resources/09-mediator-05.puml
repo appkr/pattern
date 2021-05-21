@@ -1,0 +1,26 @@
+@startuml
+
+class VideoPlayer {}
+
+interface PlayerObserver {}
+
+interface ControllerObserver {}
+
+class VideoMediator {}
+
+class MediaController {}
+
+class VideoListUI {}
+
+class TitleUI {}
+
+VideoMediator .left.|> PlayerObserver
+VideoMediator .right.|> ControllerObserver
+VideoPlayer .down.> PlayerObserver
+MediaController .down.> ControllerObserver
+VideoMediator .up.> VideoPlayer
+VideoMediator .up.> MediaController
+VideoMediator <.. VideoListUI
+VideoMediator ..> TitleUI
+
+@enduml

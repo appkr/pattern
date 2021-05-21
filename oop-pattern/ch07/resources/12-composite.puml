@@ -1,0 +1,24 @@
+@startuml
+
+'skinparam linetype ortho
+
+interface Device <<component>> {
+  + turnOn(): void
+  + turnOff(): void
+}
+
+class Aircon implements Device {}
+
+class Light implements Device {}
+
+class Tv implements Device {}
+
+class DeviceGroup <<composite>> implements Device {
+  - devices: Device[]
+  + addDevice(Device): void
+  + removeDevice(Device): void
+}
+
+DeviceGroup o-up-> Device
+
+@enduml

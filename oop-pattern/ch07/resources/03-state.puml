@@ -1,0 +1,32 @@
+@startuml
+
+skinparam linetype ortho
+
+class VendingMachine <<context>> {
+  - state: State
+  - balance: int
+  - currentStock: int
+  + insertCoin(coin: int): void
+  + select(Coffee): Coffee
+  + changeState(State): void
+  + isEnoughCoinProvidedFor(Coffee): boolean
+  + hasNoCoin(): boolean
+  + acceptCoin(newCoin: int): void
+  + consumeCoin(amount: int): void
+  + serve(Coffee): Coffee
+}
+
+interface State <<state>> {
+  + increaseCoin(coin: int, ctx: VendingMachine): void
+  + select(coffee: Coffee, ctx: VendingMachine): Coffee
+}
+
+class NoCoinState implements State {}
+
+class SelectableState implements State {}
+
+class SoldoutState implements State {}
+
+VendingMachine -> State
+
+@enduml

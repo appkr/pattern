@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="221px" preserveAspectRatio="none" style="width:298px;height:221px;" version="1.1" viewBox="0 0 298 221" width="298px" zoomAndPan="magnify"><defs><filter height="300%" id="fs0hj2h0bbzgv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c91c8127aba9b64414ad9fd0a673873f]
+class CFO--><rect codeLine="4" fill="#FEFECE" filter="url(#fs0hj2h0bbzgv)" height="54.2656" id="CFO" style="stroke:#A80036;stroke-width:1.5;" width="69" x="7" y="7"/><ellipse cx="22" cy="26.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.4731,32.2759 Q23.8921,32.5747 23.2529,32.7241 Q22.6138,32.8735 21.9082,32.8735 Q19.4014,32.8735 18.0815,31.2217 Q16.7617,29.5698 16.7617,26.4487 Q16.7617,23.3193 18.0815,21.6675 Q19.4014,20.0156 21.9082,20.0156 Q22.6138,20.0156 23.2612,20.165 Q23.9087,20.3145 24.4731,20.6133 L24.4731,23.3359 Q23.8423,22.7549 23.2488,22.4851 Q22.6553,22.2153 22.0244,22.2153 Q20.6797,22.2153 19.9949,23.282 Q19.3101,24.3486 19.3101,26.4487 Q19.3101,28.5405 19.9949,29.6072 Q20.6797,30.6738 22.0244,30.6738 Q22.6553,30.6738 23.2488,30.4041 Q23.8423,30.1343 24.4731,29.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="34" y="23.6016">«actor»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="23" x="43" y="37.7344">CFO</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="75" y1="45.2656" y2="45.2656"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="75" y1="53.2656" y2="53.2656"/><!--MD5=[ccac9bd22138a3e13de7435a834e3717]
+class COO--><rect codeLine="5" fill="#FEFECE" filter="url(#fs0hj2h0bbzgv)" height="54.2656" id="COO" style="stroke:#A80036;stroke-width:1.5;" width="69" x="111" y="7"/><ellipse cx="126" cy="26.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M128.4731,32.2759 Q127.8921,32.5747 127.2529,32.7241 Q126.6138,32.8735 125.9082,32.8735 Q123.4014,32.8735 122.0815,31.2217 Q120.7617,29.5698 120.7617,26.4487 Q120.7617,23.3193 122.0815,21.6675 Q123.4014,20.0156 125.9082,20.0156 Q126.6138,20.0156 127.2612,20.165 Q127.9087,20.3145 128.4731,20.6133 L128.4731,23.3359 Q127.8423,22.7549 127.2488,22.4851 Q126.6553,22.2153 126.0244,22.2153 Q124.6797,22.2153 123.9949,23.282 Q123.3101,24.3486 123.3101,26.4487 Q123.3101,28.5405 123.9949,29.6072 Q124.6797,30.6738 126.0244,30.6738 Q126.6553,30.6738 127.2488,30.4041 Q127.8423,30.1343 128.4731,29.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="138" y="23.6016">«actor»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="26" x="145.5" y="37.7344">COO</text><line style="stroke:#A80036;stroke-width:1.5;" x1="112" x2="179" y1="45.2656" y2="45.2656"/><line style="stroke:#A80036;stroke-width:1.5;" x1="112" x2="179" y1="53.2656" y2="53.2656"/><!--MD5=[dd865797dce2abb7bf53f98491f09b40]
+class CTO--><rect codeLine="6" fill="#FEFECE" filter="url(#fs0hj2h0bbzgv)" height="54.2656" id="CTO" style="stroke:#A80036;stroke-width:1.5;" width="69" x="215" y="7"/><ellipse cx="230" cy="26.1328" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M232.4731,32.2759 Q231.8921,32.5747 231.2529,32.7241 Q230.6138,32.8735 229.9082,32.8735 Q227.4014,32.8735 226.0815,31.2217 Q224.7617,29.5698 224.7617,26.4487 Q224.7617,23.3193 226.0815,21.6675 Q227.4014,20.0156 229.9082,20.0156 Q230.6138,20.0156 231.2612,20.165 Q231.9087,20.3145 232.4731,20.6133 L232.4731,23.3359 Q231.8423,22.7549 231.2488,22.4851 Q230.6553,22.2153 230.0244,22.2153 Q228.6797,22.2153 227.9949,23.282 Q227.3101,24.3486 227.3101,26.4487 Q227.3101,28.5405 227.9949,29.6072 Q228.6797,30.6738 230.0244,30.6738 Q230.6553,30.6738 231.2488,30.4041 Q231.8423,30.1343 232.4731,29.5532 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="242" y="23.6016">«actor»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="25" x="250" y="37.7344">CTO</text><line style="stroke:#A80036;stroke-width:1.5;" x1="216" x2="283" y1="45.2656" y2="45.2656"/><line style="stroke:#A80036;stroke-width:1.5;" x1="216" x2="283" y1="53.2656" y2="53.2656"/><!--MD5=[7421f545a0d8420c5bec41e74b387d9c]
+class Employee--><rect codeLine="8" fill="#FEFECE" filter="url(#fs0hj2h0bbzgv)" height="86.8652" id="Employee" style="stroke:#A80036;stroke-width:1.5;" width="101" x="95" y="121"/><ellipse cx="115.85" cy="137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M118.3231,143.1431 Q117.7421,143.4419 117.1029,143.5913 Q116.4638,143.7407 115.7582,143.7407 Q113.2514,143.7407 111.9315,142.0889 Q110.6117,140.437 110.6117,137.3159 Q110.6117,134.1865 111.9315,132.5347 Q113.2514,130.8828 115.7582,130.8828 Q116.4638,130.8828 117.1112,131.0322 Q117.7587,131.1816 118.3231,131.4805 L118.3231,134.2031 Q117.6923,133.6221 117.0988,133.3523 Q116.5053,133.0825 115.8744,133.0825 Q114.5297,133.0825 113.8449,134.1492 Q113.1601,135.2158 113.1601,137.3159 Q113.1601,139.4077 113.8449,140.4744 Q114.5297,141.541 115.8744,141.541 Q116.5053,141.541 117.0988,141.2712 Q117.6923,141.0015 118.3231,140.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="131.15" y="141.5352">Employee</text><line style="stroke:#A80036;stroke-width:1.5;" x1="96" x2="195" y1="153" y2="153"/><line style="stroke:#A80036;stroke-width:1.5;" x1="96" x2="195" y1="161" y2="161"/><ellipse cx="106" cy="172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="115" y="175.6348">calculatePay()</text><ellipse cx="106" cy="184.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="115" y="188.5898">reportHours()</text><ellipse cx="106" cy="197.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="32" x="115" y="201.5449">save()</text><!--MD5=[73ef97d1a5d168229edc45e7cc58e15e]
+link CFO to Employee--><path codeLine="14" d="M62.55,61 C75.46,76.96 92.37,97.86 107.56,116.62 " fill="none" id="CFO-to-Employee" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="110.97,120.84,108.4202,111.3269,107.8257,116.9524,102.2001,116.3579,110.97,120.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ddf2bd7dd10110782080d8578238cb69]
+link COO to Employee--><path codeLine="15" d="M145.5,61 C145.5,76.69 145.5,97.16 145.5,115.67 " fill="none" id="COO-to-Employee" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="145.5,120.84,149.5,111.84,145.5,115.84,141.5,111.84,145.5,120.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[01cb912156115b240aa15e0d66947813]
+link CTO to Employee--><path codeLine="16" d="M228.45,61 C215.54,76.96 198.63,97.86 183.44,116.62 " fill="none" id="CTO-to-Employee" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="180.03,120.84,188.7999,116.3579,183.1743,116.9524,182.5798,111.3269,180.03,120.84" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0eea219ffe49299fd7fba80edff25499]
+@startuml
+
+'skinparam linetype ortho
+
+class CFO <<actor>> {}
+class COO <<actor>> {}
+class CTO <<actor>> {}
+
+class Employee {
+  + calculatePay()
+  + reportHours()
+  + save()
+}
+
+CFO ..> Employee
+COO ..> Employee
+CTO ..> Employee
+
+@enduml
+
+@startuml
+
+
+class CFO <<actor>> {}
+class COO <<actor>> {}
+class CTO <<actor>> {}
+
+class Employee {
+  + calculatePay()
+  + reportHours()
+  + save()
+}
+
+CFO ..> Employee
+COO ..> Employee
+CTO ..> Employee
+
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 20:10:27 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ko
+Country: KR
+--></g></svg>

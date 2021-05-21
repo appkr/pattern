@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="253px" preserveAspectRatio="none" style="width:487px;height:253px;" version="1.1" viewBox="0 0 487 253" width="487px" zoomAndPan="magnify"><defs><filter height="300%" id="frac09g2oiell" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fc539fa3f3b7db9b31467e896d367b3b]
+class Device--><rect codeLine="3" fill="#FEFECE" filter="url(#frac09g2oiell)" height="79.5469" id="Device" style="stroke:#A80036;stroke-width:1.5;" width="113" x="177" y="7"/><ellipse cx="192" cy="25.9688" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M187.9219,21.7344 L187.9219,19.5781 L195.3125,19.5781 L195.3125,21.7344 L192.8438,21.7344 L192.8438,29.8125 L195.3125,29.8125 L195.3125,31.9688 L187.9219,31.9688 L187.9219,29.8125 L190.3906,29.8125 L190.3906,21.7344 L187.9219,21.7344 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="85" x="204" y="23.1387">«component»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="41" x="226" y="37.1074">Device</text><line style="stroke:#A80036;stroke-width:1.5;" x1="178" x2="289" y1="44.9375" y2="44.9375"/><line style="stroke:#A80036;stroke-width:1.5;" x1="178" x2="289" y1="52.9375" y2="52.9375"/><ellipse cx="188" cy="63.9375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="197" y="67.1479">turnOn(): void</text><ellipse cx="188" cy="76.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="197" y="79.9526">turnOff(): void</text><!--MD5=[ea8eb20607e8074f4d0450387327c8ec]
+class Aircon--><rect codeLine="8" fill="#FEFECE" filter="url(#frac09g2oiell)" height="48" id="Aircon" style="stroke:#A80036;stroke-width:1.5;" width="71" x="7" y="169"/><ellipse cx="22" cy="185" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.9688,190.6406 Q24.3906,190.9375 23.75,191.0781 Q23.1094,191.2344 22.4063,191.2344 Q19.9063,191.2344 18.5781,189.5938 Q17.2656,187.9375 17.2656,184.8125 Q17.2656,181.6875 18.5781,180.0313 Q19.9063,178.375 22.4063,178.375 Q23.1094,178.375 23.75,178.5313 Q24.4063,178.6875 24.9688,178.9844 L24.9688,181.7031 Q24.3438,181.125 23.75,180.8594 Q23.1563,180.5781 22.5313,180.5781 Q21.1875,180.5781 20.5,181.6563 Q19.8125,182.7188 19.8125,184.8125 Q19.8125,186.9063 20.5,187.9844 Q21.1875,189.0469 22.5313,189.0469 Q23.1563,189.0469 23.75,188.7813 Q24.3438,188.5 24.9688,187.9219 L24.9688,190.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="36" y="189.1543">Aircon</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="77" y1="201" y2="201"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="77" y1="209" y2="209"/><!--MD5=[7c1a0278dec21c72584b17e1785fd623]
+class Light--><rect codeLine="10" fill="#FEFECE" filter="url(#frac09g2oiell)" height="48" id="Light" style="stroke:#A80036;stroke-width:1.5;" width="62" x="113.5" y="169"/><ellipse cx="128.5" cy="185" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M131.4688,190.6406 Q130.8906,190.9375 130.25,191.0781 Q129.6094,191.2344 128.9063,191.2344 Q126.4063,191.2344 125.0781,189.5938 Q123.7656,187.9375 123.7656,184.8125 Q123.7656,181.6875 125.0781,180.0313 Q126.4063,178.375 128.9063,178.375 Q129.6094,178.375 130.25,178.5313 Q130.9063,178.6875 131.4688,178.9844 L131.4688,181.7031 Q130.8438,181.125 130.25,180.8594 Q129.6563,180.5781 129.0313,180.5781 Q127.6875,180.5781 127,181.6563 Q126.3125,182.7188 126.3125,184.8125 Q126.3125,186.9063 127,187.9844 Q127.6875,189.0469 129.0313,189.0469 Q129.6563,189.0469 130.25,188.7813 Q130.8438,188.5 131.4688,187.9219 L131.4688,190.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="142.5" y="189.1543">Light</text><line style="stroke:#A80036;stroke-width:1.5;" x1="114.5" x2="174.5" y1="201" y2="201"/><line style="stroke:#A80036;stroke-width:1.5;" x1="114.5" x2="174.5" y1="209" y2="209"/><!--MD5=[c40581dce3a61b73d493470d15ee44f1]
+class Tv--><rect codeLine="12" fill="#FEFECE" filter="url(#frac09g2oiell)" height="48" id="Tv" style="stroke:#A80036;stroke-width:1.5;" width="45" x="211" y="169"/><ellipse cx="226" cy="185" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M228.9688,190.6406 Q228.3906,190.9375 227.75,191.0781 Q227.1094,191.2344 226.4063,191.2344 Q223.9063,191.2344 222.5781,189.5938 Q221.2656,187.9375 221.2656,184.8125 Q221.2656,181.6875 222.5781,180.0313 Q223.9063,178.375 226.4063,178.375 Q227.1094,178.375 227.75,178.5313 Q228.4063,178.6875 228.9688,178.9844 L228.9688,181.7031 Q228.3438,181.125 227.75,180.8594 Q227.1563,180.5781 226.5313,180.5781 Q225.1875,180.5781 224.5,181.6563 Q223.8125,182.7188 223.8125,184.8125 Q223.8125,186.9063 224.5,187.9844 Q225.1875,189.0469 226.5313,189.0469 Q227.1563,189.0469 227.75,188.7813 Q228.3438,188.5 228.9688,187.9219 L228.9688,190.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="13" x="240" y="189.1543">Tv</text><line style="stroke:#A80036;stroke-width:1.5;" x1="212" x2="255" y1="201" y2="201"/><line style="stroke:#A80036;stroke-width:1.5;" x1="212" x2="255" y1="209" y2="209"/><!--MD5=[e85a4a159655ef1379c43bb216dd40cf]
+class DeviceGroup--><rect codeLine="14" fill="#FEFECE" filter="url(#frac09g2oiell)" height="92.3516" id="DeviceGroup" style="stroke:#A80036;stroke-width:1.5;" width="182" x="291.5" y="147"/><ellipse cx="338.75" cy="165.9688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M341.7188,171.6094 Q341.1406,171.9063 340.5,172.0469 Q339.8594,172.2031 339.1563,172.2031 Q336.6563,172.2031 335.3281,170.5625 Q334.0156,168.9063 334.0156,165.7813 Q334.0156,162.6563 335.3281,161 Q336.6563,159.3438 339.1563,159.3438 Q339.8594,159.3438 340.5,159.5 Q341.1563,159.6563 341.7188,159.9531 L341.7188,162.6719 Q341.0938,162.0938 340.5,161.8281 Q339.9063,161.5469 339.2813,161.5469 Q337.9375,161.5469 337.25,162.625 Q336.5625,163.6875 336.5625,165.7813 Q336.5625,167.875 337.25,168.9531 Q337.9375,170.0156 339.2813,170.0156 Q339.9063,170.0156 340.5,169.75 Q341.0938,169.4688 341.7188,168.8906 L341.7188,171.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="79" x="359.25" y="163.1387">«composite»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="79" x="359.25" y="177.1074">DeviceGroup</text><line style="stroke:#A80036;stroke-width:1.5;" x1="292.5" x2="472.5" y1="184.9375" y2="184.9375"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="299.5" y="192.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="96" x="311.5" y="199.1479">devices: Device[]</text><line style="stroke:#A80036;stroke-width:1.5;" x1="292.5" x2="472.5" y1="205.7422" y2="205.7422"/><ellipse cx="302.5" cy="216.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="311.5" y="219.9526">addDevice(Device): void</text><ellipse cx="302.5" cy="229.5469" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="156" x="311.5" y="232.7573">removeDevice(Device): void</text><!--MD5=[1df6341c2efc7b9dedaebf23c89609bd]
+reverse link Device to Aircon--><path d="M160.3886,98.1588 C139.1729,113.4907 116.1628,130.5982 95.5,147 C86.8161,153.8932 77.6089,161.6982 69.3478,168.8958 " fill="none" id="Device-backto-Aircon" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="156.6068,92.2569,176.9393,86.291,164.7651,103.6343,156.6068,92.2569" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[dcd22d50342af11664ed34e33e614224]
+reverse link Device to Light--><path d="M198.3798,104.6129 C184.7478,126.9754 169.8856,151.3562 159.2301,168.8361 " fill="none" id="Device-backto-Light" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="192.5576,100.7153,208.9448,87.2816,204.5117,108.0024,192.5576,100.7153" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a40a99172a76502bbee2b07d54528473]
+reverse link Device to Tv--><path d="M233.5,107.6132 C233.5,129.1343 233.5,152.135 233.5,168.8361 " fill="none" id="Device-backto-Tv" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="226.5001,107.2817,233.5,87.2816,240.5001,107.2816,226.5001,107.2817" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ac8a28327dddd3f035fead2891173495]
+reverse link Device to DeviceGroup--><path d="M276.9435,101.7067 C291.5343,116.5935 307.9813,132.5651 323.5287,146.9213 " fill="none" id="Device-backto-DeviceGroup" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="271.8897,106.5502,263.0735,87.2816,281.9815,96.8467,271.8897,106.5502" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5a63dc21dbe56299c44e1ea2e7334e22]
+link Device to DeviceGroup--><path codeLine="20" d="M296.5307,96.1803 C310.751,109.3732 339.778,138.2981 339.778,138.2981 " fill="none" id="Device-DeviceGroup" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="348.1231,146.9213,346.825,139.828,339.778,138.2981,341.0762,145.3914,348.1231,146.9213" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="286.8237,87.2816,290.7549,96.3119,290.5094,90.6603,296.1609,90.4148,286.8237,87.2816" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="290.5094" x2="296.4065" y1="90.6603" y2="96.0665"/><!--MD5=[83684a4f4f50cf8edc96ad434409d455]
+@startuml
+'skinparam linetype ortho
+
+interface Device <<component>> {
+  + turnOn(): void
+  + turnOff(): void
+}
+
+class Aircon implements Device {}
+
+class Light implements Device {}
+
+class Tv implements Device {}
+
+class DeviceGroup <<composite>> implements Device {
+  - devices: Device[]
+  + addDevice(Device): void
+  + removeDevice(Device): void
+}
+
+DeviceGroup o-up-> Device
+@enduml
+
+@startuml
+
+interface Device <<component>> {
+  + turnOn(): void
+  + turnOff(): void
+}
+
+class Aircon implements Device {}
+
+class Light implements Device {}
+
+class Tv implements Device {}
+
+class DeviceGroup <<composite>> implements Device {
+  - devices: Device[]
+  + addDevice(Device): void
+  + removeDevice(Device): void
+}
+
+DeviceGroup o-up-> Device
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

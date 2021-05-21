@@ -1,0 +1,20 @@
+@startuml
+
+'skinparam linetype ortho
+
+class App {}
+
+interface Service {
+  + request(): void
+}
+
+class PublicService <<proxy>> implements Service {
+  - premiumService: PremiumService
+}
+
+class PremiumService <<concrete subject>> implements Service {}
+
+App -> Service
+PublicService -> PremiumService
+
+@enduml

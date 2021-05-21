@@ -1,0 +1,24 @@
+@startuml
+
+skinparam linetype ortho
+
+abstract class Component <<component>>{
+  - name: String
+  - length: int
+  - value: Object
+  + {abstract} format(): String
+  + {abstract} parse(byte[] src): void
+}
+
+class Item extends Component {
+}
+
+class Packet <<composite>> extends Component {
+  - items: Component[]
+  + add(Component): void
+  + find(name: string): Component
+}
+
+Packet o-up-> Component
+
+@enduml

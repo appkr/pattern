@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="177px" preserveAspectRatio="none" style="width:405px;height:177px;" version="1.1" viewBox="0 0 405 177" width="405px" zoomAndPan="magnify"><defs><filter height="300%" id="f1vslgjnzc4ks0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[29967a0e3d7be4a4ee370988d1fe0aa7]
+class GUIViewer--><rect codeLine="3" fill="#FEFECE" filter="url(#f1vslgjnzc4ks0)" height="48" id="GUIViewer" style="stroke:#A80036;stroke-width:1.5;" width="94" x="133" y="7"/><ellipse cx="148" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M150.9688,28.6406 Q150.3906,28.9375 149.75,29.0781 Q149.1094,29.2344 148.4063,29.2344 Q145.9063,29.2344 144.5781,27.5938 Q143.2656,25.9375 143.2656,22.8125 Q143.2656,19.6875 144.5781,18.0313 Q145.9063,16.375 148.4063,16.375 Q149.1094,16.375 149.75,16.5313 Q150.4063,16.6875 150.9688,16.9844 L150.9688,19.7031 Q150.3438,19.125 149.75,18.8594 Q149.1563,18.5781 148.5313,18.5781 Q147.1875,18.5781 146.5,19.6563 Q145.8125,20.7188 145.8125,22.8125 Q145.8125,24.9063 146.5,25.9844 Q147.1875,27.0469 148.5313,27.0469 Q149.1563,27.0469 149.75,26.7813 Q150.3438,26.5 150.9688,25.9219 L150.9688,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="162" y="27.1543">GUIViewer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="134" x2="226" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="134" x2="226" y1="47" y2="47"/><!--MD5=[888ad225de8a328aba416aeb8bb56c57]
+class EmpDao--><rect codeLine="5" fill="#FEFECE" filter="url(#f1vslgjnzc4ks0)" height="48" id="EmpDao" style="stroke:#A80036;stroke-width:1.5;" width="84" x="7" y="115"/><ellipse cx="22" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.9688,136.6406 Q24.3906,136.9375 23.75,137.0781 Q23.1094,137.2344 22.4063,137.2344 Q19.9063,137.2344 18.5781,135.5938 Q17.2656,133.9375 17.2656,130.8125 Q17.2656,127.6875 18.5781,126.0313 Q19.9063,124.375 22.4063,124.375 Q23.1094,124.375 23.75,124.5313 Q24.4063,124.6875 24.9688,124.9844 L24.9688,127.7031 Q24.3438,127.125 23.75,126.8594 Q23.1563,126.5781 22.5313,126.5781 Q21.1875,126.5781 20.5,127.6563 Q19.8125,128.7188 19.8125,130.8125 Q19.8125,132.9063 20.5,133.9844 Q21.1875,135.0469 22.5313,135.0469 Q23.1563,135.0469 23.75,134.7813 Q24.3438,134.5 24.9688,133.9219 L24.9688,136.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="52" x="36" y="135.1543">EmpDao</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="90" y1="147" y2="147"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="90" y1="155" y2="155"/><!--MD5=[2baf91812bb7574dc7b3872e8b05d1ca]
+class ResumeDao--><rect codeLine="7" fill="#FEFECE" filter="url(#f1vslgjnzc4ks0)" height="48" id="ResumeDao" style="stroke:#A80036;stroke-width:1.5;" width="107" x="126.5" y="115"/><ellipse cx="141.5" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M144.4688,136.6406 Q143.8906,136.9375 143.25,137.0781 Q142.6094,137.2344 141.9063,137.2344 Q139.4063,137.2344 138.0781,135.5938 Q136.7656,133.9375 136.7656,130.8125 Q136.7656,127.6875 138.0781,126.0313 Q139.4063,124.375 141.9063,124.375 Q142.6094,124.375 143.25,124.5313 Q143.9063,124.6875 144.4688,124.9844 L144.4688,127.7031 Q143.8438,127.125 143.25,126.8594 Q142.6563,126.5781 142.0313,126.5781 Q140.6875,126.5781 140,127.6563 Q139.3125,128.7188 139.3125,130.8125 Q139.3125,132.9063 140,133.9844 Q140.6875,135.0469 142.0313,135.0469 Q142.6563,135.0469 143.25,134.7813 Q143.8438,134.5 144.4688,133.9219 L144.4688,136.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="75" x="155.5" y="135.1543">ResumeDao</text><line style="stroke:#A80036;stroke-width:1.5;" x1="127.5" x2="232.5" y1="147" y2="147"/><line style="stroke:#A80036;stroke-width:1.5;" x1="127.5" x2="232.5" y1="155" y2="155"/><!--MD5=[1673edaabe08db83a6e736364ef0044a]
+class EvaluationDao--><rect codeLine="9" fill="#FEFECE" filter="url(#f1vslgjnzc4ks0)" height="48" id="EvaluationDao" style="stroke:#A80036;stroke-width:1.5;" width="122" x="269" y="115"/><ellipse cx="284" cy="131" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M286.9688,136.6406 Q286.3906,136.9375 285.75,137.0781 Q285.1094,137.2344 284.4063,137.2344 Q281.9063,137.2344 280.5781,135.5938 Q279.2656,133.9375 279.2656,130.8125 Q279.2656,127.6875 280.5781,126.0313 Q281.9063,124.375 284.4063,124.375 Q285.1094,124.375 285.75,124.5313 Q286.4063,124.6875 286.9688,124.9844 L286.9688,127.7031 Q286.3438,127.125 285.75,126.8594 Q285.1563,126.5781 284.5313,126.5781 Q283.1875,126.5781 282.5,127.6563 Q281.8125,128.7188 281.8125,130.8125 Q281.8125,132.9063 282.5,133.9844 Q283.1875,135.0469 284.5313,135.0469 Q285.1563,135.0469 285.75,134.7813 Q286.3438,134.5 286.9688,133.9219 L286.9688,136.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="298" y="135.1543">EvaluationDao</text><line style="stroke:#A80036;stroke-width:1.5;" x1="270" x2="390" y1="147" y2="147"/><line style="stroke:#A80036;stroke-width:1.5;" x1="270" x2="390" y1="155" y2="155"/><!--MD5=[3e16902bdb7ae2d4d847a52714d131ed]
+link GUIViewer to EmpDao--><path codeLine="11" d="M150.601,55.2373 C130.2905,71.9819 103.2451,94.2788 82.1646,111.6582 " fill="none" id="GUIViewer-to-EmpDao" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="78.3008,114.8436,87.7896,112.2048,82.1587,111.663,82.7006,106.0321,78.3008,114.8436" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3f70a05ac6622a7c182223c4c3a37635]
+link GUIViewer to ResumeDao--><path codeLine="12" d="M180,55.2373 C180,71.3565 180,92.6212 180,109.6911 " fill="none" id="GUIViewer-to-ResumeDao" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="180,114.8436,184,105.8436,180,109.8436,176,105.8436,180,114.8436" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3c7d3ac86afb36f5bc76f47681f32f37]
+link GUIViewer to EvaluationDao--><path codeLine="13" d="M213.6629,55.2373 C237.0157,72.0513 268.1444,94.4639 292.3253,111.8742 " fill="none" id="GUIViewer-to-EvaluationDao" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="296.4494,114.8436,291.4828,106.3387,292.3917,111.9221,286.8084,112.831,296.4494,114.8436" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4fd8a5255a0cde9ade57e0d03be070d7]
+@startuml
+'skinparam linetype ortho
+
+class GUIViewer {}
+
+class EmpDao {}
+
+class ResumeDao {}
+
+class EvaluationDao {}
+
+GUIViewer ..> EmpDao
+GUIViewer ..> ResumeDao
+GUIViewer ..> EvaluationDao
+@enduml
+
+@startuml
+
+class GUIViewer {}
+
+class EmpDao {}
+
+class ResumeDao {}
+
+class EvaluationDao {}
+
+GUIViewer ..> EmpDao
+GUIViewer ..> ResumeDao
+GUIViewer ..> EvaluationDao
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

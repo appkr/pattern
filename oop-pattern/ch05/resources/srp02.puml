@@ -1,0 +1,33 @@
+@startuml
+
+'skinparam linetype ortho
+
+class EmployeeFacade {
+  + calculatePay()
+  + reportHours()
+  + save()
+}
+
+class PayCalculator {
+  + calculatePay()
+}
+
+class HourReporter {
+  + reportHours()
+}
+
+class EmployeeSaver {
+  + saveEmployee()
+}
+
+class EmployeeData {}
+
+EmployeeFacade --> PayCalculator
+EmployeeFacade --> HourReporter
+EmployeeFacade --> EmployeeSaver
+
+PayCalculator --> EmployeeData
+HourReporter --> EmployeeData
+EmployeeSaver --> EmployeeData
+
+@enduml

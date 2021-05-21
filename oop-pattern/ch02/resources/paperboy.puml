@@ -1,0 +1,30 @@
+@startuml
+
+class App {
+  + {static} main()
+}
+
+class Customer {
+  - name:String
+  - wallet:Wallet
+  + getPayment(subscriptionPrice:int): int
+}
+
+class Wallet {
+  - money:int
+  + getTotalMoney(): int
+  + subtractMoney(debit): void
+}
+
+class Paperboy {
+  + collectPaperSubscriptionFrom(
+    customer:Customer, subscriptionPrice:int): int
+}
+
+App -down-> Paperboy: <<create>>
+App -down-> Customer: <<create>>
+App -down-> Wallet: <<create>>
+Paperboy -> Customer: <<call>>
+Customer -> Wallet
+
+@enduml

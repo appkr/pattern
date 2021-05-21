@@ -1,0 +1,31 @@
+@startuml
+
+skinparam linetype polyline
+'skinparam linetype ortho
+
+class Storage {
+  - compressor: Compressor
+  - encryptor: Encryptor
+  - cacheEngine: CacheEngine
+  - useCompression: boolean
+  - useEncryption: boolean
+  - useCache: boolean
+}
+
+class Compressor {
+  + compress()
+}
+
+class Encryptor {
+  + encrypt()
+}
+
+class CacheEngine {
+  + put()
+}
+
+Storage -> CacheEngine
+Storage -> Encryptor
+Storage -> Compressor
+
+@enduml

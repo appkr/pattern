@@ -1,0 +1,29 @@
+@startuml
+
+'skinparam linetype ortho
+
+class GUIViewer {}
+
+class XMLExporter {}
+
+class ExcelExporter {}
+
+class EmpDao {}
+
+class ResumeDao {}
+
+class EvaluationDao {}
+
+GUIViewer ..> EmpDao
+GUIViewer ..> ResumeDao
+GUIViewer ..> EvaluationDao
+
+XMLExporter ..> EmpDao
+XMLExporter ..> ResumeDao
+XMLExporter ..> EvaluationDao
+
+ExcelExporter ..> EmpDao
+ExcelExporter ..> ResumeDao
+ExcelExporter ..> EvaluationDao
+
+@enduml

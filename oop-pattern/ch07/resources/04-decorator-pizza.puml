@@ -1,0 +1,31 @@
+@startuml
+
+skinparam linetype ortho
+
+class App{}
+
+interface Pizza {
+  + getDescription(): String
+  + getCost(): double
+}
+
+class PlainPizza implements Pizza {}
+
+abstract class ToppingDecorator implements Pizza {
+  - tempPizza: Pizza
+}
+
+class Mozzarella extends ToppingDecorator {}
+
+class Sauce extends ToppingDecorator{}
+
+note left
+  ToppingDecorator is a Pizza
+  ToppingDecorator has a Pizza
+end note
+
+
+App -> Pizza
+ToppingDecorator -up-> Pizza
+
+@enduml

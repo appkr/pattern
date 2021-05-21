@@ -1,0 +1,26 @@
+@startuml
+
+'skinparam linetype ortho
+
+package application {
+  class OrderService {}
+  interface Notifier {}
+}
+
+package domain {
+  class CalculateDiscountService {}
+  interface OrderRepository {}
+  interface RuleDiscounter {}
+}
+
+package infra {
+  class EmailNotifier implements Notifier {}
+  class MyBatisOrderRepository implements OrderRepository {}
+  class DroolsRuleDiscounter implements RuleDiscounter {}
+}
+
+OrderService --> CalculateDiscountService
+OrderService --> OrderRepository
+CalculateDiscountService -> RuleDiscounter
+
+@enduml

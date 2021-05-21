@@ -1,0 +1,17 @@
+@startuml
+
+'skinparam linetype ortho
+
+package domain {
+  class CalculateDiscountService {}
+
+  interface RuleDiscounter {}
+}
+
+package infra {
+  class DroolsRuleDiscounter implements RuleDiscounter {}
+}
+
+CalculateDiscountService -> RuleDiscounter
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+
+'skinparam linetype polyline
+skinparam linetype ortho
+
+interface LogCollector {
+  + collect()
+}
+
+class FtpLogFileDownloader implements LogCollector {}
+
+class SockerLogReader implements LogCollector {}
+
+class DbTableLogGateway implements LogCollector {}
+
+@enduml

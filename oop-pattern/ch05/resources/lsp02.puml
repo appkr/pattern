@@ -1,0 +1,18 @@
+@startuml
+
+'skinparam linetype ortho
+
+class User {}
+
+class Rectangle {
+  + setH()
+  + setW()
+}
+
+class Square extends Rectangle {
+  + setSide()
+}
+
+User -> Rectangle
+
+@enduml

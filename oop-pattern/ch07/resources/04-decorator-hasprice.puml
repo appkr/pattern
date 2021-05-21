@@ -1,0 +1,24 @@
+@startuml
+
+skinparam linetype ortho
+
+class App{}
+
+interface HasPrice {
+  + getPrice(): int
+}
+
+class Product implements HasPrice {}
+
+abstract PriceCalculator implements HasPrice {
+  - delegate: HasPrice
+}
+
+class VatCalculator extends PriceCalculator {}
+
+class PromotionCalculator extends PriceCalculator {}
+
+
+App -> HasPrice
+
+@enduml

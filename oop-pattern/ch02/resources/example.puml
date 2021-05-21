@@ -1,0 +1,22 @@
+@startuml
+
+class App {
+  + {static} main()
+}
+
+class MemberService {
+  + handleRequest(member:Member): void
+}
+
+class Member {
+  - name:String
+  - expiryDate:LocalDate
+  - male:boolean
+  + isExpired(): boolean
+}
+
+App -down-> Member: <<create>>
+App -down-> MemberService: <<create, call>>
+MemberService -> Member: <<call>>
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+
+'skinparam linetype ortho
+
+class CFO <<actor>> {}
+class COO <<actor>> {}
+class CTO <<actor>> {}
+
+class Employee {
+  + calculatePay()
+  + reportHours()
+  + save()
+}
+
+CFO ..> Employee
+COO ..> Employee
+CTO ..> Employee
+
+@enduml

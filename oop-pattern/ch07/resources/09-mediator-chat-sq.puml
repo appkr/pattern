@@ -1,0 +1,17 @@
+@startuml
+
+actor App <<client>>
+participant ChatMediator <<concrete mediator>>
+participant DesktopColleague <<concrete colleague>>
+
+App -> ChatMediator: create
+
+App -> DesktopColleague: create
+
+App -> ChatMediator: addDesktopColleague()
+
+App -> DesktopColleague: send(message: String)
+    DesktopColleague -> ChatMediator: send(message: String, originator: Colleague)
+    ChatMediator -> DesktopColleague: receive(message: String)
+
+@enduml

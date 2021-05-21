@@ -1,0 +1,30 @@
+@startuml
+
+skinparam linetype ortho
+
+class CatalogService {}
+
+package catalog.application.datasource {
+  interface TenantDataSourceProvider {
+    + save(TenantDataSource): TenantDataSource
+    + findAll(): List<TenantDataSource>
+    + findByTenantId(String): Optional<TenantDataSource>
+    + getTenantList(): List<String>
+  }
+}
+
+package catalog.repository.datasource {
+  class CacheableTenentDataSourceProvider implements TenantDataSourceProvider {
+    - cache: Cache
+    - delegate: TenentDataSourceProvider
+  }
+
+  class JdbcTenantDataSourceProvider implements TenantDataSourceProvider {
+    - jdbcTemplate: JdbcTemplate
+  }
+}
+
+CatalogService -> TenantDataSourceProvider
+CacheableTenentDataSourceProvider -> JdbcTenantDataSourceProvider
+
+@enduml

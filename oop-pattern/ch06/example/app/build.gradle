@@ -1,0 +1,33 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+ext {
+    slf4jVersion = '1.7.30'
+    logbackVersion = '1.2.3'
+}
+
+List loggers = [
+        "org.slf4j:slf4j-api:${slf4jVersion}",
+        "org.slf4j:log4j-over-slf4j:${slf4jVersion}",
+        "ch.qos.logback:logback-core:${logbackVersion}",
+        "ch.qos.logback:logback-classic:${logbackVersion}"
+]
+
+dependencies {
+    implementation loggers
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+application {
+    mainClass = 'study.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

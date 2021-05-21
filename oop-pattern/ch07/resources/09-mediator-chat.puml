@@ -1,0 +1,34 @@
+@startuml
+
+class App {}
+
+interface Mediator {
+  + send(message:String, Colleague): void
+}
+
+class ChatMediator <<concrete mediator>> implements Mediator {
+  - colleagues: List<Colleague>
+  + addColleague(Colleague): void
+}
+
+abstract class Colleague {
+  - mediator: Mediator
+  + send(message: String): void
+  + receive(message: String): void
+}
+
+class DesktopColleague <<concrete colleague>> extends Colleague {
+}
+
+class MobileColleague <<concrete colleague>> extends Colleague {
+}
+
+class TabletColleague <<concrete colleague>> extends Colleague {
+}
+
+App ..> Mediator
+App ..> Colleague
+Colleague -> Mediator
+'ChatMediator o-left- Colleague
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml
+
+'skinparam linetype ortho
+
+class GUIViewer {}
+
+class XMLExporter {}
+
+class ExcelExporter {}
+
+interface EmpReportFacade {}
+
+class EmpReportDaoFacade implements EmpReportFacade {}
+
+class EmpDao {}
+
+class ResumeDao {}
+
+class EvaluationDao {}
+
+class EmpReportHTTPFacade implements EmpReportFacade {}
+
+class EmpResumeDataClient {}
+
+class EvaluationDataClient {}
+
+GUIViewer ..> EmpReportFacade
+XMLExporter ..> EmpReportFacade
+ExcelExporter ..> EmpReportFacade
+
+EmpReportDaoFacade ..> EmpDao
+EmpReportDaoFacade ..> ResumeDao
+EmpReportDaoFacade ..> EvaluationDao
+
+EmpReportHTTPFacade ..> EmpResumeDataClient
+EmpReportHTTPFacade ..> EvaluationDataClient
+
+@enduml

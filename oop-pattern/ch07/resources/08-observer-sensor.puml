@@ -1,0 +1,33 @@
+@startuml
+
+abstract class Sensor <<observable>> {
+    - observers: List<Display>
+    + add(Display): void
+    + remove(Display): void
+    + notifyObservers(): void
+    + {abstract}getState(): int
+    + {abstract}setState(state: int): void
+}
+
+class HumiditySensor extends Sensor {
+    - humidity: int
+}
+
+class TempratureSensor extends Sensor {
+    - temperature: int
+}
+
+interface Display <<observer>> {
+    + update(Sensor): void
+}
+
+class LogDisplay implements Display {
+    - path: String
+}
+
+class ScreenDisplay implements Display {
+}
+
+Sensor o-> Display
+
+@enduml

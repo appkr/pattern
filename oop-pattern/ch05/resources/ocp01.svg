@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="279px" preserveAspectRatio="none" style="width:597px;height:279px;" version="1.1" viewBox="0 0 597 279" width="597px" zoomAndPan="magnify"><defs><filter height="300%" id="f6of93ihd47v6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3a99a5b09dbd329f9ef535195c1f27a5]
+entity FinancialReportController--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="217" x="117" y="7"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="314" y="12"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="312" y="14"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="312" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="132" y="40.5352">FinancialReportController</text><!--MD5=[0c588026c5efef8e1b1076b524b9b46d]
+entity FinancialReportInteractor--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="214" x="369.5" y="7"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="563.5" y="12"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="561.5" y="14"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="561.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="384.5" y="40.5352">FinancialReportInteractor</text><!--MD5=[0f30f4e63efe5334a1845584a2c00f7c]
+entity ScreenPresenter--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="151" x="179" y="113"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="310" y="118"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="308" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="308" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="194" y="146.5352">ScreenPresenter</text><!--MD5=[9433ecdcf8e87491a6cfa54a087b378f]
+entity PrintPresenter--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="137" x="7" y="113"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="124" y="118"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="122" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="122" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="22" y="146.5352">PrintPresenter</text><!--MD5=[a9e818596ad9ce7d078e84637c2c14c1]
+entity WebView--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="101" x="204" y="219"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="285" y="224"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="283" y="226"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="283" y="230"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="219" y="252.5352">WebView</text><!--MD5=[d4ecdf971dd8b3f290c89cfe788dc35f]
+entity PDFView--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="98" x="26.5" y="219"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="104.5" y="224"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="102.5" y="226"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="102.5" y="230"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="41.5" y="252.5352">PDFView</text><!--MD5=[f75ccc228888508f40766356992cc5d2]
+entity FinancialDatabase--><rect fill="#FEFECE" filter="url(#f6of93ihd47v6)" height="46.4883" style="stroke:#A80036;stroke-width:1.5;" width="164" x="394.5" y="113"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="538.5" y="118"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="536.5" y="120"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="536.5" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="409.5" y="146.5352">FinancialDatabase</text><!--MD5=[93183f07dbc633184a6a374b46bd7a48]
+link FinancialReportController to FinancialReportInteractor--><path d="M334.33,30 C344.26,30 354.19,30 364.13,30 " fill="none" id="FinancialReportController-to-FinancialReportInteractor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="369.32,30,360.32,26,364.32,30,360.32,34,369.32,30" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[565c61e538fa7a8fa0cec5e25f848467]
+reverse link FinancialReportController to ScreenPresenter--><path d="M233.08,58.19 C237.84,75.26 243.9,96.99 248.36,112.98 " fill="none" id="FinancialReportController-backto-ScreenPresenter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="231.65,53.06,230.2152,62.8038,232.9934,57.8762,237.921,60.6544,231.65,53.06" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[03c5f773d4e34121a98931f479d7ec6b]
+reverse link FinancialReportController to PrintPresenter--><path d="M189.43,56.01 C164.38,73.38 131.32,96.3 107.27,112.98 " fill="none" id="FinancialReportController-backto-PrintPresenter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="193.69,53.06,184.0191,54.9239,189.5878,55.9187,188.593,61.4874,193.69,53.06" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6e69c1dcf7b39c2b84643d6baa5bf758]
+reverse link ScreenPresenter to WebView--><path d="M254.5,164.19 C254.5,181.26 254.5,202.99 254.5,218.98 " fill="none" id="ScreenPresenter-backto-WebView" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="254.5,159.06,250.5,168.06,254.5,164.06,258.5,168.06,254.5,159.06" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[cc34cbe3045f5977789c11964fd90e56]
+reverse link PrintPresenter to PDFView--><path d="M75.5,164.19 C75.5,181.26 75.5,202.99 75.5,218.98 " fill="none" id="PrintPresenter-backto-PDFView" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="75.5,159.06,71.5,168.06,75.5,164.06,79.5,168.06,75.5,159.06" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f61575bfac8e1c5f62f405df0bcfb037]
+reverse link FinancialReportInteractor to FinancialDatabase--><path d="M476.5,58.19 C476.5,75.26 476.5,96.99 476.5,112.98 " fill="none" id="FinancialReportInteractor-backto-FinancialDatabase" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="476.5,53.06,472.5,62.06,476.5,58.06,480.5,62.06,476.5,53.06" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0beea748abc78ed8f3ed6112d18af53d]
+@startuml
+
+'skinparam linetype ortho
+
+[FinancialReportController]
+
+[FinancialReportInteractor]
+
+[ScreenPresenter]
+
+[PrintPresenter]
+
+[WebView]
+
+[PDFView]
+
+[FinancialDatabase]
+
+FinancialReportController -> FinancialReportInteractor
+ScreenPresenter -up-> FinancialReportController
+PrintPresenter -up-> FinancialReportController
+WebView -up-> ScreenPresenter
+PDFView -up-> PrintPresenter
+FinancialDatabase -up-> FinancialReportInteractor
+
+@enduml
+
+@startuml
+
+
+[FinancialReportController]
+
+[FinancialReportInteractor]
+
+[ScreenPresenter]
+
+[PrintPresenter]
+
+[WebView]
+
+[PDFView]
+
+[FinancialDatabase]
+
+FinancialReportController -> FinancialReportInteractor
+ScreenPresenter -up-> FinancialReportController
+PrintPresenter -up-> FinancialReportController
+WebView -up-> ScreenPresenter
+PDFView -up-> PrintPresenter
+FinancialDatabase -up-> FinancialReportInteractor
+
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 20:10:27 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ko
+Country: KR
+--></g></svg>

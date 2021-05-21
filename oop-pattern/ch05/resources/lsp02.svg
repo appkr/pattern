@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="215px" preserveAspectRatio="none" style="width:202px;height:215px;" version="1.1" viewBox="0 0 202 215" width="202px" zoomAndPan="magnify"><defs><filter height="300%" id="fp5j733xo9pq5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="4" fill="#FEFECE" filter="url(#fp5j733xo9pq5)" height="48" id="User" style="stroke:#A80036;stroke-width:1.5;" width="58" x="7" y="20"/><ellipse cx="22" cy="36" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.4731,42.1431 Q23.8921,42.4419 23.2529,42.5913 Q22.6138,42.7407 21.9082,42.7407 Q19.4014,42.7407 18.0815,41.0889 Q16.7617,39.437 16.7617,36.3159 Q16.7617,33.1865 18.0815,31.5347 Q19.4014,29.8828 21.9082,29.8828 Q22.6138,29.8828 23.2612,30.0322 Q23.9087,30.1816 24.4731,30.4805 L24.4731,33.2031 Q23.8423,32.6221 23.2488,32.3523 Q22.6553,32.0825 22.0244,32.0825 Q20.6797,32.0825 19.9949,33.1492 Q19.3101,34.2158 19.3101,36.3159 Q19.3101,38.4077 19.9949,39.4744 Q20.6797,40.541 22.0244,40.541 Q22.6553,40.541 23.2488,40.2712 Q23.8423,40.0015 24.4731,39.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="26" x="36" y="40.5352">User</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="64" y1="52" y2="52"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="64" y1="60" y2="60"/><!--MD5=[b5313cd49da22b0744b541f414f8445e]
+class Rectangle--><rect codeLine="6" fill="#FEFECE" filter="url(#fp5j733xo9pq5)" height="73.9102" id="Rectangle" style="stroke:#A80036;stroke-width:1.5;" width="88" x="100" y="7"/><ellipse cx="115" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M117.4731,29.1431 Q116.8921,29.4419 116.2529,29.5913 Q115.6138,29.7407 114.9082,29.7407 Q112.4014,29.7407 111.0815,28.0889 Q109.7617,26.437 109.7617,23.3159 Q109.7617,20.1865 111.0815,18.5347 Q112.4014,16.8828 114.9082,16.8828 Q115.6138,16.8828 116.2612,17.0322 Q116.9087,17.1816 117.4731,17.4805 L117.4731,20.2031 Q116.8423,19.6221 116.2488,19.3523 Q115.6553,19.0825 115.0244,19.0825 Q113.6797,19.0825 112.9949,20.1492 Q112.3101,21.2158 112.3101,23.3159 Q112.3101,25.4077 112.9949,26.4744 Q113.6797,27.541 115.0244,27.541 Q115.6553,27.541 116.2488,27.2712 Q116.8423,27.0015 117.4731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="129" y="27.5352">Rectangle</text><line style="stroke:#A80036;stroke-width:1.5;" x1="101" x2="187" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="101" x2="187" y1="47" y2="47"/><ellipse cx="111" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="32" x="120" y="61.6348">setH()</text><ellipse cx="111" cy="70.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="33" x="120" y="74.5898">setW()</text><!--MD5=[5655ee3e2a0d028d03fe20f829576392]
+class Square--><rect codeLine="11" fill="#FEFECE" filter="url(#fp5j733xo9pq5)" height="60.9551" id="Square" style="stroke:#A80036;stroke-width:1.5;" width="72" x="108" y="141"/><ellipse cx="123" cy="157" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M125.4731,163.1431 Q124.8921,163.4419 124.2529,163.5913 Q123.6138,163.7407 122.9082,163.7407 Q120.4014,163.7407 119.0815,162.0889 Q117.7617,160.437 117.7617,157.3159 Q117.7617,154.1865 119.0815,152.5347 Q120.4014,150.8828 122.9082,150.8828 Q123.6138,150.8828 124.2612,151.0322 Q124.9087,151.1816 125.4731,151.4805 L125.4731,154.2031 Q124.8423,153.6221 124.2488,153.3523 Q123.6553,153.0825 123.0244,153.0825 Q121.6797,153.0825 120.9949,154.1492 Q120.3101,155.2158 120.3101,157.3159 Q120.3101,159.4077 120.9949,160.4744 Q121.6797,161.541 123.0244,161.541 Q123.6553,161.541 124.2488,161.2712 Q124.8423,161.0015 125.4731,160.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="137" y="161.5352">Square</text><line style="stroke:#A80036;stroke-width:1.5;" x1="109" x2="179" y1="173" y2="173"/><line style="stroke:#A80036;stroke-width:1.5;" x1="109" x2="179" y1="181" y2="181"/><ellipse cx="119" cy="192" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="128" y="195.6348">setSide()</text><!--MD5=[da1c883970fc9f8ff4dba8cbad67d066]
+reverse link Rectangle to Square--><path d="M144,101.73 C144,115.15 144,128.95 144,140.62 " fill="none" id="Rectangle-backto-Square" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="137,101.3,144,81.3,151,101.3,137,101.3" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b708e7c1f49fb83e1b8bf8b227ded5ee]
+link User to Rectangle--><path codeLine="15" d="M65.11,44 C74.99,44 84.88,44 94.76,44 " fill="none" id="User-to-Rectangle" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="99.93,44,90.93,40,94.93,44,90.93,48,99.93,44" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[45964faaa9bc3c86ae28d5aa095c84d4]
+@startuml
+
+'skinparam linetype ortho
+
+class User {}
+
+class Rectangle {
+  + setH()
+  + setW()
+}
+
+class Square extends Rectangle {
+  + setSide()
+}
+
+User -> Rectangle
+
+@enduml
+
+@startuml
+
+
+class User {}
+
+class Rectangle {
+  + setH()
+  + setW()
+}
+
+class Square extends Rectangle {
+  + setSide()
+}
+
+User -> Rectangle
+
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 20:10:27 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ko
+Country: KR
+--></g></svg>

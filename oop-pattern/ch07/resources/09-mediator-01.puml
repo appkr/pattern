@@ -1,0 +1,44 @@
+@startuml
+
+'skinparam linetype ortho
+
+class MediaController {
+    '재생 버튼을 누른다
+    + onPressPlayButton(): void
+    '멈춤 버튼을 누른다
+    + onPressPauseButton(): void
+    '시간 이동 조작을 한다
+    + onMoveProgressBar(position: int)
+    '다음 버튼을 누른다
+    + onPressNextButton(): void
+    '이전 버튼을 누른다
+    + onPressPrevButton(): void
+}
+
+class TitleUI {
+    '제목을 표시한다
+    + setTitle(VideoInfo): void
+}
+
+class VideoPlayer {
+    '영상을 재생한다
+    + play(VideoInfo): void
+    + pause(): void
+    + toggle(): void
+    + moveTo(position: int): void
+}
+
+class VideoListUI {
+    '동영상 목록에서 제목을 선택한다
+    + onSelectedItem(selectedIdx: int): void
+    + next(): void
+    + prev(): void
+}
+
+MediaController ..> VideoPlayer
+VideoPlayer ..> MediaController
+VideoPlayer <. VideoListUI
+VideoListUI .up.> TitleUI
+MediaController .> VideoListUI
+
+@enduml

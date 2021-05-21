@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="358px" preserveAspectRatio="none" style="width:660px;height:358px;" version="1.1" viewBox="0 0 660 358" width="660px" zoomAndPan="magnify"><defs><filter height="300%" id="f1us4pjo5p0zhs" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3ff016c1aa5003d713567a073e2181a6]
+cluster application--><polygon fill="#FFFFFF" filter="url(#f1us4pjo5p0zhs)" points="212,6,298,6,305,28.4883,459,28.4883,459,105,212,105,212,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="212" x2="305" y1="28.4883" y2="28.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="80" x="216" y="21.5352">application</text><!--MD5=[27f772719433d509ddbc20ff768eba08]
+cluster domain--><polygon fill="#FFFFFF" filter="url(#f1us4pjo5p0zhs)" points="16,129,76,129,83,151.4883,537,151.4883,537,228,16,228,16,129" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="83" y1="151.4883" y2="151.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="20" y="144.5352">domain</text><!--MD5=[b96263a6e3ccc8d9646ad6160c88315b]
+cluster infra--><polygon fill="#FFFFFF" filter="url(#f1us4pjo5p0zhs)" points="110,252,150,252,157,274.4883,643,274.4883,643,351,110,351,110,252" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="110" x2="157" y1="274.4883" y2="274.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="34" x="114" y="267.5352">infra</text><!--MD5=[7655a4d4bd54a6253b7313a085dd4122]
+class OrderService--><rect codeLine="5" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="OrderService" style="stroke:#A80036;stroke-width:1.5;" width="106" x="228" y="41"/><ellipse cx="243" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M245.4731,63.1431 Q244.8921,63.4419 244.2529,63.5913 Q243.6138,63.7407 242.9082,63.7407 Q240.4014,63.7407 239.0815,62.0889 Q237.7617,60.437 237.7617,57.3159 Q237.7617,54.1865 239.0815,52.5347 Q240.4014,50.8828 242.9082,50.8828 Q243.6138,50.8828 244.2612,51.0322 Q244.9087,51.1816 245.4731,51.4805 L245.4731,54.2031 Q244.8423,53.6221 244.2488,53.3523 Q243.6553,53.0825 243.0244,53.0825 Q241.6797,53.0825 240.9949,54.1492 Q240.3101,55.2158 240.3101,57.3159 Q240.3101,59.4077 240.9949,60.4744 Q241.6797,61.541 243.0244,61.541 Q243.6553,61.541 244.2488,61.2712 Q244.8423,61.0015 245.4731,60.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="257" y="61.5352">OrderService</text><line style="stroke:#A80036;stroke-width:1.5;" x1="229" x2="333" y1="73" y2="73"/><line style="stroke:#A80036;stroke-width:1.5;" x1="229" x2="333" y1="81" y2="81"/><!--MD5=[bc5b29fb3d887e13be4d600333f8a461]
+class Notifier--><rect codeLine="6" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="Notifier" style="stroke:#A80036;stroke-width:1.5;" width="74" x="369" y="41"/><ellipse cx="384" cy="57" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M380.4277,53.2651 L380.4277,51.1069 L387.8071,51.1069 L387.8071,53.2651 L385.3418,53.2651 L385.3418,61.3418 L387.8071,61.3418 L387.8071,63.5 L380.4277,63.5 L380.4277,61.3418 L382.8931,61.3418 L382.8931,53.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="42" x="398" y="61.5352">Notifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="370" x2="442" y1="73" y2="73"/><line style="stroke:#A80036;stroke-width:1.5;" x1="370" x2="442" y1="81" y2="81"/><!--MD5=[5cff0ce650492a921016fb2a1bba9212]
+class CalculateDiscountService--><rect codeLine="10" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="CalculateDiscountService" style="stroke:#A80036;stroke-width:1.5;" width="173" x="194.5" y="164"/><ellipse cx="209.5" cy="180" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M211.9731,186.1431 Q211.3921,186.4419 210.7529,186.5913 Q210.1138,186.7407 209.4082,186.7407 Q206.9014,186.7407 205.5815,185.0889 Q204.2617,183.437 204.2617,180.3159 Q204.2617,177.1865 205.5815,175.5347 Q206.9014,173.8828 209.4082,173.8828 Q210.1138,173.8828 210.7612,174.0322 Q211.4087,174.1816 211.9731,174.4805 L211.9731,177.2031 Q211.3423,176.6221 210.7488,176.3523 Q210.1553,176.0825 209.5244,176.0825 Q208.1797,176.0825 207.4949,177.1492 Q206.8101,178.2158 206.8101,180.3159 Q206.8101,182.4077 207.4949,183.4744 Q208.1797,184.541 209.5244,184.541 Q210.1553,184.541 210.7488,184.2712 Q211.3423,184.0015 211.9731,183.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="141" x="223.5" y="184.5352">CalculateDiscountService</text><line style="stroke:#A80036;stroke-width:1.5;" x1="195.5" x2="366.5" y1="196" y2="196"/><line style="stroke:#A80036;stroke-width:1.5;" x1="195.5" x2="366.5" y1="204" y2="204"/><!--MD5=[708e328039b60d50c6285936843ac334]
+class OrderRepository--><rect codeLine="11" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="OrderRepository" style="stroke:#A80036;stroke-width:1.5;" width="127" x="32.5" y="164"/><ellipse cx="47.5" cy="180" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M43.9277,176.2651 L43.9277,174.1069 L51.3071,174.1069 L51.3071,176.2651 L48.8418,176.2651 L48.8418,184.3418 L51.3071,184.3418 L51.3071,186.5 L43.9277,186.5 L43.9277,184.3418 L46.3931,184.3418 L46.3931,176.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="95" x="61.5" y="184.5352">OrderRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="33.5" x2="158.5" y1="196" y2="196"/><line style="stroke:#A80036;stroke-width:1.5;" x1="33.5" x2="158.5" y1="204" y2="204"/><!--MD5=[20f6c64c39122525343598bfc4253c86]
+class RuleDiscounter--><rect codeLine="12" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="RuleDiscounter" style="stroke:#A80036;stroke-width:1.5;" width="118" x="403" y="164"/><ellipse cx="418" cy="180" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M414.4277,176.2651 L414.4277,174.1069 L421.8071,174.1069 L421.8071,176.2651 L419.3418,176.2651 L419.3418,184.3418 L421.8071,184.3418 L421.8071,186.5 L414.4277,186.5 L414.4277,184.3418 L416.8931,184.3418 L416.8931,176.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="86" x="432" y="184.5352">RuleDiscounter</text><line style="stroke:#A80036;stroke-width:1.5;" x1="404" x2="520" y1="196" y2="196"/><line style="stroke:#A80036;stroke-width:1.5;" x1="404" x2="520" y1="204" y2="204"/><!--MD5=[1a771fca33d7136c45a2b8e127540c32]
+class EmailNotifier--><rect codeLine="16" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="EmailNotifier" style="stroke:#A80036;stroke-width:1.5;" width="105" x="521.5" y="287"/><ellipse cx="536.5" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M538.9731,309.1431 Q538.3921,309.4419 537.7529,309.5913 Q537.1138,309.7407 536.4082,309.7407 Q533.9014,309.7407 532.5815,308.0889 Q531.2617,306.437 531.2617,303.3159 Q531.2617,300.1865 532.5815,298.5347 Q533.9014,296.8828 536.4082,296.8828 Q537.1138,296.8828 537.7612,297.0322 Q538.4087,297.1816 538.9731,297.4805 L538.9731,300.2031 Q538.3423,299.6221 537.7488,299.3523 Q537.1553,299.0825 536.5244,299.0825 Q535.1797,299.0825 534.4949,300.1492 Q533.8101,301.2158 533.8101,303.3159 Q533.8101,305.4077 534.4949,306.4744 Q535.1797,307.541 536.5244,307.541 Q537.1553,307.541 537.7488,307.2712 Q538.3423,307.0015 538.9731,306.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73" x="550.5" y="307.5352">EmailNotifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="522.5" x2="625.5" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="522.5" x2="625.5" y1="327" y2="327"/><!--MD5=[8d7c74309798fa74d38d1f9b72403fc8]
+class MyBatisOrderRepository--><rect codeLine="17" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="MyBatisOrderRepository" style="stroke:#A80036;stroke-width:1.5;" width="170" x="126" y="287"/><ellipse cx="141" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M143.4731,309.1431 Q142.8921,309.4419 142.2529,309.5913 Q141.6138,309.7407 140.9082,309.7407 Q138.4014,309.7407 137.0815,308.0889 Q135.7617,306.437 135.7617,303.3159 Q135.7617,300.1865 137.0815,298.5347 Q138.4014,296.8828 140.9082,296.8828 Q141.6138,296.8828 142.2612,297.0322 Q142.9087,297.1816 143.4731,297.4805 L143.4731,300.2031 Q142.8423,299.6221 142.2488,299.3523 Q141.6553,299.0825 141.0244,299.0825 Q139.6797,299.0825 138.9949,300.1492 Q138.3101,301.2158 138.3101,303.3159 Q138.3101,305.4077 138.9949,306.4744 Q139.6797,307.541 141.0244,307.541 Q141.6553,307.541 142.2488,307.2712 Q142.8423,307.0015 143.4731,306.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="138" x="155" y="307.5352">MyBatisOrderRepository</text><line style="stroke:#A80036;stroke-width:1.5;" x1="127" x2="295" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="127" x2="295" y1="327" y2="327"/><!--MD5=[026fa0173a31eedb0853cd2c126d4390]
+class DroolsRuleDiscounter--><rect codeLine="18" fill="#FEFECE" filter="url(#f1us4pjo5p0zhs)" height="48" id="DroolsRuleDiscounter" style="stroke:#A80036;stroke-width:1.5;" width="155" x="331.5" y="287"/><ellipse cx="346.5" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M348.9731,309.1431 Q348.3921,309.4419 347.7529,309.5913 Q347.1138,309.7407 346.4082,309.7407 Q343.9014,309.7407 342.5815,308.0889 Q341.2617,306.437 341.2617,303.3159 Q341.2617,300.1865 342.5815,298.5347 Q343.9014,296.8828 346.4082,296.8828 Q347.1138,296.8828 347.7612,297.0322 Q348.4087,297.1816 348.9731,297.4805 L348.9731,300.2031 Q348.3423,299.6221 347.7488,299.3523 Q347.1553,299.0825 346.5244,299.0825 Q345.1797,299.0825 344.4949,300.1492 Q343.8101,301.2158 343.8101,303.3159 Q343.8101,305.4077 344.4949,306.4744 Q345.1797,307.541 346.5244,307.541 Q347.1553,307.541 347.7488,307.2712 Q348.3423,307.0015 348.9731,306.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="123" x="360.5" y="307.5352">DroolsRuleDiscounter</text><line style="stroke:#A80036;stroke-width:1.5;" x1="332.5" x2="485.5" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="332.5" x2="485.5" y1="327" y2="327"/><!--MD5=[37f84b9e47e28a971b603ff37aca9bff]
+reverse link Notifier to EmailNotifier--><path d="M462.77,76.93 C489.08,84.85 518.54,98.32 537,121 C576.48,169.49 578.02,247.98 575.99,286.78 " fill="none" id="Notifier-backto-EmailNotifier" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="460.65,83.61,443.06,71.79,464.18,70.06,460.65,83.61" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2a6e91b49e2581b1582170265db57b84]
+reverse link OrderRepository to MyBatisOrderRepository--><path d="M131.89,226.76 C150.51,246.35 172.67,269.67 188.79,286.63 " fill="none" id="OrderRepository-backto-MyBatisOrderRepository" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="126.61,231.36,117.9,212.04,136.75,221.72,126.61,231.36" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9fd1ac226edc9553687a6cd5ca4c389]
+reverse link RuleDiscounter to DroolsRuleDiscounter--><path d="M443.78,230.59 C435.57,249.33 426.19,270.76 419.24,286.63 " fill="none" id="RuleDiscounter-backto-DroolsRuleDiscounter" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="437.47,227.56,451.91,212.04,450.29,233.17,437.47,227.56" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[25a19a4e51c884e40b12159caf581b54]
+link OrderService to CalculateDiscountService--><path codeLine="21" d="M281,89.04 C281,108.77 281,137.24 281,158.41 " fill="none" id="OrderService-to-CalculateDiscountService" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="281,163.63,285,154.63,281,158.63,277,154.63,281,163.63" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3978b7c58cefb265c48c072514d6074e]
+link OrderService to OrderRepository--><path codeLine="22" d="M232.75,89 C214.8,98.21 194.54,109.38 177,121 C159.17,132.81 140.58,147.75 125.71,160.42 " fill="none" id="OrderService-to-OrderRepository" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="121.62,163.93,131.0565,161.1099,125.4163,160.676,125.8501,155.0359,121.62,163.93" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b5e4d937a09bb7d974ff0f4b0c5e374a]
+link CalculateDiscountService to RuleDiscounter--><path codeLine="23" d="M367.61,188 C377.55,188 387.5,188 397.44,188 " fill="none" id="CalculateDiscountService-to-RuleDiscounter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="402.64,188,393.64,184,397.64,188,393.64,192,402.64,188" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[001fe021cb41ec2226a090c9f5c366b1]
+@startuml
+
+'skinparam linetype ortho
+
+package application {
+  class OrderService {}
+  interface Notifier {}
+}
+
+package domain {
+  class CalculateDiscountService {}
+  interface OrderRepository {}
+  interface RuleDiscounter {}
+}
+
+package infra {
+  class EmailNotifier implements Notifier {}
+  class MyBatisOrderRepository implements OrderRepository {}
+  class DroolsRuleDiscounter implements RuleDiscounter {}
+}
+
+OrderService - -> CalculateDiscountService
+OrderService - -> OrderRepository
+CalculateDiscountService -> RuleDiscounter
+
+@enduml
+
+@startuml
+
+
+package application {
+  class OrderService {}
+  interface Notifier {}
+}
+
+package domain {
+  class CalculateDiscountService {}
+  interface OrderRepository {}
+  interface RuleDiscounter {}
+}
+
+package infra {
+  class EmailNotifier implements Notifier {}
+  class MyBatisOrderRepository implements OrderRepository {}
+  class DroolsRuleDiscounter implements RuleDiscounter {}
+}
+
+OrderService - -> CalculateDiscountService
+OrderService - -> OrderRepository
+CalculateDiscountService -> RuleDiscounter
+
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 20:10:27 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ko
+Country: KR
+--></g></svg>

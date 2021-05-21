@@ -1,0 +1,25 @@
+@startuml
+
+'skinparam linetype ortho
+
+class MediaController {}
+
+class TitleUI {}
+
+class VideoPlayer {}
+
+class VideoListUI {}
+
+class RecommendedListUI {}
+
+class CaptionUI {}
+
+MediaController ..> VideoPlayer
+VideoPlayer ..> MediaController
+VideoPlayer <. VideoListUI
+VideoListUI .up.> TitleUI
+MediaController .> VideoListUI
+RecommendedListUI .> VideoPlayer
+VideoPlayer .up.> CaptionUI
+
+@enduml

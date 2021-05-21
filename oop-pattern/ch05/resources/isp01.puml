@@ -1,0 +1,21 @@
+@startuml
+
+'skinparam linetype ortho
+
+class User1 {}
+
+class User2 {}
+
+class User3 {}
+
+class Ops {
+  + op1()
+  + op2()
+  + op3()
+}
+
+User1 --> Ops
+User2 --> Ops
+User3 --> Ops
+
+@enduml

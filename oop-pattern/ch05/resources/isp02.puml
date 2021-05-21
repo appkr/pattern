@@ -1,0 +1,33 @@
+@startuml
+
+'skinparam linetype ortho
+
+class User1 {}
+
+class User2 {}
+
+class User3 {}
+
+interface U1Ops {
+  + op1()
+}
+
+interface U2Ops {
+  + op2()
+}
+
+interface U3Ops {
+  + op3()
+}
+
+class Ops implements U1Ops, U2Ops, U3Ops {
+  + op1()
+  + op2()
+  + op3()
+}
+
+User1 --> U1Ops
+User2 --> U2Ops
+User3 --> U3Ops
+
+@enduml

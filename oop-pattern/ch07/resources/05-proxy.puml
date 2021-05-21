@@ -1,0 +1,20 @@
+@startuml
+
+'skinparam linetype ortho
+
+class ListUI {}
+
+interface Image <<subject>> {
+  + draw(): void
+}
+
+class ProxyImage <<proxy>> implements Image {
+  - real: RealImage
+}
+
+class RealImage <<concrete subject>> implements Image {}
+
+ListUI .> Image
+ProxyImage -> RealImage
+
+@enduml

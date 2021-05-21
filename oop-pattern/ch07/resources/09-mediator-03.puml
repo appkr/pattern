@@ -1,0 +1,31 @@
+@startuml
+
+interface PlayerObserver {}
+
+interface ControllerObserver {
+    + volumeChanged()
+}
+
+abstract class PlayerMediator <<mediator>> {
+    + select()
+    + {abstract} volumeChanged()
+}
+
+class VideoPlayer <<colleague>> {}
+
+class MediaController <<colleague>> {}
+
+class VideoListUI <<colleague>> {}
+
+class TitleUI <<colleague>> {}
+
+PlayerMediator .left.|> PlayerObserver
+PlayerMediator .right.|> ControllerObserver
+VideoPlayer .down.> PlayerObserver
+MediaController .down.> ControllerObserver
+PlayerMediator .up.> VideoPlayer
+PlayerMediator .up.> MediaController
+PlayerMediator <.. VideoListUI
+PlayerMediator ..> TitleUI
+
+@enduml

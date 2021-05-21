@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="214px" preserveAspectRatio="none" style="width:324px;height:214px;" version="1.1" viewBox="0 0 324 214" width="324px" zoomAndPan="magnify"><defs><filter height="300%" id="fmqoflmydcu0m" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b1a6bf9cba0999e1042ab692f50fd3ae]
+class ListUI--><rect codeLine="3" fill="#FEFECE" filter="url(#fmqoflmydcu0m)" height="48" id="ListUI" style="stroke:#A80036;stroke-width:1.5;" width="65" x="7" y="16.5"/><ellipse cx="22" cy="32.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.9688,38.1406 Q24.3906,38.4375 23.75,38.5781 Q23.1094,38.7344 22.4063,38.7344 Q19.9063,38.7344 18.5781,37.0938 Q17.2656,35.4375 17.2656,32.3125 Q17.2656,29.1875 18.5781,27.5313 Q19.9063,25.875 22.4063,25.875 Q23.1094,25.875 23.75,26.0313 Q24.4063,26.1875 24.9688,26.4844 L24.9688,29.2031 Q24.3438,28.625 23.75,28.3594 Q23.1563,28.0781 22.5313,28.0781 Q21.1875,28.0781 20.5,29.1563 Q19.8125,30.2188 19.8125,32.3125 Q19.8125,34.4063 20.5,35.4844 Q21.1875,36.5469 22.5313,36.5469 Q23.1563,36.5469 23.75,36.2813 Q24.3438,36 24.9688,35.4219 L24.9688,38.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="33" x="36" y="36.6543">ListUI</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="71" y1="48.5" y2="48.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="71" y1="56.5" y2="56.5"/><!--MD5=[964f074a2dd77d134c21b891bb53e381]
+class Image--><rect codeLine="5" fill="#FEFECE" filter="url(#fmqoflmydcu0m)" height="66.7422" id="Image" style="stroke:#A80036;stroke-width:1.5;" width="93" x="107" y="7"/><ellipse cx="124.25" cy="25.9688" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M120.1719,21.7344 L120.1719,19.5781 L127.5625,19.5781 L127.5625,21.7344 L125.0938,21.7344 L125.0938,29.8125 L127.5625,29.8125 L127.5625,31.9688 L120.1719,31.9688 L120.1719,29.8125 L122.6406,29.8125 L122.6406,21.7344 L120.1719,21.7344 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="136.75" y="23.1387">«subject»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="38" x="147.75" y="37.1074">Image</text><line style="stroke:#A80036;stroke-width:1.5;" x1="108" x2="199" y1="44.9375" y2="44.9375"/><line style="stroke:#A80036;stroke-width:1.5;" x1="108" x2="199" y1="52.9375" y2="52.9375"/><ellipse cx="118" cy="63.9375" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="67" x="127" y="67.1479">draw(): void</text><!--MD5=[b80044190758d1ea057d0acc6bc57b50]
+class ProxyImage--><rect codeLine="9" fill="#FEFECE" filter="url(#fmqoflmydcu0m)" height="66.7422" id="ProxyImage" style="stroke:#A80036;stroke-width:1.5;" width="115" x="12" y="134"/><ellipse cx="32.4" cy="152.9688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M35.3688,158.6094 Q34.7906,158.9063 34.15,159.0469 Q33.5094,159.2031 32.8063,159.2031 Q30.3063,159.2031 28.9781,157.5625 Q27.6656,155.9063 27.6656,152.7813 Q27.6656,149.6563 28.9781,148 Q30.3063,146.3438 32.8063,146.3438 Q33.5094,146.3438 34.15,146.5 Q34.8063,146.6563 35.3688,146.9531 L35.3688,149.6719 Q34.7438,149.0938 34.15,148.8281 Q33.5563,148.5469 32.9313,148.5469 Q31.5875,148.5469 30.9,149.625 Q30.2125,150.6875 30.2125,152.7813 Q30.2125,154.875 30.9,155.9531 Q31.5875,157.0156 32.9313,157.0156 Q33.5563,157.0156 34.15,156.75 Q34.7438,156.4688 35.3688,155.8906 L35.3688,158.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="47" x="59.6" y="150.1387">«proxy»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="47.6" y="164.1074">ProxyImage</text><line style="stroke:#A80036;stroke-width:1.5;" x1="13" x2="126" y1="171.9375" y2="171.9375"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="20" y="179.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="32" y="186.1479">real: RealImage</text><line style="stroke:#A80036;stroke-width:1.5;" x1="13" x2="126" y1="192.7422" y2="192.7422"/><!--MD5=[89d30dc0c0d094d34ed46ab1b68a4180]
+class RealImage--><rect codeLine="13" fill="#FEFECE" filter="url(#fmqoflmydcu0m)" height="53.9375" id="RealImage" style="stroke:#A80036;stroke-width:1.5;" width="148" x="162.5" y="140.5"/><ellipse cx="177.5" cy="159.4688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M180.4688,165.1094 Q179.8906,165.4063 179.25,165.5469 Q178.6094,165.7031 177.9063,165.7031 Q175.4063,165.7031 174.0781,164.0625 Q172.7656,162.4063 172.7656,159.2813 Q172.7656,156.1563 174.0781,154.5 Q175.4063,152.8438 177.9063,152.8438 Q178.6094,152.8438 179.25,153 Q179.9063,153.1563 180.4688,153.4531 L180.4688,156.1719 Q179.8438,155.5938 179.25,155.3281 Q178.6563,155.0469 178.0313,155.0469 Q176.6875,155.0469 176,156.125 Q175.3125,157.1875 175.3125,159.2813 Q175.3125,161.375 176,162.4531 Q176.6875,163.5156 178.0313,163.5156 Q178.6563,163.5156 179.25,163.25 Q179.8438,162.9688 180.4688,162.3906 L180.4688,165.1094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="120" x="189.5" y="156.6387">«concrete subject»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="65" x="217" y="170.6074">RealImage</text><line style="stroke:#A80036;stroke-width:1.5;" x1="163.5" x2="309.5" y1="178.4375" y2="178.4375"/><line style="stroke:#A80036;stroke-width:1.5;" x1="163.5" x2="309.5" y1="186.4375" y2="186.4375"/><!--MD5=[85f03f213ee77362854fdc48b77a1577]
+reverse link Image to ProxyImage--><path d="M120.0964,91.0031 C110.625,105.3229 100.5443,120.564 91.8941,133.6423 " fill="none" id="Image-backto-ProxyImage" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="114.3383,87.0199,131.2101,74.2002,126.0152,94.7432,114.3383,87.0199" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7345adca31c04485740eb50d8cb4dcaa]
+reverse link Image to RealImage--><path d="M186.5751,91.1089 C197.5991,107.977 209.4512,126.1121 218.8399,140.4779 " fill="none" id="Image-backto-RealImage" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="180.6064,94.7715,175.5246,74.2002,192.3257,87.1125,180.6064,94.7715" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[af2932a331f32f5f32b194d000eb2960]
+link ListUI to Image--><path codeLine="15" d="M72.0078,40.5 C81.8569,40.5 91.7061,40.5 101.5552,40.5 " fill="none" id="ListUI-to-Image" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="106.7057,40.5,97.7057,36.5,101.7057,40.5,97.7057,44.5,106.7057,40.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5df0b6fd37cbca177e8d6ec8617f3d22]
+link ProxyImage to RealImage--><path codeLine="16" d="M127.2324,167.5 C137.1673,167.5 147.1021,167.5 157.0369,167.5 " fill="none" id="ProxyImage-to-RealImage" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="162.2322,167.5,153.2322,163.5,157.2322,167.5,153.2322,171.5,162.2322,167.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[edf53da532997665a05172b5aad375bc]
+@startuml
+'skinparam linetype ortho
+
+class ListUI {}
+
+interface Image <<subject>> {
+  + draw(): void
+}
+
+class ProxyImage <<proxy>> implements Image {
+  - real: RealImage
+}
+
+class RealImage <<concrete subject>> implements Image {}
+
+ListUI .> Image
+ProxyImage -> RealImage
+@enduml
+
+@startuml
+
+class ListUI {}
+
+interface Image <<subject>> {
+  + draw(): void
+}
+
+class ProxyImage <<proxy>> implements Image {
+  - real: RealImage
+}
+
+class RealImage <<concrete subject>> implements Image {}
+
+ListUI .> Image
+ProxyImage -> RealImage
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

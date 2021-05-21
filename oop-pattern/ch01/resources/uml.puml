@@ -1,0 +1,47 @@
+@startuml
+
+class App {
+  + {static} main()
+}
+
+class Application {
+
+}
+
+interface OnClickListener {
+  + clicked(eventSource:Component): void
+}
+
+class MenuListener implements OnClickListener {}
+
+class ButtonListener implements OnClickListener {}
+
+interface ScreenUI {
+  + show(): void
+  + handleButton1Click(): void
+  + handleButton2Click(): void
+}
+
+class Menu1ScreenUI implements ScreenUI {}
+class Menu2ScreenUI implements ScreenUI {}
+class Menu3ScreenUI implements ScreenUI {}
+
+interface Component {
+  + getId(): String
+}
+
+class Menu implements Component {}
+class Button implements Component {}
+
+
+App -down-> Application: <<create, call>>
+App -down-> OnClickListener: <<call>>
+'App -down-> Menu: <<create>>
+'App -down-> Button: <<create>>
+Application -> OnClickListener: <<has>>
+MenuListener -down-> ScreenUI
+ButtonListener -down-> ScreenUI
+OnClickListener .> Component
+
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+
+interface ControllerObserver {
+    + volumeChanged()
+}
+
+abstract class PlayerMediator {
+    + select()
+    + {abstract} volumeChanged()
+}
+
+class VideoPlayerMediator extends PlayerMediator {
+    + select()
+    + volumeChanged()
+}
+
+class MP3PlayerMediator extends PlayerMediator {
+    + select()
+    + volumeChanged()
+}
+
+class VideoPlayer {}
+
+class MP3Player
+
+class MediaController {}
+
+class ListUI {}
+
+class TitleUI {}
+
+PlayerMediator .left.|> ControllerObserver
+VideoPlayerMediator ..> VideoPlayer
+MP3PlayerMediator ..> MP3Player
+MediaController..> ControllerObserver
+PlayerMediator .up.> MediaController
+PlayerMediator .up.> TitleUI
+PlayerMediator <. ListUI
+
+@enduml

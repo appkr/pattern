@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="336px" preserveAspectRatio="none" style="width:304px;height:336px;" version="1.1" viewBox="0 0 304 336" width="304px" zoomAndPan="magnify"><defs><filter height="300%" id="fchhpjocmwq6y" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[01014ce963fa94fe73cd7ad9c59bf3f2]
+class User1--><rect codeLine="4" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="48" id="User1" style="stroke:#A80036;stroke-width:1.5;" width="66" x="9.5" y="7"/><ellipse cx="24.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M26.9731,29.1431 Q26.3921,29.4419 25.7529,29.5913 Q25.1138,29.7407 24.4082,29.7407 Q21.9014,29.7407 20.5815,28.0889 Q19.2617,26.437 19.2617,23.3159 Q19.2617,20.1865 20.5815,18.5347 Q21.9014,16.8828 24.4082,16.8828 Q25.1138,16.8828 25.7612,17.0322 Q26.4087,17.1816 26.9731,17.4805 L26.9731,20.2031 Q26.3423,19.6221 25.7488,19.3523 Q25.1553,19.0825 24.5244,19.0825 Q23.1797,19.0825 22.4949,20.1492 Q21.8101,21.2158 21.8101,23.3159 Q21.8101,25.4077 22.4949,26.4744 Q23.1797,27.541 24.5244,27.541 Q25.1553,27.541 25.7488,27.2712 Q26.3423,27.0015 26.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="34" x="38.5" y="27.5352">User1</text><line style="stroke:#A80036;stroke-width:1.5;" x1="10.5" x2="74.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="10.5" x2="74.5" y1="47" y2="47"/><!--MD5=[7af54055f6866eb140385798199795b6]
+class User2--><rect codeLine="6" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="48" id="User2" style="stroke:#A80036;stroke-width:1.5;" width="66" x="115.5" y="7"/><ellipse cx="130.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M132.9731,29.1431 Q132.3921,29.4419 131.7529,29.5913 Q131.1138,29.7407 130.4082,29.7407 Q127.9014,29.7407 126.5815,28.0889 Q125.2617,26.437 125.2617,23.3159 Q125.2617,20.1865 126.5815,18.5347 Q127.9014,16.8828 130.4082,16.8828 Q131.1138,16.8828 131.7612,17.0322 Q132.4087,17.1816 132.9731,17.4805 L132.9731,20.2031 Q132.3423,19.6221 131.7488,19.3523 Q131.1553,19.0825 130.5244,19.0825 Q129.1797,19.0825 128.4949,20.1492 Q127.8101,21.2158 127.8101,23.3159 Q127.8101,25.4077 128.4949,26.4744 Q129.1797,27.541 130.5244,27.541 Q131.1553,27.541 131.7488,27.2712 Q132.3423,27.0015 132.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="34" x="144.5" y="27.5352">User2</text><line style="stroke:#A80036;stroke-width:1.5;" x1="116.5" x2="180.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="116.5" x2="180.5" y1="47" y2="47"/><!--MD5=[ba6209caeeea7926ed50e7d4725a85f5]
+class User3--><rect codeLine="8" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="48" id="User3" style="stroke:#A80036;stroke-width:1.5;" width="66" x="221.5" y="7"/><ellipse cx="236.5" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M238.9731,29.1431 Q238.3921,29.4419 237.7529,29.5913 Q237.1138,29.7407 236.4082,29.7407 Q233.9014,29.7407 232.5815,28.0889 Q231.2617,26.437 231.2617,23.3159 Q231.2617,20.1865 232.5815,18.5347 Q233.9014,16.8828 236.4082,16.8828 Q237.1138,16.8828 237.7612,17.0322 Q238.4087,17.1816 238.9731,17.4805 L238.9731,20.2031 Q238.3423,19.6221 237.7488,19.3523 Q237.1553,19.0825 236.5244,19.0825 Q235.1797,19.0825 234.4949,20.1492 Q233.8101,21.2158 233.8101,23.3159 Q233.8101,25.4077 234.4949,26.4744 Q235.1797,27.541 236.5244,27.541 Q237.1553,27.541 237.7488,27.2712 Q238.3423,27.0015 238.9731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="34" x="250.5" y="27.5352">User3</text><line style="stroke:#A80036;stroke-width:1.5;" x1="222.5" x2="286.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="222.5" x2="286.5" y1="47" y2="47"/><!--MD5=[639a986162ac8f0c39d799b865aa45c9]
+class U1Ops--><rect codeLine="10" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="60.9551" id="U1Ops" style="stroke:#A80036;stroke-width:1.5;" width="71" x="7" y="115"/><ellipse cx="22" cy="131" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M18.4277,127.2651 L18.4277,125.1069 L25.8071,125.1069 L25.8071,127.2651 L23.3418,127.2651 L23.3418,135.3418 L25.8071,135.3418 L25.8071,137.5 L18.4277,137.5 L18.4277,135.3418 L20.8931,135.3418 L20.8931,127.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="39" x="36" y="135.5352">U1Ops</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="77" y1="147" y2="147"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="77" y1="155" y2="155"/><ellipse cx="18" cy="166" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="27" y="169.6348">op1()</text><!--MD5=[41e8e6236b71bed26142867941582d11]
+class U2Ops--><rect codeLine="14" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="60.9551" id="U2Ops" style="stroke:#A80036;stroke-width:1.5;" width="71" x="113" y="115"/><ellipse cx="128" cy="131" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M124.4277,127.2651 L124.4277,125.1069 L131.8071,125.1069 L131.8071,127.2651 L129.3418,127.2651 L129.3418,135.3418 L131.8071,135.3418 L131.8071,137.5 L124.4277,137.5 L124.4277,135.3418 L126.8931,135.3418 L126.8931,127.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="39" x="142" y="135.5352">U2Ops</text><line style="stroke:#A80036;stroke-width:1.5;" x1="114" x2="183" y1="147" y2="147"/><line style="stroke:#A80036;stroke-width:1.5;" x1="114" x2="183" y1="155" y2="155"/><ellipse cx="124" cy="166" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="133" y="169.6348">op2()</text><!--MD5=[381a85f84aafd15fee87fa0253cdfc33]
+class U3Ops--><rect codeLine="18" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="60.9551" id="U3Ops" style="stroke:#A80036;stroke-width:1.5;" width="71" x="219" y="115"/><ellipse cx="234" cy="131" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M230.4277,127.2651 L230.4277,125.1069 L237.8071,125.1069 L237.8071,127.2651 L235.3418,127.2651 L235.3418,135.3418 L237.8071,135.3418 L237.8071,137.5 L230.4277,137.5 L230.4277,135.3418 L232.8931,135.3418 L232.8931,127.2651 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="39" x="248" y="135.5352">U3Ops</text><line style="stroke:#A80036;stroke-width:1.5;" x1="220" x2="289" y1="147" y2="147"/><line style="stroke:#A80036;stroke-width:1.5;" x1="220" x2="289" y1="155" y2="155"/><ellipse cx="230" cy="166" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="239" y="169.6348">op3()</text><!--MD5=[9b6d3f6b7b03e1529f685b7df2c1b9d7]
+class Ops--><rect codeLine="22" fill="#FEFECE" filter="url(#fchhpjocmwq6y)" height="86.8652" id="Ops" style="stroke:#A80036;stroke-width:1.5;" width="55" x="121" y="236"/><ellipse cx="136" cy="252" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M138.4731,258.1431 Q137.8921,258.4419 137.2529,258.5913 Q136.6138,258.7407 135.9082,258.7407 Q133.4014,258.7407 132.0815,257.0889 Q130.7617,255.437 130.7617,252.3159 Q130.7617,249.1865 132.0815,247.5347 Q133.4014,245.8828 135.9082,245.8828 Q136.6138,245.8828 137.2612,246.0322 Q137.9087,246.1816 138.4731,246.4805 L138.4731,249.2031 Q137.8423,248.6221 137.2488,248.3523 Q136.6553,248.0825 136.0244,248.0825 Q134.6797,248.0825 133.9949,249.1492 Q133.3101,250.2158 133.3101,252.3159 Q133.3101,254.4077 133.9949,255.4744 Q134.6797,256.541 136.0244,256.541 Q136.6553,256.541 137.2488,256.2712 Q137.8423,256.0015 138.4731,255.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="23" x="150" y="256.5352">Ops</text><line style="stroke:#A80036;stroke-width:1.5;" x1="122" x2="175" y1="268" y2="268"/><line style="stroke:#A80036;stroke-width:1.5;" x1="122" x2="175" y1="276" y2="276"/><ellipse cx="132" cy="287" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="141" y="290.6348">op1()</text><ellipse cx="132" cy="299.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="141" y="303.5898">op2()</text><ellipse cx="132" cy="312.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="141" y="316.5449">op3()</text><!--MD5=[59c248bda612f0838e6b1c253b78639b]
+reverse link U1Ops to Ops--><path d="M78.99,191.94 C92.64,208.94 107.92,227.96 120.66,243.83 " fill="none" id="U1Ops-backto-Ops" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="73.35,196.1,66.29,176.12,84.27,187.33,73.35,196.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7f5d13cfcb02d84c59edbe22b100660e]
+reverse link U2Ops to Ops--><path d="M148.5,196.24 C148.5,209.31 148.5,223.3 148.5,235.96 " fill="none" id="U2Ops-backto-Ops" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="141.5,196.12,148.5,176.12,155.5,196.12,141.5,196.12" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b34435b9074690eec7dba5c3c167bebc]
+reverse link U3Ops to Ops--><path d="M218.01,191.94 C204.36,208.94 189.08,227.96 176.34,243.83 " fill="none" id="U3Ops-backto-Ops" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="212.73,187.33,230.71,176.12,223.65,196.1,212.73,187.33" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8e9e04c171fe044807854e1cdea8076f]
+link User1 to U1Ops--><path codeLine="28" d="M42.5,55.04 C42.5,70.65 42.5,91.58 42.5,109.27 " fill="none" id="User1-to-U1Ops" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="42.5,114.65,46.5,105.65,42.5,109.65,38.5,105.65,42.5,114.65" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4ef903e846ad927e7688682527d9f7cd]
+link User2 to U2Ops--><path codeLine="29" d="M148.5,55.04 C148.5,70.65 148.5,91.58 148.5,109.27 " fill="none" id="User2-to-U2Ops" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="148.5,114.65,152.5,105.65,148.5,109.65,144.5,105.65,148.5,114.65" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9d7d8f9d8fbb996b9c9d30725e3ca204]
+link User3 to U3Ops--><path codeLine="30" d="M254.5,55.04 C254.5,70.65 254.5,91.58 254.5,109.27 " fill="none" id="User3-to-U3Ops" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="254.5,114.65,258.5,105.65,254.5,109.65,250.5,105.65,254.5,114.65" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2bd999c5c6e552fc0cc66e4f5282a8a7]
+@startuml
+
+'skinparam linetype ortho
+
+class User1 {}
+
+class User2 {}
+
+class User3 {}
+
+interface U1Ops {
+  + op1()
+}
+
+interface U2Ops {
+  + op2()
+}
+
+interface U3Ops {
+  + op3()
+}
+
+class Ops implements U1Ops, U2Ops, U3Ops {
+  + op1()
+  + op2()
+  + op3()
+}
+
+User1 - -> U1Ops
+User2 - -> U2Ops
+User3 - -> U3Ops
+
+@enduml
+
+@startuml
+
+
+class User1 {}
+
+class User2 {}
+
+class User3 {}
+
+interface U1Ops {
+  + op1()
+}
+
+interface U2Ops {
+  + op2()
+}
+
+interface U3Ops {
+  + op3()
+}
+
+class Ops implements U1Ops, U2Ops, U3Ops {
+  + op1()
+  + op2()
+  + op3()
+}
+
+User1 - -> U1Ops
+User2 - -> U2Ops
+User3 - -> U3Ops
+
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 20:10:27 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ko
+Country: KR
+--></g></svg>

@@ -1,0 +1,51 @@
+@startuml
+
+actor CatalogRefresher
+participant CatalogInitializer
+participant TenantDataSourceProvider <<Observable>>
+
+participant CatalogApiDelegate
+participant CatalogService
+
+participant Cache
+participant DataSourceBasedMultiTenantConnectionProvider <<Observer>>
+
+... at application boot up ...
+
+autonumber
+CatalogInitializer -> TenantDataSourceProvider: findAll()
+activate CatalogInitializer
+deactivate CatalogInitializer
+note left of CatalogInitializer
+  Load catalog on to the cache
+end note 
+
+
+... at any time ...
+
+autonumber
+CatalogApiDelegate -> CatalogService: createTenant(TenantInfoDto)
+activate CatalogApiDelegate
+deactivate CatalogApiDelegate
+
+... on every 60 seconds ...
+
+autonumber
+CatalogRefresher -> CatalogInitializer: refresh()
+activate CatalogRefresher
+  CatalogInitializer -> TenantDataSourceProvider: refresh()
+    TenantDataSourceProvider -> Cache: evictIfPresent(CACHE_KEY)
+    TenantDataSourceProvider -> TenantDataSourceProvider: findAll()
+    note left of TenantDataSourceProvider
+      Refill cache
+    end note
+    TenantDataSourceProvider -> TenantDataSourceProvider: setChanged(true)
+    TenantDataSourceProvider -> TenantDataSourceProvider: notifyObservers()
+    TenantDataSourceProvider -> DataSourceBasedMultiTenantConnectionProvider: update(Observable)
+      DataSourceBasedMultiTenantConnectionProvider -> DataSourceBasedMultiTenantConnectionProvider: load()
+      DataSourceBasedMultiTenantConnectionProvider -> TenantDataSourceProvider: findAll()
+    note left of DataSourceBasedMultiTenantConnectionProvider
+      update tenantDataSourceMap: HashMap<String, DataSource>
+    end note
+
+@enduml

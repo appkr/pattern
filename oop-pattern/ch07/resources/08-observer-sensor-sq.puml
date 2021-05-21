@@ -1,0 +1,28 @@
+@startuml
+
+actor App
+participant TemperatureSensor
+participant ScreenDisplay
+
+activate App
+App -> TemperatureSensor: create
+return Sensor
+
+App -> ScreenDisplay: create
+activate ScreenDisplay
+return Display
+
+App -> TemperatureSensor: add(Sensor)
+activate TemperatureSensor
+App -> TemperatureSensor: setState(newState)
+App -> TemperatureSensor: notifyObservers()
+deactivate App
+
+    TemperatureSensor -> ScreenDisplay: update(Sensor)
+    activate ScreenDisplay
+    deactivate TemperatureSensor
+
+    ScreenDisplay -> ScreenDisplay: update its screen
+    deactivate ScreenDisplay
+
+@enduml

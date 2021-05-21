@@ -1,0 +1,65 @@
+@startuml
+
+skinparam linetype ortho
+
+class Stage {
+  - ememies: EnemyFlight[]
+  - obstacles: Obstacle[]
+  - boss: Boss
+  + run(): void
+}
+
+abstract class EnemyFlight {
+  - attackPower: int
+  - defensePower: int
+  + {abstract} attack(): void
+}
+
+abstract class Boss extends EnemyFlight {
+  + {abstract} specialAttack(): void
+}
+
+class CloningBoss extends Boss {}
+
+class StrongAttackBoss extends Boss {}
+
+abstract class SmallFlight extends EnemyFlight {}
+
+class MissileSmallFlight extends SmallFlight {}
+
+class DashSmallFlight extends SmallFlight {}
+
+abstract class Obstacle {
+  + {abstract} block(): void
+}
+
+class BombObstacle extends Obstacle {}
+
+class RockObstacle extends Obstacle {}
+
+abstract class EnemyFactory {
+  + getFactory(level: int): EnemyFactory
+  + {abstract} createBoss(): Boss
+  + {abstract} createSmallFlight(): SmallFlight
+  + {abstract} createObstacle(): Obstacle
+}
+
+class EasyStageEnemyFactory extends EnemyFactory {}
+note top of EasyStageEnemyFactory
+  creates StrongAttackBoss, DashSmallFlight, RockObstacle
+end note
+
+class HardStageEnemyFactory extends EnemyFactory {}
+note bottom of HardStageEnemyFactory
+  creates CloningBoss, MissileSmallFlight, BombObstacle
+end note
+
+Stage .> EnemyFactory
+'EasyStageEnemyFactory ..> StrongAttackBoss: <<create>>
+'EasyStageEnemyFactory ..> DashSmallFlight: <<create>>
+'EasyStageEnemyFactory ..> RockObstacle: <<create>>
+Stage --> Boss
+Stage o-> SmallFlight
+Stage o-> Obstacle
+
+@enduml

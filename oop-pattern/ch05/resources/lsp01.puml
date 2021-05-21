@@ -1,0 +1,19 @@
+@startuml
+
+'skinparam linetype ortho
+
+class Billing {}
+
+interface License {
+  + calcFee()
+}
+
+class PersonalLicense implements License {}
+
+class BusinessLicense implements License {
+  - users
+}
+
+Billing -> License
+
+@enduml

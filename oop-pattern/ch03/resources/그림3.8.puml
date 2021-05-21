@@ -1,0 +1,24 @@
+@startuml
+
+'skinparam linetype polyline
+'skinparam linetype ortho
+
+class FlowController {}
+
+class ByteSourceFactory {}
+
+interface ByteSource {
+  + read(): byte[]
+}
+
+class FileDataReader implements ByteSource {}
+
+class SocketDateReader implements ByteSource {}
+
+FlowController -> ByteSource
+FlowController --> ByteSourceFactory
+ByteSourceFactory -up-> ByteSource
+ByteSourceFactory .> FileDataReader: <<create>>
+ByteSourceFactory .> SocketDateReader: <<create>>
+
+@enduml

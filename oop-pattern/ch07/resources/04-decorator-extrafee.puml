@@ -1,0 +1,28 @@
+@startuml
+
+'skinparam linetype ortho
+
+class ExtraFeeFilterFactory {}
+
+interface ExtraFeeFilter {
+  + getActiveExtraFees(): Collection
+}
+
+class Store implements ExtraFeeFilter {
+  'startAt ~ endAt으로 필터
+}
+
+abstract AbstractExtraFeeFilter implements ExtraFeeFilter {
+  + delegate: ExtraFeeFilter
+}
+
+class WeeklyHourExtraFeeFilter extends AbstractExtraFeeFilter {}
+
+class RegionExtraFeeFilter extends AbstractExtraFeeFilter {}
+
+class WeatherExtraFeeFilter extends AbstractExtraFeeFilter {}
+
+ExtraFeeFilterFactory -> ExtraFeeFilter
+AbstractExtraFeeFilter -up-> ExtraFeeFilter
+
+@enduml

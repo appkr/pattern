@@ -1,0 +1,28 @@
+@startuml
+
+skinparam linetype ortho
+
+class App {}
+
+interface FileOut <<component>> {
+  + write(data: byte[]): void
+}
+
+class FileOutImpl <<concrete component>> implements FileOut {}
+
+abstract class Decorator <<decorator>> implements FileOut {
+  - delegate: FileOut
+  # doDelegate(data: byte[]): void
+}
+
+class EncryptionOut <<decorator>> extends Decorator {}
+
+class ZipOut <<decorator>> extends Decorator {}
+note left
+  A decorator is a component
+  A decorator has a component
+end note
+
+App -> FileOut
+
+@enduml

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="337px" preserveAspectRatio="none" style="width:430px;height:337px;" version="1.1" viewBox="0 0 430 337" width="430px" zoomAndPan="magnify"><defs><filter height="300%" id="fzcbvxxefx010" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[795217f8cbfe40d89149436a0d648475]
+class EmployeeFacade--><rect codeLine="4" fill="#FEFECE" filter="url(#fzcbvxxefx010)" height="86.8652" id="EmployeeFacade" style="stroke:#A80036;stroke-width:1.5;" width="129" x="142" y="7"/><ellipse cx="157" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M159.4731,29.1431 Q158.8921,29.4419 158.2529,29.5913 Q157.6138,29.7407 156.9082,29.7407 Q154.4014,29.7407 153.0815,28.0889 Q151.7617,26.437 151.7617,23.3159 Q151.7617,20.1865 153.0815,18.5347 Q154.4014,16.8828 156.9082,16.8828 Q157.6138,16.8828 158.2612,17.0322 Q158.9087,17.1816 159.4731,17.4805 L159.4731,20.2031 Q158.8423,19.6221 158.2488,19.3523 Q157.6553,19.0825 157.0244,19.0825 Q155.6797,19.0825 154.9949,20.1492 Q154.3101,21.2158 154.3101,23.3159 Q154.3101,25.4077 154.9949,26.4744 Q155.6797,27.541 157.0244,27.541 Q157.6553,27.541 158.2488,27.2712 Q158.8423,27.0015 159.4731,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="97" x="171" y="27.5352">EmployeeFacade</text><line style="stroke:#A80036;stroke-width:1.5;" x1="143" x2="270" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="143" x2="270" y1="47" y2="47"/><ellipse cx="153" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="162" y="61.6348">calculatePay()</text><ellipse cx="153" cy="70.9551" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="162" y="74.5898">reportHours()</text><ellipse cx="153" cy="83.9102" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="32" x="162" y="87.5449">save()</text><!--MD5=[88c25c16aecc6bb1f91cc76dae9b38d9]
+class PayCalculator--><rect codeLine="10" fill="#FEFECE" filter="url(#fzcbvxxefx010)" height="60.9551" id="PayCalculator" style="stroke:#A80036;stroke-width:1.5;" width="109" x="7" y="154"/><ellipse cx="22" cy="170" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.4731,176.1431 Q23.8921,176.4419 23.2529,176.5913 Q22.6138,176.7407 21.9082,176.7407 Q19.4014,176.7407 18.0815,175.0889 Q16.7617,173.437 16.7617,170.3159 Q16.7617,167.1865 18.0815,165.5347 Q19.4014,163.8828 21.9082,163.8828 Q22.6138,163.8828 23.2612,164.0322 Q23.9087,164.1816 24.4731,164.4805 L24.4731,167.2031 Q23.8423,166.6221 23.2488,166.3523 Q22.6553,166.0825 22.0244,166.0825 Q20.6797,166.0825 19.9949,167.1492 Q19.3101,168.2158 19.3101,170.3159 Q19.3101,172.4077 19.9949,173.4744 Q20.6797,174.541 22.0244,174.541 Q22.6553,174.541 23.2488,174.2712 Q23.8423,174.0015 24.4731,173.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="77" x="36" y="174.5352">PayCalculator</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="115" y1="186" y2="186"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="115" y1="194" y2="194"/><ellipse cx="18" cy="205" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="27" y="208.6348">calculatePay()</text><!--MD5=[2a1ce0d9baa2c6e3b551096f58cea510]
+class HourReporter--><rect codeLine="14" fill="#FEFECE" filter="url(#fzcbvxxefx010)" height="60.9551" id="HourReporter" style="stroke:#A80036;stroke-width:1.5;" width="111" x="151" y="154"/><ellipse cx="166" cy="170" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M168.4731,176.1431 Q167.8921,176.4419 167.2529,176.5913 Q166.6138,176.7407 165.9082,176.7407 Q163.4014,176.7407 162.0815,175.0889 Q160.7617,173.437 160.7617,170.3159 Q160.7617,167.1865 162.0815,165.5347 Q163.4014,163.8828 165.9082,163.8828 Q166.6138,163.8828 167.2612,164.0322 Q167.9087,164.1816 168.4731,164.4805 L168.4731,167.2031 Q167.8423,166.6221 167.2488,166.3523 Q166.6553,166.0825 166.0244,166.0825 Q164.6797,166.0825 163.9949,167.1492 Q163.3101,168.2158 163.3101,170.3159 Q163.3101,172.4077 163.9949,173.4744 Q164.6797,174.541 166.0244,174.541 Q166.6553,174.541 167.2488,174.2712 Q167.8423,174.0015 168.4731,173.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="180" y="174.5352">HourReporter</text><line style="stroke:#A80036;stroke-width:1.5;" x1="152" x2="261" y1="186" y2="186"/><line style="stroke:#A80036;stroke-width:1.5;" x1="152" x2="261" y1="194" y2="194"/><ellipse cx="162" cy="205" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="171" y="208.6348">reportHours()</text><!--MD5=[a1e1e5977ac590abd0f6b6d8f866dcbc]
+class EmployeeSaver--><rect codeLine="18" fill="#FEFECE" filter="url(#fzcbvxxefx010)" height="60.9551" id="EmployeeSaver" style="stroke:#A80036;stroke-width:1.5;" width="119" x="297" y="154"/><ellipse cx="312" cy="170" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M314.4731,176.1431 Q313.8921,176.4419 313.2529,176.5913 Q312.6138,176.7407 311.9082,176.7407 Q309.4014,176.7407 308.0815,175.0889 Q306.7617,173.437 306.7617,170.3159 Q306.7617,167.1865 308.0815,165.5347 Q309.4014,163.8828 311.9082,163.8828 Q312.6138,163.8828 313.2612,164.0322 Q313.9087,164.1816 314.4731,164.4805 L314.4731,167.2031 Q313.8423,166.6221 313.2488,166.3523 Q312.6553,166.0825 312.0244,166.0825 Q310.6797,166.0825 309.9949,167.1492 Q309.3101,168.2158 309.3101,170.3159 Q309.3101,172.4077 309.9949,173.4744 Q310.6797,174.541 312.0244,174.541 Q312.6553,174.541 313.2488,174.2712 Q313.8423,174.0015 314.4731,173.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="87" x="326" y="174.5352">EmployeeSaver</text><line style="stroke:#A80036;stroke-width:1.5;" x1="298" x2="415" y1="186" y2="186"/><line style="stroke:#A80036;stroke-width:1.5;" x1="298" x2="415" y1="194" y2="194"/><ellipse cx="308" cy="205" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="317" y="208.6348">saveEmployee()</text><!--MD5=[61b8a2328b0ad72dcd562b50064b6eeb]
+class EmployeeData--><rect codeLine="22" fill="#FEFECE" filter="url(#fzcbvxxefx010)" height="48" id="EmployeeData" style="stroke:#A80036;stroke-width:1.5;" width="115" x="149" y="275"/><ellipse cx="164" cy="291" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M166.4731,297.1431 Q165.8921,297.4419 165.2529,297.5913 Q164.6138,297.7407 163.9082,297.7407 Q161.4014,297.7407 160.0815,296.0889 Q158.7617,294.437 158.7617,291.3159 Q158.7617,288.1865 160.0815,286.5347 Q161.4014,284.8828 163.9082,284.8828 Q164.6138,284.8828 165.2612,285.0322 Q165.9087,285.1816 166.4731,285.4805 L166.4731,288.2031 Q165.8423,287.6221 165.2488,287.3523 Q164.6553,287.0825 164.0244,287.0825 Q162.6797,287.0825 161.9949,288.1492 Q161.3101,289.2158 161.3101,291.3159 Q161.3101,293.4077 161.9949,294.4744 Q162.6797,295.541 164.0244,295.541 Q164.6553,295.541 165.2488,295.2712 Q165.8423,295.0015 166.4731,294.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="83" x="178" y="295.5352">EmployeeData</text><line style="stroke:#A80036;stroke-width:1.5;" x1="150" x2="263" y1="307" y2="307"/><line style="stroke:#A80036;stroke-width:1.5;" x1="150" x2="263" y1="315" y2="315"/><!--MD5=[13cbbecbadeb661bac6ce48f526fe8f5]
+link EmployeeFacade to PayCalculator--><path codeLine="24" d="M159.42,94.36 C139.59,112.41 116.85,133.12 98.27,150.02 " fill="none" id="EmployeeFacade-to-PayCalculator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="94.14,153.79,103.4866,150.6849,97.8358,150.4224,98.0984,144.7716,94.14,153.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[31b78deb347cefdd08ede1313a878802]
+link EmployeeFacade to HourReporter--><path codeLine="25" d="M206.5,94.36 C206.5,111.96 206.5,132.07 206.5,148.74 " fill="none" id="EmployeeFacade-to-HourReporter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="206.5,153.79,210.5,144.79,206.5,148.79,202.5,144.79,206.5,153.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[24d86c4549c8fec4fba354f77ef4e111]
+link EmployeeFacade to EmployeeSaver--><path codeLine="26" d="M255.2,94.36 C275.89,112.56 299.64,133.46 318.94,150.45 " fill="none" id="EmployeeFacade-to-EmployeeSaver" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="322.74,153.79,318.6176,144.8454,318.9833,150.4904,313.3383,150.8561,322.74,153.79" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5aa7ec5100ce0cb7627496e520031faf]
+link PayCalculator to EmployeeData--><path codeLine="28" d="M99.6,215.06 C122.19,232.59 150.58,254.62 172.43,271.57 " fill="none" id="PayCalculator-to-EmployeeData" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="176.43,274.67,171.7533,266.0023,172.4733,271.6132,166.8624,272.3331,176.43,274.67" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[005aff237888ed39f4551807eb4146b3]
+link HourReporter to EmployeeData--><path codeLine="29" d="M206.5,215.06 C206.5,231.93 206.5,252.98 206.5,269.65 " fill="none" id="HourReporter-to-EmployeeData" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="206.5,274.67,210.5,265.67,206.5,269.67,202.5,265.67,206.5,274.67" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6243a0864ab10e249702b9a8bea81f80]
+link EmployeeSaver to EmployeeData--><path codeLine="30" d="M317.09,215.06 C293.72,232.59 264.35,254.62 241.75,271.57 " fill="none" id="EmployeeSaver-to-EmployeeData" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="237.61,274.67,247.21,272.47,241.61,271.67,242.41,266.07,237.61,274.67" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[27f0badf66b9f850b9e434f25e24053f]
+@startuml
+
+'skinparam linetype ortho
+
+class EmployeeFacade {
+  + calculatePay()
+  + reportHours()
+  + save()
+}
+
+class PayCalculator {
+  + calculatePay()
+}
+
+class HourReporter {
+  + reportHours()
+}
+
+class EmployeeSaver {
+  + saveEmployee()
+}
+
+class EmployeeData {}
+
+EmployeeFacade - -> PayCalculator
+EmployeeFacade - -> HourReporter
+EmployeeFacade - -> EmployeeSaver
+
+PayCalculator - -> EmployeeData
+HourReporter - -> EmployeeData
+EmployeeSaver - -> EmployeeData
+
+@enduml
+
+@startuml
+
+
+class EmployeeFacade {
+  + calculatePay()
+  + reportHours()
+  + save()
+}
+
+class PayCalculator {
+  + calculatePay()
+}
+
+class HourReporter {
+  + reportHours()
+}
+
+class EmployeeSaver {
+  + saveEmployee()
+}
+
+class EmployeeData {}
+
+EmployeeFacade - -> PayCalculator
+EmployeeFacade - -> HourReporter
+EmployeeFacade - -> EmployeeSaver
+
+PayCalculator - -> EmployeeData
+HourReporter - -> EmployeeData
+EmployeeSaver - -> EmployeeData
+
+@enduml
+
+PlantUML version 1.2021.2(Sun Mar 07 20:10:27 KST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: ko
+Country: KR
+--></g></svg>

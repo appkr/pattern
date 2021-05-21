@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="207px" preserveAspectRatio="none" style="width:576px;height:207px;" version="1.1" viewBox="0 0 576 207" width="576px" zoomAndPan="magnify"><defs><filter height="300%" id="f1orfball64yj9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[12f72c17ee61fbd7562674b3e87f7dc3]
+class FlowController--><rect codeLine="4" fill="#FEFECE" filter="url(#f1orfball64yj9)" height="48" id="FlowController" style="stroke:#A80036;stroke-width:1.5;" width="120" x="26.5" y="13.5"/><ellipse cx="41.5" cy="29.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M44.4688,35.1406 Q43.8906,35.4375 43.25,35.5781 Q42.6094,35.7344 41.9063,35.7344 Q39.4063,35.7344 38.0781,34.0938 Q36.7656,32.4375 36.7656,29.3125 Q36.7656,26.1875 38.0781,24.5313 Q39.4063,22.875 41.9063,22.875 Q42.6094,22.875 43.25,23.0313 Q43.9063,23.1875 44.4688,23.4844 L44.4688,26.2031 Q43.8438,25.625 43.25,25.3594 Q42.6563,25.0781 42.0313,25.0781 Q40.6875,25.0781 40,26.1563 Q39.3125,27.2188 39.3125,29.3125 Q39.3125,31.4063 40,32.4844 Q40.6875,33.5469 42.0313,33.5469 Q42.6563,33.5469 43.25,33.2813 Q43.8438,33 44.4688,32.4219 L44.4688,35.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="88" x="55.5" y="33.6543">FlowController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="27.5" x2="145.5" y1="45.5" y2="45.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="27.5" x2="145.5" y1="53.5" y2="53.5"/><!--MD5=[3cd114dd742fa45c306a49c9a2838214]
+class ByteSourceFactory--><rect codeLine="6" fill="#FEFECE" filter="url(#f1orfball64yj9)" height="48" id="ByteSourceFactory" style="stroke:#A80036;stroke-width:1.5;" width="149" x="7" y="145"/><ellipse cx="22" cy="161" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.9688,166.6406 Q24.3906,166.9375 23.75,167.0781 Q23.1094,167.2344 22.4063,167.2344 Q19.9063,167.2344 18.5781,165.5938 Q17.2656,163.9375 17.2656,160.8125 Q17.2656,157.6875 18.5781,156.0313 Q19.9063,154.375 22.4063,154.375 Q23.1094,154.375 23.75,154.5313 Q24.4063,154.6875 24.9688,154.9844 L24.9688,157.7031 Q24.3438,157.125 23.75,156.8594 Q23.1563,156.5781 22.5313,156.5781 Q21.1875,156.5781 20.5,157.6563 Q19.8125,158.7188 19.8125,160.8125 Q19.8125,162.9063 20.5,163.9844 Q21.1875,165.0469 22.5313,165.0469 Q23.1563,165.0469 23.75,164.7813 Q24.3438,164.5 24.9688,163.9219 L24.9688,166.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="36" y="165.1543">ByteSourceFactory</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="155" y1="177" y2="177"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="155" y1="185" y2="185"/><!--MD5=[1b466576ba77b9b06cb22a9ed055fc08]
+class ByteSource--><rect codeLine="8" fill="#FEFECE" filter="url(#f1orfball64yj9)" height="60.8047" id="ByteSource" style="stroke:#A80036;stroke-width:1.5;" width="103" x="184" y="7"/><ellipse cx="199" cy="23" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M194.9219,18.7656 L194.9219,16.6094 L202.3125,16.6094 L202.3125,18.7656 L199.8438,18.7656 L199.8438,26.8438 L202.3125,26.8438 L202.3125,29 L194.9219,29 L194.9219,26.8438 L197.3906,26.8438 L197.3906,18.7656 L194.9219,18.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="71" x="213" y="27.1543">ByteSource</text><line style="stroke:#A80036;stroke-width:1.5;" x1="185" x2="286" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="185" x2="286" y1="47" y2="47"/><ellipse cx="195" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="204" y="61.2104">read(): byte[]</text><!--MD5=[51313ff251088848cf4155f9e9215bff]
+class FileDataReader--><rect codeLine="12" fill="#FEFECE" filter="url(#f1orfball64yj9)" height="48" id="FileDataReader" style="stroke:#A80036;stroke-width:1.5;" width="128" x="249.5" y="145"/><ellipse cx="264.5" cy="161" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M267.4688,166.6406 Q266.8906,166.9375 266.25,167.0781 Q265.6094,167.2344 264.9063,167.2344 Q262.4063,167.2344 261.0781,165.5938 Q259.7656,163.9375 259.7656,160.8125 Q259.7656,157.6875 261.0781,156.0313 Q262.4063,154.375 264.9063,154.375 Q265.6094,154.375 266.25,154.5313 Q266.9063,154.6875 267.4688,154.9844 L267.4688,157.7031 Q266.8438,157.125 266.25,156.8594 Q265.6563,156.5781 265.0313,156.5781 Q263.6875,156.5781 263,157.6563 Q262.3125,158.7188 262.3125,160.8125 Q262.3125,162.9063 263,163.9844 Q263.6875,165.0469 265.0313,165.0469 Q265.6563,165.0469 266.25,164.7813 Q266.8438,164.5 267.4688,163.9219 L267.4688,166.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="278.5" y="165.1543">FileDataReader</text><line style="stroke:#A80036;stroke-width:1.5;" x1="250.5" x2="376.5" y1="177" y2="177"/><line style="stroke:#A80036;stroke-width:1.5;" x1="250.5" x2="376.5" y1="185" y2="185"/><!--MD5=[1b652573da6d148ba5c87737e9d09ac3]
+class SocketDateReader--><rect codeLine="14" fill="#FEFECE" filter="url(#f1orfball64yj9)" height="48" id="SocketDateReader" style="stroke:#A80036;stroke-width:1.5;" width="150" x="412.5" y="145"/><ellipse cx="427.5" cy="161" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M430.4688,166.6406 Q429.8906,166.9375 429.25,167.0781 Q428.6094,167.2344 427.9063,167.2344 Q425.4063,167.2344 424.0781,165.5938 Q422.7656,163.9375 422.7656,160.8125 Q422.7656,157.6875 424.0781,156.0313 Q425.4063,154.375 427.9063,154.375 Q428.6094,154.375 429.25,154.5313 Q429.9063,154.6875 430.4688,154.9844 L430.4688,157.7031 Q429.8438,157.125 429.25,156.8594 Q428.6563,156.5781 428.0313,156.5781 Q426.6875,156.5781 426,157.6563 Q425.3125,158.7188 425.3125,160.8125 Q425.3125,162.9063 426,163.9844 Q426.6875,165.0469 428.0313,165.0469 Q428.6563,165.0469 429.25,164.7813 Q429.8438,164.5 430.4688,163.9219 L430.4688,166.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="118" x="441.5" y="165.1543">SocketDateReader</text><line style="stroke:#A80036;stroke-width:1.5;" x1="413.5" x2="561.5" y1="177" y2="177"/><line style="stroke:#A80036;stroke-width:1.5;" x1="413.5" x2="561.5" y1="185" y2="185"/><!--MD5=[ecf9d7bd0f403a181e915b2f4762a496]
+reverse link ByteSource to FileDataReader--><path d="M264.0269,85.5935 C275.9983,105.7759 289.3915,128.3555 299.2205,144.9263 " fill="none" id="ByteSource-backto-FileDataReader" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="257.9702,89.1036,253.7875,68.3309,270.0114,81.9614,257.9702,89.1036" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[51ded3df7990780d745a5866bde15478]
+reverse link ByteSource to SocketDateReader--><path d="M304.9713,73.7519 C348.472,96.4517 403.313,125.0691 441.4728,144.9819 " fill="none" id="ByteSource-backto-SocketDateReader" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="301.5967,79.8868,287.1041,64.4283,308.0735,67.475,301.5967,79.8868" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a8d6836e038279558fd1c9da3d2608a2]
+link FlowController to ByteSource--><path codeLine="16" d="M146.7402,37.5 C157.3675,37.5 167.9948,37.5 178.622,37.5 " fill="none" id="FlowController-to-ByteSource" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="183.839,37.5,174.839,33.5,178.839,37.5,174.839,41.5,183.839,37.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[85abca669a292bcf13ca3423ddb6bd1b]
+link FlowController to ByteSourceFactory--><path codeLine="17" d="M85.5829,61.6191 C84.7494,83.5398 83.5172,115.9481 82.6246,139.4237 " fill="none" id="FlowController-to-ByteSourceFactory" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="82.4282,144.5885,86.7676,135.7471,82.6183,139.5921,78.7733,135.4429,82.4282,144.5885" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[88ca0bce4ceecf83f05dc6aa75a5a627]
+reverse link ByteSource to ByteSourceFactory--><path codeLine="18" d="M195.4814,71.6717 C168.5599,94.6599 133.7288,124.4021 109.6928,144.9263 " fill="none" id="ByteSource-backto-ByteSourceFactory" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="199.3938,68.3309,189.952,71.1333,195.5914,71.5777,195.147,77.2171,199.3938,68.3309" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[46e3836e104de12739cf8ae97348287d]
+link ByteSourceFactory to FileDataReader--><path codeLine="19" d="M156.1833,169 C184.4905,169 216.5736,169 244.3493,169 " fill="none" id="ByteSourceFactory-to-FileDataReader" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="249.4836,169,240.4836,165,244.4836,169,240.4836,173,249.4836,169" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="57" x="174.25" y="162.0669">«create»</text><!--MD5=[97ea12c4eca5d45cb0d6e1ac46045aa1]
+link ByteSourceFactory to SocketDateReader--><path codeLine="20" d="M115.2599,144.6931 C136.4548,130.9652 164.9954,115.1597 193,108 C276.0308,86.7721 373.6534,117.8409 433.0243,142.8721 " fill="none" id="ByteSourceFactory-to-SocketDateReader" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="437.9396,144.9675,431.2292,137.7584,433.3401,143.0067,428.0919,145.1176,437.9396,144.9675" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="57" x="194" y="111.0669">«create»</text><!--MD5=[eee238dff5011a47064bf82d00c597c3]
+@startuml
+'skinparam linetype polyline
+'skinparam linetype ortho
+
+class FlowController {}
+
+class ByteSourceFactory {}
+
+interface ByteSource {
+  + read(): byte[]
+}
+
+class FileDataReader implements ByteSource {}
+
+class SocketDateReader implements ByteSource {}
+
+FlowController -> ByteSource
+FlowController - -> ByteSourceFactory
+ByteSourceFactory -up-> ByteSource
+ByteSourceFactory .> FileDataReader: <<create>>
+ByteSourceFactory .> SocketDateReader: <<create>>
+@enduml
+
+@startuml
+
+class FlowController {}
+
+class ByteSourceFactory {}
+
+interface ByteSource {
+  + read(): byte[]
+}
+
+class FileDataReader implements ByteSource {}
+
+class SocketDateReader implements ByteSource {}
+
+FlowController -> ByteSource
+FlowController - -> ByteSourceFactory
+ByteSourceFactory -up-> ByteSource
+ByteSourceFactory .> FileDataReader: <<create>>
+ByteSourceFactory .> SocketDateReader: <<create>>
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

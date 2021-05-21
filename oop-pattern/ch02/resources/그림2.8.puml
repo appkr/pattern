@@ -1,0 +1,15 @@
+@startuml
+
+class "흐름제어" as controller
+
+class "Byte암호화" as encrypter
+
+class "파일읽기" as reader
+
+class "파일쓰기" as writer
+
+controller -down-> encrypter
+controller -right-> reader
+controller -left-> writer
+
+@enduml

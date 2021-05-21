@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="349px" preserveAspectRatio="none" style="width:1448px;height:349px;" version="1.1" viewBox="0 0 1448 349" width="1448px" zoomAndPan="magnify"><defs><filter height="300%" id="ffo7les1w45od" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[cbfc57bef1c415c3126d20e2f7e364c7]
+class Stage--><rect codeLine="3" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="99.2188" id="Stage" style="stroke:#A80036;stroke-width:1.5;" width="163" x="343" y="7"/><ellipse cx="401.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M404.7188,28.6406 Q404.1406,28.9375 403.5,29.0781 Q402.8594,29.2344 402.1563,29.2344 Q399.6563,29.2344 398.3281,27.5938 Q397.0156,25.9375 397.0156,22.8125 Q397.0156,19.6875 398.3281,18.0313 Q399.6563,16.375 402.1563,16.375 Q402.8594,16.375 403.5,16.5313 Q404.1563,16.6875 404.7188,16.9844 L404.7188,19.7031 Q404.0938,19.125 403.5,18.8594 Q402.9063,18.5781 402.2813,18.5781 Q400.9375,18.5781 400.25,19.6563 Q399.5625,20.7188 399.5625,22.8125 Q399.5625,24.9063 400.25,25.9844 Q400.9375,27.0469 402.2813,27.0469 Q402.9063,27.0469 403.5,26.7813 Q404.0938,26.5 404.7188,25.9219 L404.7188,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="422.25" y="27.1543">Stage</text><line style="stroke:#A80036;stroke-width:1.5;" x1="344" x2="505" y1="39" y2="39"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="351" y="47"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="137" x="363" y="53.2104">ememies: EnemyFlight[]</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="351" y="59.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="363" y="66.0151">obstacles: Obstacle[]</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="351" y="72.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="65" x="363" y="78.8198">boss: Boss</text><line style="stroke:#A80036;stroke-width:1.5;" x1="344" x2="505" y1="85.4141" y2="85.4141"/><ellipse cx="354" cy="96.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="58" x="363" y="99.6245">run(): void</text><!--MD5=[b8fb5f32a1d51b6c41cc679fd36c9128]
+class EnemyFlight--><rect codeLine="10" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="86.4141" id="EnemyFlight" style="stroke:#A80036;stroke-width:1.5;" width="129" x="179" y="13.5"/><ellipse cx="203.9" cy="29.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M204.0094,24.8438 L202.8531,29.9219 L205.1813,29.9219 L204.0094,24.8438 Z M202.525,22.6094 L205.5094,22.6094 L208.8688,35 L206.4156,35 L205.65,31.9375 L202.3688,31.9375 L201.6188,35 L199.1813,35 L202.525,22.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="75" x="220.1" y="33.6543">EnemyFlight</text><line style="stroke:#A80036;stroke-width:1.5;" x1="180" x2="307" y1="45.5" y2="45.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="187" y="53.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="199" y="59.7104">attackPower: int</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="187" y="66.3047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103" x="199" y="72.5151">defensePower: int</text><line style="stroke:#A80036;stroke-width:1.5;" x1="180" x2="307" y1="79.1094" y2="79.1094"/><ellipse cx="190" cy="90.1094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="73" x="199" y="93.3198">attack(): void</text><!--MD5=[50cdb932a9a3968e2a6da4b7868254f5]
+class Boss--><rect codeLine="16" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="60.8047" id="Boss" style="stroke:#A80036;stroke-width:1.5;" width="139" x="351" y="166"/><ellipse cx="401.25" cy="182" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M401.3594,177.3438 L400.2031,182.4219 L402.5313,182.4219 L401.3594,177.3438 Z M399.875,175.1094 L402.8594,175.1094 L406.2188,187.5 L403.7656,187.5 L403,184.4375 L399.7188,184.4375 L398.9688,187.5 L396.5313,187.5 L399.875,175.1094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="30" x="421.75" y="186.1543">Boss</text><line style="stroke:#A80036;stroke-width:1.5;" x1="352" x2="489" y1="198" y2="198"/><line style="stroke:#A80036;stroke-width:1.5;" x1="352" x2="489" y1="206" y2="206"/><ellipse cx="362" cy="217" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="113" x="371" y="220.2104">specialAttack(): void</text><!--MD5=[2a426584d0a5f5f40e7c2004a3c5d70e]
+class CloningBoss--><rect codeLine="20" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="CloningBoss" style="stroke:#A80036;stroke-width:1.5;" width="108" x="527.5" y="287"/><ellipse cx="542.5" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M545.4688,308.6406 Q544.8906,308.9375 544.25,309.0781 Q543.6094,309.2344 542.9063,309.2344 Q540.4063,309.2344 539.0781,307.5938 Q537.7656,305.9375 537.7656,302.8125 Q537.7656,299.6875 539.0781,298.0313 Q540.4063,296.375 542.9063,296.375 Q543.6094,296.375 544.25,296.5313 Q544.9063,296.6875 545.4688,296.9844 L545.4688,299.7031 Q544.8438,299.125 544.25,298.8594 Q543.6563,298.5781 543.0313,298.5781 Q541.6875,298.5781 541,299.6563 Q540.3125,300.7188 540.3125,302.8125 Q540.3125,304.9063 541,305.9844 Q541.6875,307.0469 543.0313,307.0469 Q543.6563,307.0469 544.25,306.7813 Q544.8438,306.5 545.4688,305.9219 L545.4688,308.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="556.5" y="307.1543">CloningBoss</text><line style="stroke:#A80036;stroke-width:1.5;" x1="528.5" x2="634.5" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="528.5" x2="634.5" y1="327" y2="327"/><!--MD5=[9cb0a1b16b134ff5a1247458a50a8434]
+class StrongAttackBoss--><rect codeLine="22" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="StrongAttackBoss" style="stroke:#A80036;stroke-width:1.5;" width="144" x="348.5" y="287"/><ellipse cx="363.5" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M366.4688,308.6406 Q365.8906,308.9375 365.25,309.0781 Q364.6094,309.2344 363.9063,309.2344 Q361.4063,309.2344 360.0781,307.5938 Q358.7656,305.9375 358.7656,302.8125 Q358.7656,299.6875 360.0781,298.0313 Q361.4063,296.375 363.9063,296.375 Q364.6094,296.375 365.25,296.5313 Q365.9063,296.6875 366.4688,296.9844 L366.4688,299.7031 Q365.8438,299.125 365.25,298.8594 Q364.6563,298.5781 364.0313,298.5781 Q362.6875,298.5781 362,299.6563 Q361.3125,300.7188 361.3125,302.8125 Q361.3125,304.9063 362,305.9844 Q362.6875,307.0469 364.0313,307.0469 Q364.6563,307.0469 365.25,306.7813 Q365.8438,306.5 366.4688,305.9219 L366.4688,308.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="112" x="377.5" y="307.1543">StrongAttackBoss</text><line style="stroke:#A80036;stroke-width:1.5;" x1="349.5" x2="491.5" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="349.5" x2="491.5" y1="327" y2="327"/><!--MD5=[c9648982ea976359d170acb4188f8773]
+class SmallFlight--><rect codeLine="24" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="SmallFlight" style="stroke:#A80036;stroke-width:1.5;" width="99" x="194" y="172.5"/><ellipse cx="209" cy="188.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M209.1094,183.8438 L207.9531,188.9219 L210.2813,188.9219 L209.1094,183.8438 Z M207.625,181.6094 L210.6094,181.6094 L213.9688,194 L211.5156,194 L210.75,190.9375 L207.4688,190.9375 L206.7188,194 L204.2813,194 L207.625,181.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="67" x="223" y="192.6543">SmallFlight</text><line style="stroke:#A80036;stroke-width:1.5;" x1="195" x2="292" y1="204.5" y2="204.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="195" x2="292" y1="212.5" y2="212.5"/><!--MD5=[911d89f8ef302c6dce54aa5ac2bd828a]
+class MissileSmallFlight--><rect codeLine="26" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="MissileSmallFlight" style="stroke:#A80036;stroke-width:1.5;" width="140" x="173.5" y="287"/><ellipse cx="188.5" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M191.4688,308.6406 Q190.8906,308.9375 190.25,309.0781 Q189.6094,309.2344 188.9063,309.2344 Q186.4063,309.2344 185.0781,307.5938 Q183.7656,305.9375 183.7656,302.8125 Q183.7656,299.6875 185.0781,298.0313 Q186.4063,296.375 188.9063,296.375 Q189.6094,296.375 190.25,296.5313 Q190.9063,296.6875 191.4688,296.9844 L191.4688,299.7031 Q190.8438,299.125 190.25,298.8594 Q189.6563,298.5781 189.0313,298.5781 Q187.6875,298.5781 187,299.6563 Q186.3125,300.7188 186.3125,302.8125 Q186.3125,304.9063 187,305.9844 Q187.6875,307.0469 189.0313,307.0469 Q189.6563,307.0469 190.25,306.7813 Q190.8438,306.5 191.4688,305.9219 L191.4688,308.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="202.5" y="307.1543">MissileSmallFlight</text><line style="stroke:#A80036;stroke-width:1.5;" x1="174.5" x2="312.5" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="174.5" x2="312.5" y1="327" y2="327"/><!--MD5=[fdea97a91c80e12b30261ffffbf7f348]
+class DashSmallFlight--><rect codeLine="28" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="DashSmallFlight" style="stroke:#A80036;stroke-width:1.5;" width="131" x="7" y="287"/><ellipse cx="22" cy="303" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M24.9688,308.6406 Q24.3906,308.9375 23.75,309.0781 Q23.1094,309.2344 22.4063,309.2344 Q19.9063,309.2344 18.5781,307.5938 Q17.2656,305.9375 17.2656,302.8125 Q17.2656,299.6875 18.5781,298.0313 Q19.9063,296.375 22.4063,296.375 Q23.1094,296.375 23.75,296.5313 Q24.4063,296.6875 24.9688,296.9844 L24.9688,299.7031 Q24.3438,299.125 23.75,298.8594 Q23.1563,298.5781 22.5313,298.5781 Q21.1875,298.5781 20.5,299.6563 Q19.8125,300.7188 19.8125,302.8125 Q19.8125,304.9063 20.5,305.9844 Q21.1875,307.0469 22.5313,307.0469 Q23.1563,307.0469 23.75,306.7813 Q24.3438,306.5 24.9688,305.9219 L24.9688,308.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="36" y="307.1543">DashSmallFlight</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="137" y1="319" y2="319"/><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="137" y1="327" y2="327"/><!--MD5=[23868d926b4091f874f65c50fc3e197e]
+class Obstacle--><rect codeLine="30" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="60.8047" id="Obstacle" style="stroke:#A80036;stroke-width:1.5;" width="94" x="541.5" y="26"/><ellipse cx="559.65" cy="42" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M559.7594,37.3438 L558.6031,42.4219 L560.9313,42.4219 L559.7594,37.3438 Z M558.275,35.1094 L561.2594,35.1094 L564.6188,47.5 L562.1656,47.5 L561.4,44.4375 L558.1188,44.4375 L557.3688,47.5 L554.9313,47.5 L558.275,35.1094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="55" x="574.35" y="46.1543">Obstacle</text><line style="stroke:#A80036;stroke-width:1.5;" x1="542.5" x2="634.5" y1="58" y2="58"/><line style="stroke:#A80036;stroke-width:1.5;" x1="542.5" x2="634.5" y1="66" y2="66"/><ellipse cx="552.5" cy="77" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="68" x="561.5" y="80.2104">block(): void</text><!--MD5=[e49faab0a193e0701ad91b4985b8a213]
+class BombObstacle--><rect codeLine="34" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="BombObstacle" style="stroke:#A80036;stroke-width:1.5;" width="122" x="525.5" y="172.5"/><ellipse cx="540.5" cy="188.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M543.4688,194.1406 Q542.8906,194.4375 542.25,194.5781 Q541.6094,194.7344 540.9063,194.7344 Q538.4063,194.7344 537.0781,193.0938 Q535.7656,191.4375 535.7656,188.3125 Q535.7656,185.1875 537.0781,183.5313 Q538.4063,181.875 540.9063,181.875 Q541.6094,181.875 542.25,182.0313 Q542.9063,182.1875 543.4688,182.4844 L543.4688,185.2031 Q542.8438,184.625 542.25,184.3594 Q541.6563,184.0781 541.0313,184.0781 Q539.6875,184.0781 539,185.1563 Q538.3125,186.2188 538.3125,188.3125 Q538.3125,190.4063 539,191.4844 Q539.6875,192.5469 541.0313,192.5469 Q541.6563,192.5469 542.25,192.2813 Q542.8438,192 543.4688,191.4219 L543.4688,194.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="554.5" y="192.6543">BombObstacle</text><line style="stroke:#A80036;stroke-width:1.5;" x1="526.5" x2="646.5" y1="204.5" y2="204.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="526.5" x2="646.5" y1="212.5" y2="212.5"/><!--MD5=[3863b57fb8916cc6bf4bee60ef1cb5d1]
+class RockObstacle--><rect codeLine="36" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="RockObstacle" style="stroke:#A80036;stroke-width:1.5;" width="117" x="683" y="172.5"/><ellipse cx="698" cy="188.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M700.9688,194.1406 Q700.3906,194.4375 699.75,194.5781 Q699.1094,194.7344 698.4063,194.7344 Q695.9063,194.7344 694.5781,193.0938 Q693.2656,191.4375 693.2656,188.3125 Q693.2656,185.1875 694.5781,183.5313 Q695.9063,181.875 698.4063,181.875 Q699.1094,181.875 699.75,182.0313 Q700.4063,182.1875 700.9688,182.4844 L700.9688,185.2031 Q700.3438,184.625 699.75,184.3594 Q699.1563,184.0781 698.5313,184.0781 Q697.1875,184.0781 696.5,185.1563 Q695.8125,186.2188 695.8125,188.3125 Q695.8125,190.4063 696.5,191.4844 Q697.1875,192.5469 698.5313,192.5469 Q699.1563,192.5469 699.75,192.2813 Q700.3438,192 700.9688,191.4219 L700.9688,194.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="712" y="192.6543">RockObstacle</text><line style="stroke:#A80036;stroke-width:1.5;" x1="684" x2="799" y1="204.5" y2="204.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="684" x2="799" y1="212.5" y2="212.5"/><!--MD5=[8a12a265198621f36a07a2ded3413d7e]
+class EnemyFactory--><rect codeLine="38" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="99.2188" id="EnemyFactory" style="stroke:#A80036;stroke-width:1.5;" width="228" x="782.5" y="7"/><ellipse cx="848.75" cy="23" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M848.8594,18.3438 L847.7031,23.4219 L850.0313,23.4219 L848.8594,18.3438 Z M847.375,16.1094 L850.3594,16.1094 L853.7188,28.5 L851.2656,28.5 L850.5,25.4375 L847.2188,25.4375 L846.4688,28.5 L844.0313,28.5 L847.375,16.1094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="87" x="869.25" y="27.1543">EnemyFactory</text><line style="stroke:#A80036;stroke-width:1.5;" x1="783.5" x2="1009.5" y1="39" y2="39"/><line style="stroke:#A80036;stroke-width:1.5;" x1="783.5" x2="1009.5" y1="47" y2="47"/><ellipse cx="793.5" cy="58" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="202" x="802.5" y="61.2104">getFactory(level: int): EnemyFactory</text><ellipse cx="793.5" cy="70.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="110" x="802.5" y="74.0151">createBoss(): Boss</text><ellipse cx="793.5" cy="83.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="176" x="802.5" y="86.8198">createSmallFlight(): SmallFlight</text><ellipse cx="793.5" cy="96.4141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="152" x="802.5" y="99.6245">createObstacle(): Obstacle</text><!--MD5=[92183e36174eae4922c3fd7627601cef]
+class EasyStageEnemyFactory--><rect codeLine="45" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="EasyStageEnemyFactory" style="stroke:#A80036;stroke-width:1.5;" width="185" x="1087" y="172.5"/><ellipse cx="1102" cy="188.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1104.9688,194.1406 Q1104.3906,194.4375 1103.75,194.5781 Q1103.1094,194.7344 1102.4063,194.7344 Q1099.9063,194.7344 1098.5781,193.0938 Q1097.2656,191.4375 1097.2656,188.3125 Q1097.2656,185.1875 1098.5781,183.5313 Q1099.9063,181.875 1102.4063,181.875 Q1103.1094,181.875 1103.75,182.0313 Q1104.4063,182.1875 1104.9688,182.4844 L1104.9688,185.2031 Q1104.3438,184.625 1103.75,184.3594 Q1103.1563,184.0781 1102.5313,184.0781 Q1101.1875,184.0781 1100.5,185.1563 Q1099.8125,186.2188 1099.8125,188.3125 Q1099.8125,190.4063 1100.5,191.4844 Q1101.1875,192.5469 1102.5313,192.5469 Q1103.1563,192.5469 1103.75,192.2813 Q1104.3438,192 1104.9688,191.4219 L1104.9688,194.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="153" x="1116" y="192.6543">EasyStageEnemyFactory</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1088" x2="1271" y1="204.5" y2="204.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="1088" x2="1271" y1="212.5" y2="212.5"/><path d="M1046,44 L1046,69.1328 A0,0 0 0 0 1046,69.1328 L1206.3333,69.1328 L1210.3333,172.4729 L1214.3333,69.1328 L1439,69.1328 A0,0 0 0 0 1439,69.1328 L1439,54 L1429,44 L1046,44 A0,0 0 0 0 1046,44 " fill="#FBFB77" filter="url(#ffo7les1w45od)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1429,44 L1429,54 L1439,54 L1429,44 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="372" x="1052" y="61.0669">creates StrongAttackBoss, DashSmallFlight, RockObstacle</text><!--MD5=[c48dcfab1395367e7f9864b052fe9152]
+class HardStageEnemyFactory--><rect codeLine="50" fill="#FEFECE" filter="url(#ffo7les1w45od)" height="48" id="HardStageEnemyFactory" style="stroke:#A80036;stroke-width:1.5;" width="186" x="835.5" y="172.5"/><ellipse cx="850.5" cy="188.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M853.4688,194.1406 Q852.8906,194.4375 852.25,194.5781 Q851.6094,194.7344 850.9063,194.7344 Q848.4063,194.7344 847.0781,193.0938 Q845.7656,191.4375 845.7656,188.3125 Q845.7656,185.1875 847.0781,183.5313 Q848.4063,181.875 850.9063,181.875 Q851.6094,181.875 852.25,182.0313 Q852.9063,182.1875 853.4688,182.4844 L853.4688,185.2031 Q852.8438,184.625 852.25,184.3594 Q851.6563,184.0781 851.0313,184.0781 Q849.6875,184.0781 849,185.1563 Q848.3125,186.2188 848.3125,188.3125 Q848.3125,190.4063 849,191.4844 Q849.6875,192.5469 851.0313,192.5469 Q851.6563,192.5469 852.25,192.2813 Q852.8438,192 853.4688,191.4219 L853.4688,194.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="154" x="864.5" y="192.6543">HardStageEnemyFactory</text><line style="stroke:#A80036;stroke-width:1.5;" x1="836.5" x2="1020.5" y1="204.5" y2="204.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="836.5" x2="1020.5" y1="212.5" y2="212.5"/><path d="M742,298.5 L742,323.6328 A0,0 0 0 0 742,323.6328 L1115,323.6328 A0,0 0 0 0 1115,323.6328 L1115,308.5 L1105,298.5 L932.5,298.5 L928.5,220.503 L924.5,298.5 L742,298.5 A0,0 0 0 0 742,298.5 " fill="#FBFB77" filter="url(#ffo7les1w45od)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1105,298.5 L1105,308.5 L1115,308.5 L1105,298.5 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="352" x="748" y="315.5669">creates CloningBoss, MissileSmallFlight, BombObstacle</text><!--MD5=[bdbeac57af4ed06c34239fa248852960]
+reverse link EnemyFlight to Boss--><path d="M300.5,119.8515 C300.5,119.8515 300.5,205 300.5,205 C300.5,205 324.2964,205 350.6955,205 " fill="none" id="EnemyFlight-backto-Boss" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="293.5001,119.8516,300.5,99.8515,307.5001,119.8515,293.5001,119.8516" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[db500e701f06b62efc9e2a5e3b6056f5]
+reverse link Boss to CloningBoss--><path d="M498.3466,197 C498.3466,197 499.25,197 499.25,197 C499.25,197 499.25,311 499.25,311 C499.25,311 511.8004,311 527.0961,311 " fill="none" id="Boss-backto-CloningBoss" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="510.2165,203.9998,490.2164,197,510.2163,189.9998,510.2165,203.9998" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8f609ec5470c54bbc0e61d5201104e23]
+reverse link Boss to StrongAttackBoss--><path d="M420.5,247.1839 C420.5,247.1839 420.5,286.7634 420.5,286.7634 " fill="none" id="Boss-backto-StrongAttackBoss" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="413.5001,247.1839,420.5,227.1839,427.5001,247.1839,413.5001,247.1839" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1df1610be8e5e7bb05763b3bba5ed4f6]
+reverse link EnemyFlight to SmallFlight--><path d="M243.5,119.647 C243.5,119.647 243.5,172.4319 243.5,172.4319 " fill="none" id="EnemyFlight-backto-SmallFlight" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="236.5001,119.647,243.5,99.647,250.5001,119.6469,236.5001,119.647" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ba8cd9c9f57951c61731f4251932e5ee]
+reverse link SmallFlight to MissileSmallFlight--><path d="M243.5,240.503 C243.5,240.503 243.5,286.6343 243.5,286.6343 " fill="none" id="SmallFlight-backto-MissileSmallFlight" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="236.5001,240.503,243.5,220.503,250.5001,240.5029,236.5001,240.503" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[620ba1a810a03879f481ba60aef58af6]
+reverse link SmallFlight to DashSmallFlight--><path d="M173.58,197 C173.58,197 72.5,197 72.5,197 C72.5,197 72.5,253.3599 72.5,286.8235 " fill="none" id="SmallFlight-backto-DashSmallFlight" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="173.5801,189.9999,193.58,197,173.58,203.9999,173.5801,189.9999" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f5c2ad12b92ed1997b7aaec2bc3ea7f1]
+reverse link Obstacle to BombObstacle--><path d="M588.5,107.2236 C588.5,107.2236 588.5,172.3472 588.5,172.3472 " fill="none" id="Obstacle-backto-BombObstacle" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="581.5001,107.2236,588.5,87.2236,595.5001,107.2236,581.5001,107.2236" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[57f75767c02c36f25e946bcf84285da0]
+reverse link Obstacle to RockObstacle--><path d="M655.7328,57 C655.7328,57 732.75,57 732.75,57 C732.75,57 732.75,132.2333 732.75,172.201 " fill="none" id="Obstacle-backto-RockObstacle" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="655.7329,63.9999,635.7328,57,655.7328,49.9999,655.7329,63.9999" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[443e384d9e55e24bb4b80006e1adaa6f]
+reverse link EnemyFactory to EasyStageEnemyFactory--><path d="M1030.7784,88 C1030.7784,88 1148.6667,88 1148.6667,88 C1148.6667,88 1148.6667,140.4554 1148.6667,172.4203 " fill="none" id="EnemyFactory-backto-EasyStageEnemyFactory" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="1030.7784,94.9999,1010.7784,88,1030.7784,80.9999,1030.7784,94.9999" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[655167d5a19938be366478e1f52131ca]
+reverse link EnemyFactory to HardStageEnemyFactory--><path d="M923,126.253 C923,126.253 923,172.4107 923,172.4107 " fill="none" id="EnemyFactory-backto-HardStageEnemyFactory" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="916.0001,126.253,923,106.253,930.0001,126.2529,916.0001,126.253" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[70ca7a5fc78bf54905bff91c1912c59f]
+link Stage to EnemyFactory--><path codeLine="55" d="M506.1773,97 C506.1773,97 777.262,97 777.262,97 " fill="none" id="Stage-to-EnemyFactory" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="782.262,97,773.262,93,777.262,97,773.262,101,782.262,97" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7e9cd7bbbee1b0b2318973076ca07cf5]
+link Stage to Boss--><path codeLine="59" d="M420.5,106.253 C420.5,106.253 420.5,160.641 420.5,160.641 " fill="none" id="Stage-to-Boss" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="420.5,165.641,424.5,156.641,420.5,160.641,416.5,156.641,420.5,165.641" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[87ee0121db72f9329f3a4f5b512092f1]
+link Stage to SmallFlight--><path codeLine="60" d="M330.8683,57 C330.8683,57 328.25,57 328.25,57 C328.25,57 328.25,189 328.25,189 C328.25,189 306.2896,189 306.2896,189 " fill="none" id="Stage-SmallFlight" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="293.2896,189,302.2896,193,298.2896,189,302.2896,185,293.2896,189" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="298.2896" x2="306.2897" y1="189" y2="188.9999"/><polygon fill="#FFFFFF" points="342.8683,57,336.8683,53,330.8683,57,336.8683,61,342.8683,57" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4c8e225b60ad71f6f2ebd1c856d7fa67]
+link Stage to Obstacle--><path codeLine="61" d="M518.0195,57 C518.0195,57 528.1934,57 528.1934,57 " fill="none" id="Stage-Obstacle" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="541.1934,57,532.1934,53,536.1934,57,532.1934,61,541.1934,57" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="536.1934" x2="528.1934" y1="57" y2="56.9999"/><polygon fill="#FFFFFF" points="506.0195,57,512.0195,61,518.0195,57,512.0195,53,506.0195,57" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[00c29bcedb381585f1bb8f85a7bf2679]
+@startuml
+skinparam linetype ortho
+
+class Stage {
+  - ememies: EnemyFlight[]
+  - obstacles: Obstacle[]
+  - boss: Boss
+  + run(): void
+}
+
+abstract class EnemyFlight {
+  - attackPower: int
+  - defensePower: int
+  + {abstract} attack(): void
+}
+
+abstract class Boss extends EnemyFlight {
+  + {abstract} specialAttack(): void
+}
+
+class CloningBoss extends Boss {}
+
+class StrongAttackBoss extends Boss {}
+
+abstract class SmallFlight extends EnemyFlight {}
+
+class MissileSmallFlight extends SmallFlight {}
+
+class DashSmallFlight extends SmallFlight {}
+
+abstract class Obstacle {
+  + {abstract} block(): void
+}
+
+class BombObstacle extends Obstacle {}
+
+class RockObstacle extends Obstacle {}
+
+abstract class EnemyFactory {
+  + getFactory(level: int): EnemyFactory
+  + {abstract} createBoss(): Boss
+  + {abstract} createSmallFlight(): SmallFlight
+  + {abstract} createObstacle(): Obstacle
+}
+
+class EasyStageEnemyFactory extends EnemyFactory {}
+note top of EasyStageEnemyFactory
+  creates StrongAttackBoss, DashSmallFlight, RockObstacle
+end note
+
+class HardStageEnemyFactory extends EnemyFactory {}
+note bottom of HardStageEnemyFactory
+  creates CloningBoss, MissileSmallFlight, BombObstacle
+end note
+
+Stage .> EnemyFactory
+'EasyStageEnemyFactory ..> StrongAttackBoss: <<create>>
+'EasyStageEnemyFactory ..> DashSmallFlight: <<create>>
+'EasyStageEnemyFactory ..> RockObstacle: <<create>>
+Stage - -> Boss
+Stage o-> SmallFlight
+Stage o-> Obstacle
+@enduml
+
+@startuml
+skinparam linetype ortho
+
+class Stage {
+  - ememies: EnemyFlight[]
+  - obstacles: Obstacle[]
+  - boss: Boss
+  + run(): void
+}
+
+abstract class EnemyFlight {
+  - attackPower: int
+  - defensePower: int
+  + {abstract} attack(): void
+}
+
+abstract class Boss extends EnemyFlight {
+  + {abstract} specialAttack(): void
+}
+
+class CloningBoss extends Boss {}
+
+class StrongAttackBoss extends Boss {}
+
+abstract class SmallFlight extends EnemyFlight {}
+
+class MissileSmallFlight extends SmallFlight {}
+
+class DashSmallFlight extends SmallFlight {}
+
+abstract class Obstacle {
+  + {abstract} block(): void
+}
+
+class BombObstacle extends Obstacle {}
+
+class RockObstacle extends Obstacle {}
+
+abstract class EnemyFactory {
+  + getFactory(level: int): EnemyFactory
+  + {abstract} createBoss(): Boss
+  + {abstract} createSmallFlight(): SmallFlight
+  + {abstract} createObstacle(): Obstacle
+}
+
+class EasyStageEnemyFactory extends EnemyFactory {}
+note top of EasyStageEnemyFactory
+  creates StrongAttackBoss, DashSmallFlight, RockObstacle
+end note
+
+class HardStageEnemyFactory extends EnemyFactory {}
+note bottom of HardStageEnemyFactory
+  creates CloningBoss, MissileSmallFlight, BombObstacle
+end note
+
+Stage .> EnemyFactory
+Stage - -> Boss
+Stage o-> SmallFlight
+Stage o-> Obstacle
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

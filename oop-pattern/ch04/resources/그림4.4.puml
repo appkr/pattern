@@ -1,0 +1,22 @@
+@startuml
+
+'skinparam linetype polyline
+skinparam linetype ortho
+
+abstract class Storage {
+  + write()
+}
+
+class CompressedStorage extends Storage {}
+
+class EncryptedStorage extends Storage {}
+
+class CacheableStorage extends Storage {}
+
+class CompressEncryptedStorage extends CompressedStorage, EncryptedStorage {}
+
+class EncryptedCompressedStorage extends CompressedStorage, EncryptedStorage {}
+
+class CacheableEncryptedStorage extends CacheableStorage, EncryptedStorage {}
+
+@enduml

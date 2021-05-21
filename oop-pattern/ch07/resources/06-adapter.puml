@@ -1,0 +1,28 @@
+@startuml
+
+skinparam linetype ortho
+
+class App{}
+
+interface EnemyAttacker {
+  + fireWeapone(): void
+  + driveForward(): void
+  + assignDriver(String): void
+}
+
+class EnemyRobotAdapter <<adapter>> implements EnemyAttacker {
+  + enemyRobot: EnemyRobot
+}
+
+class EnemyTank implements EnemyAttacker {}
+
+class EnemyRobot <<adaptee>> {
+  + smashWithHand(): void
+  + walkForward(): void
+  + reactToHuman(String): void
+}
+
+App -> EnemyAttacker
+EnemyRobotAdapter -down-> EnemyRobot
+
+@enduml

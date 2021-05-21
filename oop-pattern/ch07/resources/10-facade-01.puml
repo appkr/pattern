@@ -1,0 +1,17 @@
+@startuml
+
+'skinparam linetype ortho
+
+class GUIViewer {}
+
+class EmpDao {}
+
+class ResumeDao {}
+
+class EvaluationDao {}
+
+GUIViewer ..> EmpDao
+GUIViewer ..> ResumeDao
+GUIViewer ..> EvaluationDao
+
+@enduml

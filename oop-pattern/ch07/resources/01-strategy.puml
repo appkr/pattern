@@ -1,0 +1,19 @@
+@startuml
+
+skinparam linetype ortho
+
+class Calculator <<context>> {
+  + calculate(List<Item>): int
+}
+
+interface DiscountStrategy <<strategy>> {
+  + getDiscountPrice(Item): int
+}
+
+class FirstGuestDiscountStrategy <<concrete>> implements DiscountStrategy {}
+
+class NonFreshItemDiscountStrategy <<concrete>> implements DiscountStrategy {}
+
+Calculator .> DiscountStrategy
+
+@enduml

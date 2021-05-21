@@ -1,0 +1,72 @@
+@startuml
+
+'skinparam linetype ortho
+
+package main {
+  class Main {
+    'ui 구동
+    'worker 구동
+  }
+}
+
+package ui {
+  class JobCLI {
+    - jobQueue: JobQueue
+    + interact(): boolean
+    '트랜스코드할 문자열을 입력 받는다
+    '출력 장치를 입력 받는다
+    'JobData를 만들고 Queue에 넣는다
+  }
+}
+
+class JobData {
+  - source: String
+  - target: Target
+}
+
+package application {
+  class Worker {
+    - jobQueue: JobQueue
+    - transcoder: Transcoder
+    + run(): void
+    'JobQueue에서 JobData를 읽는다
+    'Transcoder에게 작업을 위임하고 결과를 받는다
+    '결과 출력을 Target에게 위임한다
+  }
+
+  interface JobQueue {
+    + addJob(job: JobData): void
+    + getJob(): JobData
+  }
+
+  interface Transcoder {
+    + transcode(source: String): String
+  }
+
+  interface Target {
+    + flush(): void
+  }
+}
+
+class FileJobQueue implements JobQueue {}
+class InMemoryJobQueue implements JobQueue {}
+
+class ShuffleTranscoder implements Transcoder {}
+class ReverseTranscoder implements Transcoder {}
+
+class FileTarget implements Target {}
+class ScreenTarget implements Target {}
+
+Main --> JobCLI
+Main -> Worker
+
+JobCLI --> JobQueue
+JobCLI .> JobData
+JobQueue .up.> JobData
+
+Worker -> JobQueue
+Worker .> JobData
+Worker --> Transcoder
+Worker --> Target
+
+@enduml
