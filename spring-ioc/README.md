@@ -19,4 +19,23 @@ Tiger tiger = context.getBean(Tiger.class, "Shere Khan");
 
 > By extending the `AbstractFactoryBean` class, your factory bean can simply override the `createInstance()` method to create the target bean instance
 
+- module 4 BeanFactory @see https://www.baeldung.com/spring-beanfactory
+> It is important to point that BeanFactory does not support the Annotation-based dependency Injection whereas ApplicationContext, a superset of BeanFactory does
 
+```puml
+@startuml
+interface BeanFactory {
+  + getBean(name: String): Object
+  + getBean(name: String, requiredType: Class<T>): T
+  + getBean(name: String, args: Object[]): Object
+  + containsBean(name: String): boolean
+  + isSingleton(name: String): boolean
+  ' check if the bean is configured with prototype scope or not
+  + isPrototype(name: String): boolean
+}
+interface ListableBeanFactory extends BeanFactory {}
+interface HierarchicalBeanFactory extends BeanFactory {}
+interface ApplicationContext extends ListableBeanFactory, HierarchicalBeanFactory {}
+@enduml
+```
+![](https://plantuml-server.kkeisuke.dev/svg/bP91ImD138Nl_HMvgTXVKAHK2-91KEZUYeViDBkREfsicInj4V-xgLZPGhVWPGvltfUNUSmi6wfrcpZYPAGL1e87mlI8mKJty3a2k8MQx21U9zpG11QcdEgR2RoKQmesw1Y3qaV7IgjYtxewZvZpNJ5rihW0eTRvE7lvTXeJ91bookUsAKMYopy-pWiN8vbSi5r1Q2Yy0rTW3K7fgeE7Z8hhpjU6BLi3hOg9-GiW1_5J59BORyphyN8evgjNx3DxssMaVi6qCqghV5fw7tfYKjJGSC3uB_2-RQD3nfBcNflx_vWpYum7Wtpep2d_8zy0.svg)
