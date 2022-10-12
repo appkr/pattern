@@ -3,8 +3,10 @@ plugins {
     id 'application'
 }
 
+sourceCompatibility = "17"
+
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 List loggers = [
