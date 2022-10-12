@@ -29,3 +29,6 @@
 - 모던 자바 인 액션, ch10 람다를 이용한 도메인 전용 언어, p 344 10.3.3 람다 표현식을 이용한 함수 시퀀싱
 
 ![](https://plantuml-server.kkeisuke.dev/svg/LOyz3iCW34PtJk4Bv08CLMxGeTsg3WIi2eMVr9WXgdBtEf2sweBb9zx7nrZO4DSObBB1b09dSaZmKW03s5euHoGD5oQV7Wqo6OT5mtMVjxlQFcO3XydhWd95phPAZ9tt51aDFAj9x7dLu1Ctif2tehXSfu2_qAOSeMMDKmv_PQAX6VcBHElzyt3gVLHl9Mj_N8sOd7pt3G00.svg)
+
+### Optional
+- 모던 자바 인 액션, ch11 null 대신 Optional 클래스, p 375 11.3.3 flatMap으로 Optional 객체 연결
