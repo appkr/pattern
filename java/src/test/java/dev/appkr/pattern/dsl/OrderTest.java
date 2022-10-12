@@ -42,26 +42,47 @@ public class OrderTest {
   }
 
   @Test
-  void testDsl() {
-    final Order order = LambdaOrderBuilder.order(o -> {
-      o.forCustomer("BigBank");
-      o.buy(t -> {
-        t.quantity(80);
-        t.price(125.00);
-        t.stock(s -> {
-          s.symbol("IBM");
-          s.market("NYSE");
+  void testDsl1() {
+    final Order order = LambdaOrderBuilder
+        .order(o -> {
+          o.forCustomer("BigBank"); // void
+          o.buy(t -> {
+            t.quantity(80);
+            t.price(125.00);
+            t.stock(s -> {
+              s.symbol("IBM");
+              s.market("NYSE");
+            });
+          });                       // void
+          o.sell(t -> {
+            t.quantity(50);
+            t.price(375.00);
+            t.stock(s -> {
+              s.symbol("GOOGLE");
+              s.market("NASDAQ");
+            });                     // void
+          });
         });
-      });
-      o.sell(t -> {
-        t.quantity(50);
-        t.price(375.00);
-        t.stock(s -> {
-          s.symbol("GOOGLE");
-          s.market("NASDAQ");
-        });
-      });
-    });
+
+    log.info("{}", order);
+  }
+
+  @Test
+  void testDsl2() {
+    final TradeBuilderAlt buyTrade = MixedOrderBuilder
+        .buy(t -> t.quantity(80)  // TradeBuilder
+            .stock("IBM")  // StockBuilder
+            .on("NYSE")    // TradeBuilder
+            .at(125.00));         // TradeBuilder
+
+    final TradeBuilderAlt sellTrade = MixedOrderBuilder
+        .sell(t -> t.quantity(50)
+            .stock("GOOGLE")
+            .on("NASDAQ")
+            .at(125.00));
+
+    final Order order = MixedOrderBuilder
+        .forCustomer("BigBank", buyTrade, sellTrade);
 
     log.info("{}", order);
   }
