@@ -84,6 +84,13 @@ public class OrderTest {
     final Order order = MixedOrderBuilder
         .forCustomer("BigBank", buyTrade, sellTrade);
 
-    log.info("{}", order);
+    final double tax = new TaxCalculator()
+        .with(Tax::regional)
+        .with(Tax::surcharge)
+        .calculate(order);
+
+    log.info("object: {}", order);
+    log.info("netValue: {}", order.getValue());
+    log.info("inclTax: {}", tax);
   }
 }
